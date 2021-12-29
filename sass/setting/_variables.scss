@@ -1,12 +1,25 @@
 // 色
+$base-color:#006E93;
+$gray:#7C8A97;
 $background: #fff; // 背景
-$text-color: #333; // テキスト色
+$text-color: #003041; // テキスト色
+// $text-color: #333; // テキスト色
+$black:#393939;
+$base-background: #2e6c83;
+$white:#fff;
+$orange:#FF9900;
+$background-blue:#4683C6;
+$bg-white:#f7f7f7;
+$light-gray:#D6E1E2;
 
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: "";// ベースフォント
+$font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
+$font-family-base: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;// ベースフォント
+$second-font-family:'Montserrat', sans-serif;
+$third-font-family: futura-pt-condensed, sans-serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
@@ -15,12 +28,14 @@ $lh: 1.6; // ベース行間
 // レイアウト
 // ---
 $l-inner: 1000px; // インナー幅
+$l-ssp: 375px; // タブレットサイズ
 $l-sp: 768px; // タブレットサイズ
 $l-tab: 1024px; // タブレットサイズ
 $l-pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）
 $breakpoints: (
+	"ssp": "screen and (max-width: #{$l-ssp})",
 	"sp": "screen and (max-width: #{$l-sp - 1})",
 	"tab": "screen and (max-width: #{$l-tab - 1 })",
 	"pc": "screen and (min-width: #{$l-pc})",
@@ -29,3 +44,4 @@ $breakpoints: (
 
 $padding-pc: 25px; // タブレット時の余白
 $padding-sp: 20px; // スマホ時の余白
+

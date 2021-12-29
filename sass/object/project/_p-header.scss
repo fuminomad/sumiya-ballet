@@ -1,0 +1,287 @@
+.p-header{
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: rem(100);
+    width: 100%;
+   @include mq(ssp){
+       height: rem(80);
+   }
+    }
+
+
+.p-header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width:rem(1400);
+    width:100%;
+    height: inherit;
+    margin: 0 auto;
+   
+}
+    
+    .p-header-logo{
+        // font-family: $third-font-family;
+
+    }
+
+  .p-header_nav {
+    width: rem(500);
+    height: rem(600);
+    color: $white;
+    background: rgba($color: $base-background, $alpha: 0.9);
+    // background: rgba(38,38,38,0.9);
+    position: absolute;
+    top: rem(100);
+    right: -100%;
+    pointer-events: none;
+    transition: .5s;
+    opacity: 1;
+    // transform: translateX(0);
+    z-index: 100;
+    display: none;
+    @include mq(sp){
+        height: rem(300);
+        width: rem(300);
+        display: block;
+    }
+}
+// .p-header_nav-close{
+//    position: absolute;
+//   content:"" ;
+//   display: inline-block;
+//   background: url(../img/common/icon-close.svg)no-repeat top left / contain;
+//  width: rem(50);
+//  height: rem(50);
+//  z-index: 10100;
+//  transition: .2s;
+// opacity: 1;
+// transform: translateX(0);
+//  top: rem(100);
+//  right: rem(-80);
+//  @include mq(sp){
+//  top: rem(80);
+//  }
+//  &.open{
+//  opacity: 1;
+//  right: rem(0);
+//  }
+// }
+ 
+    .p-header_nav.open {
+        right: 0;
+        opacity: 1;
+        z-index: 100;
+        transform: translateX(0px);
+        pointer-events: auto;
+        z-index: 10000;
+        
+    } 
+    
+    .p-header_nav_list{
+        list-style: none;
+        margin-top: rem(30);
+        
+    .menu-item:not(:first-child){
+            text-align: left; 
+            margin-top: rem(47);
+            @include mq(sp){
+                margin-top: rem(27);
+            }
+        }
+    }
+    .p-header_nav_list{
+        
+        a{   
+        padding-left: rem(105);
+        display: block;
+        color: $black;
+        font-size: rem(20);  
+        font-family: $font-family-base; 
+        text-decoration: none; 
+        list-style: none;
+        line-height: 1;
+        position: relative;
+        text-decoration: none;
+        color:$white;
+        
+    &:after{
+    position: absolute;
+    content: "";
+    background: $white;
+    width: rem(200);
+    bottom: rem(0);
+    left: rem(105);
+    height: rem(2);
+   
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .5s;
+     @include mq(sp){
+     width: rem(100);
+     }
+    }
+    &:hover::after {
+        transform: scale(1, 1);
+      }
+    }
+    }
+    
+    // .p-header_nav_list{
+    //     .menu-item:nth-child(n + 2):not(:nth-child(n + 5)){
+    //       a{
+    //         &:after{
+    //         width: rem(132);   
+    //             }
+    //         }
+    //     }
+    // }
+    // .p-header_nav_list{
+    //     .menu-item:nth-child(5){
+    //       a{
+    //         &:after{
+    //        @include mq(sp){
+    //        width: rem(180);   
+    //        }     
+    //             }
+    //         }
+    //     }
+    // }
+
+    .p-header_btn{
+        display: flex;
+        align-items: center;
+        z-index:1000;
+        padding: 0 ;
+        display: none;
+        @include mq(sp){
+            display: block;
+        }
+    }
+        // @media(min-width: 768px){
+        //     a[href^="tel:"]{
+        //       pointer-events: none;
+        //     }
+        // }
+    //   input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover {
+    //     background: transparent;
+    //     }
+    //     button{
+    //         background:transparent !important;
+    //       }
+
+ .p-header_nav-background{
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 99;
+     display: none;
+     &.open{
+     display: block;
+     }
+ }         
+
+ .j-header.change-color{
+    // background-color: $white-alpha;
+    transition: all  0.5s ease;
+  }
+
+  .p-header-nav{
+      @include mq(sp){
+          display: none;
+      }
+  }
+  .p-header-nav__items ul{
+      display: flex;
+  }
+  .p-header-nav__items ul li{
+    //   margin-left: rem(40);
+      font-family: $font-family-base;
+      font-weight: bold;
+      font-size: rem(16);
+      text-align: center;
+      line-height: 1.35;
+      padding-left: rem(30);
+      padding-right: rem(30);
+      border-left: 2px solid $base-background;
+      transform: skewX(150deg);
+      @include mq(sp){
+          font-size: rem(16);
+      }
+  }
+  // .p-header-nav__items ul li:first-child{
+  //   border-left: none ;
+  // }
+
+  .p-header-nav__items ul li a{
+    transform: skewX(-150deg);
+    display: block;
+  }
+  .p-header-nav__items ul li:last-child{
+      border-right: 2px solid $base-background;
+  }
+  .p-header-nav__items ul li a:hover{
+   opacity: .7;
+  }
+  #menu-item-24 a:after {
+    content: 'トップ';
+    display: block;
+    font-size: rem(16);
+  }
+  #menu-item-23 a:hover:after{
+opacity: .7;
+  }
+  #menu-item-23 a:after {
+    content: '講師';
+    display: block;
+    font-size: rem(16);
+  }
+  #menu-item-23 a:hover:after{
+    opacity: .7;
+      }
+  #menu-item-21 a:after {
+    content: 'コンクール';
+    display: block;
+    font-size: rem(16);
+  }
+  #menu-item-21 a:hover:after{
+    opacity: .7;
+      }
+  #menu-item-20 a:after {
+    content: 'ギャラリー';
+    display: block;
+    font-size: rem(16);
+  }
+  #menu-item-20 a:hover:after{
+    opacity: .7;
+      }
+
+      
+  #menu-item-22 a:after {
+    content: 'クラス';
+    display: block;
+    font-size: rem(16);
+  }
+  #menu-item-22 a:hover:after{
+    opacity: .7;
+      }
+
+　#menu-item-19 a{
+    color: $orange;
+}
+  #menu-item-19 a:after {
+    content: 'お問い合わせ';
+    display: block;
+    font-size: rem(16);
+    color: $orange;
+    
+  }
+  #menu-item-19 a:hover:after{
+    opacity: .7;
+      }
+
+      

@@ -1,0 +1,107 @@
+.p-footer{
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+}
+
+.p-footer__inner{
+    max-width:rem(1120);
+    width:100%;
+    margin: 0 auto;  
+    display: flex;  
+    align-items: center;
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    flex-direction: row; 
+    justify-content: space-between;
+    @include mq(tab){
+        flex-direction: column;  
+      padding: 0 rem(32);
+      
+    }
+    }
+    .p-footer__title{
+        font-family: $font-family-base;
+        font-size: 32px;
+        font-weight: bold;
+        color: $black;
+        @include mq(sp){
+            font-size: 24px;
+        }
+    }
+
+.p-footer__btn{
+     z-index: 9999;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+.p-footer__btn img{
+    border: rem(1) solid $black;
+    padding: rem(16.5) rem(10.5);  
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+	transition: .4s ease-in-out;
+    &:hover.l-footer__btn img:nth-of-type(2){
+     opacity: 0;   
+    }
+}
+.p-footer__btn__img:hover{
+    opacity: 0;   
+    
+}
+
+.p-footer_nav ul{
+display: flex;
+@include mq(sp){
+    flex-direction: column;
+    text-align: center;
+    padding-top: rem(40);
+}
+
+}
+.p-footer_nav ul li{
+    color: $black;
+    padding-left: rem(32);
+    @include mq(sp){
+        // padding-left: 0;
+        padding-top: rem(15);
+    }
+}
+
+.p-footer__copylight{
+    text-align: center;
+    color: $black;
+    @include mq(sp){
+        padding-top: rem(20);
+        padding-bottom: rem(20);
+        padding-top: rem(40);
+    }
+}
+.p-footer_nav ul li{
+    //   margin-left: rem(40);
+      font-family: $font-family-base;
+      font-weight: bold;
+      font-size: rem(24);
+      text-align: center;
+      line-height: 1.35;
+      padding-left: rem(30);
+      padding-right: rem(30);
+      border-left: 2px solid $base-background;
+      transform: skewX(150deg);
+      @include mq(sp){
+          font-size: rem(16);
+          border-left: none;
+      }
+  }
+  .p-footer_nav ul li a:last-child{
+    transform: skewX(-150deg);
+    display: inline-block;
+}
+  
+  .menu-item-19 a{
+      color: $orange;
+  }

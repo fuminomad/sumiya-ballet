@@ -14,12 +14,18 @@ jQuery(function() {
 		}
 	});
 
-	/* ドロワー */
-	jQuery(".js-drawer").on("click", function(e) {
-		e.preventDefault();
-		let targetClass = jQuery(this).attr("data-target");
-		jQuery("." + targetClass).toggleClass("is-checked");
-		return false;
+	// ドロワーメニュー
+jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e){
+	e.preventDefault();
+	
+	jQuery('.p-header_nav').toggleClass('open');
+	jQuery('.p-header_nav-background').toggleClass('open');
+	jQuery('.p-header_nav-close').toggleClass('open');
+	jQuery('.p-header_hamburger').toggleClass('active');
+	return false;
+	});
+	jQuery('.p-header_nav ul li a[href]').on('click', function(event) {
+		jQuery('.p-header_hamburger').trigger('click');
 	});
 
 	/* スムーススクロール */
@@ -54,4 +60,44 @@ jQuery(function() {
 			});
 	}
 });
+
+// topに戻るボタン
+
+var show = jQuery(".p-mv").offset();
+jQuery('.p-footer__btn').hide();
+jQuery(window).scroll(function() {
+if(jQuery(this).scrollTop() > show.top) {
+jQuery('.p-footer__btn').fadeIn();
+} else {
+jQuery('.p-footer__btn').fadeOut();
+	}
 });
+jQuery('.p-footer__btn').click(function(){
+jQuery('html, body').animate({scrollTop: 0}, 500);
+
+});
+
+
+});
+let swipeOption = {
+	loop: true,
+	effect: 'fade',
+	// autoplay: {
+	//   delay: 5000,
+	//   disableOnInteraction: false,
+	// },
+	speed: 1000,
+  }
+  new Swiper('.swiper', swipeOption);
+	
+// 1.関数の定義
+function setHeight() {
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  
+  // 2.初期化
+  setHeight();
+  
+  // 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
+//   window.addEventListener('resize', setHeight);
