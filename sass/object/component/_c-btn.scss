@@ -1,0 +1,56 @@
+.c-btn{
+    text-align: center;
+}
+
+.c-btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 180px;
+    color: $white;
+   display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: $base-color;
+    box-shadow: 5px 5px 0 $blue;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: $second-font-family;
+  }
+  
+  .c-btn a:hover {
+    text-decoration: none;
+    background-color: $blue;
+    box-shadow: 0 0 0;
+    color: $base-color;
+  }
+
+.p-class__btn{
+   padding-top: rem(30);
+    text-align: center;
+    margin: 0 auto;
+}
+.p-class__btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 180px;
+    color: $white;
+   display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: $base-color;
+    box-shadow: 5px 5px 0 $blue;
+    transition: 0.3s;
+    font-family: $second-font-family;
+  }
+  .p-class__btn a:hover {
+    text-decoration: none;
+    background-color: $base-color;
+    box-shadow: 0 0 0;
+    color: $base-color;
+  }

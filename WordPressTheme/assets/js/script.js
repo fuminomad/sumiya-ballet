@@ -61,6 +61,16 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 	}
 });
 
+// 100pxスクロールしたら半透明にする
+
+jQuery( window ).on( 'scroll', function() {
+	if ( 100 < jQuery( this ).scrollTop() ) { 
+	  jQuery( '.j-header' ).addClass( 'change-color' );
+	} else {
+	  jQuery( '.j-header' ).removeClass( 'change-color' );
+	}
+  });
+
 // topに戻るボタン
 
 var show = jQuery(".p-mv").offset();
@@ -82,10 +92,10 @@ jQuery('html, body').animate({scrollTop: 0}, 500);
 let swipeOption = {
 	loop: true,
 	effect: 'fade',
-	// autoplay: {
-	//   delay: 5000,
-	//   disableOnInteraction: false,
-	// },
+	autoplay: {
+	  delay: 5000,
+	  disableOnInteraction: false,
+	},
 	speed: 1000,
   }
   new Swiper('.swiper', swipeOption);

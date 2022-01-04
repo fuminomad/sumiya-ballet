@@ -1,0 +1,143 @@
+.p-class{
+background-color: $light-blue;
+color: $base-color ;
+padding: rem(200) rem(40);
+@include mq(sp){
+ padding-left: rem(15);
+ padding-right: rem(15); 
+ padding-bottom: rem(120);  
+}
+}
+.p-class__inner{
+max-width: rem(980);
+margin: auto;
+width: 100%;
+}
+.p-class__title{
+// color: $base-color !important;
+position: relative;
+color: $black;
+}
+.p-class__title:before{
+    content:"Class"; 
+    position: absolute;
+    font-size: rem(80);
+    color: $base-color;
+     top: -160px;
+    font-weight: bold;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $second-font-family;
+   @include mq(sp){
+    font-size: rem(60);
+   }
+    }
+.p-section__sub-title{
+text-align: center;
+}
+.p-class__cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: rem(240);
+    @include mq(sp){
+    padding-top: rem(16);
+    }
+}
+.p-class__card{
+background: $white;
+
+margin-bottom: rem(30);
+width: calc(33.3% - 40px * 2 / 3);
+ margin-left: rem(40);
+ text-align: center;
+ padding:rem(50) 0 ;
+ position: relative;
+ @include mq(sp){
+  width: 100%;
+  max-width: 450px;  
+  margin-left: auto; 
+  margin-right: auto;
+  margin-top: 180px;
+  margin-bottom: 0;
+ }
+}
+.p-class__card:nth-child(3n + 1) {
+  margin-left: 0;
+  @include mq(sp){
+  margin-left: auto;
+  margin-right: auto;    
+  }
+  }
+  .p-class__card:nth-child(3n){
+    background: $white;
+    // border:5px solid $base-color;
+  }
+
+.p-class__header{
+padding-bottom: rem(30);
+color: $black;
+font-size: rem(18);
+font-weight: bold;
+@include mq(sp){
+ font-size: rem(24);   
+}
+}
+.p-class__text{
+color:$black;
+}
+// .p-class__card:nth-child(3n) .p-class__text{
+//     color:$white;
+    
+//   }
+// .p-class__card:nth-child(3n) .p-class__header{
+//     color:$white;
+    
+//   }
+
+.p-class__card::after{
+    position: absolute;
+    line-height: 1;
+    font-size: rem(30);
+    color: white;
+    top: -55%;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%); 
+    background: $base-color;
+    width: 150px;
+    height: 150px;
+    padding-top: 50px;
+    border-radius: 50%;
+    font-family:$font-family-base;
+    font-weight: bold;
+    font-style: italic;
+    @include mq(sp){
+    padding-top: rem(45);
+    // top: -55%;
+     
+    }
+    @include mq(ssp){
+     
+    
+    }
+}
+
+.p-class__card:first-of-type::after{
+    content: "kids&\Ayouth";
+    white-space: pre;
+    font-family: $second-font-family;
+}
+
+.p-class__card:nth-of-type(2)::after{
+    content: "adult";
+    background: $white;
+    padding-top: 52px;
+    color: $base-color;
+    border:5px solid $base-color;
+    font-family: $second-font-family;
+}
+.p-class__card:nth-of-type(3)::after{
+    content: "kids&\Ayouth";
+    white-space: pre;
+    font-family: $second-font-family;
+}

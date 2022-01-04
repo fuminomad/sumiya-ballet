@@ -1,0 +1,8 @@
+.p-section__title{
+    font-size: 36px;
+    text-align: center;
+     color: $black;
+    @include mq(sp){
+    font-size: 24px;    
+    }   
+}

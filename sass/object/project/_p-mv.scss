@@ -25,6 +25,7 @@ padding-right: rem(40);
    width: 100%;
    margin: 0 auto;
    @include mq(sp){
+  max-width: rem(600);   
   height: calc(var(--vh, 1vh) * 100 - 130px);
    }
 }
@@ -70,6 +71,17 @@ padding-top: 56.25% ;
 
   }
   }
+//   @media screen and (min-width: 768px) and (max-width: 1024px){
+// .l-mv{
+// min-height: 630px;
+// height: 500px;
+// }}
+//   @media screen and (min-width: 768px) and (max-width: 1024px){
+// .slide-img{
+// height: 500px ;
+// }
+
+//   }
 .slide-img-1{
    display: block;
    background: url(../../assets/img/mv-pc-1.jpg)no-repeat top center / cover;
@@ -94,7 +106,13 @@ padding-top: 56.25% ;
     background: url(../../assets/img/mv-sp-10.jpg)no-repeat top center / cover;
   }
   }
-  
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+      .slide-img-1{
+       
+        background: url(../../assets/img/mv-tab-5.jpg)no-repeat top center / cover;
+        
+      }
+  }
 .p-mv_title-1st,.p-mv_title-2nd,.p-mv_title-3rd{
 position: absolute;
 top: 0%;
@@ -111,6 +129,8 @@ padding-bottom: rem(30);
 padding-left: 15px;
 padding-right: 15px;
 line-height: 1.25;
+font-family: $font-family-base;
+font-weight: 900;
 // font-weight: normal;
 @include mq(tab){
   font-size: 35px;
@@ -141,7 +161,7 @@ line-height: 1.25;
   font-size:rem(18);/*フォントサイズ*/
   color: #FFF;/*フォントカラー*/
   background: $base-color;/*背景色*/
-  font-weight: normal;
+  font-weight: bold;
   @include mq(tab){
     font-size: 18px;
    }
@@ -220,7 +240,7 @@ line-height: 1.25;
   padding-bottom: 11px;
   background: $base-color;
   color: $white;
-  background: $text-color;
+  // background: $text-color;
 
  @include mq(sp){
    font-size: 16px;
@@ -242,14 +262,14 @@ width: 100%;
 
 }
 
-// @keyframes zoomUp {
-//     0% {
-//       transform: scale(1);
-//     }
-//     100% {
-//       transform: scale(1.15);
-//     }
-//   }
+@keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15);
+    }
+  }
   
   .swiper-slide-active .slide-img,
   .swiper-slide-duplicate-active .slide-img,
@@ -262,9 +282,21 @@ width: 100%;
     display: block;
   }
  
+  .is-tab{
+    display: none;
+    @include mq(tab){
+      display: block;
+    }
+  }
   .is-sp{
     display: none;
     @include mq(sp){
+      display: block;
+    }
+  }
+  .is-ssp{
+    display: none;
+    @include mq(ssp){
       display: block;
     }
   }

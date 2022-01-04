@@ -1,25 +1,36 @@
 // 色
 $base-color:#006E93;
+$base-color:#274a75;
 $gray:#7C8A97;
 $background: #fff; // 背景
 $text-color: #003041; // テキスト色
-// $text-color: #333; // テキスト色
-$black:#393939;
+$text-color: #000; // テキスト色
+$blue:#167AAC;
+$blue:#C6D6EB;
+$black:#000;
 $base-background: #2e6c83;
 $white:#fff;
 $orange:#FF9900;
 $background-blue:#4683C6;
 $bg-white:#f7f7f7;
-$light-gray:#D6E1E2;
-
+$bg-white:#f4f4f4;
+$light-gray:#e6e6e6;
+$light-blue:#ECF1F8;
+$white-alpha:rgba($color: $white, $alpha: 0.8);
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
+// $font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
 $font-family-base: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;// ベースフォント
-$second-font-family:'Montserrat', sans-serif;
-$third-font-family: futura-pt-condensed, sans-serif;
+$font-family-base: 'Noto Serif JP', serif;// ベースフォント
+
+// $second-font-family:'Montserrat', sans-serif;
+// $font-family-base:'Roboto Slab', serif;
+$second-font-family:'Roboto Slab', serif;
+$second-font-family:'fertigo-pro', serif;
+// $third-font-family: futura-pt-condensed, sans-serif;
+$font-logo: 'fertigo-pro', serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間

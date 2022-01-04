@@ -1,7 +1,7 @@
 <footer class="l-footer p-footer">
  <div class="p-footer__inner">
      <div class="footer__logo">
-         <div class="p-footer__title"><a href="<?php echo esc_url(home_url('/')); ?>">sumiya</a></div>
+         <div class="p-footer__title"><a href="<?php echo esc_url(home_url('/')); ?>">Sumiya<br>ballet</a></div>
      </div>
      <?php
           wp_nav_menu(
@@ -17,7 +17,7 @@
   </div>
   </div>
    <div class="p-footer__copylights">
-    <p class="p-footer__copylight">&copy; 2022 sumiya-ballet</p> 
+    <p class="p-footer__copylight">&copy; 2022 Sumiya-ballet</p> 
    </div>
    <div class="p-footer__btn">
   <a href="#" class="c-top-btn">

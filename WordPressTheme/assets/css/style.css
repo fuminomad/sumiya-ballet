@@ -336,8 +336,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: #fff;
-	color: #003041;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	color: #000;
+	font-family: "Noto Serif JP", serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6;
@@ -579,11 +579,11 @@ summary {
 /* Remove all animations and transitions for people that prefer not to see them */
 
 .l-footer {
-	background: #f7f7f7;
+	background: #f4f4f4;
 }
 
 .l-header {
-	background: #f7f7f7;
+	background: #fff;
 	height: 6.25rem;
 	left: 0;
 	padding: 0 2.5rem;
@@ -602,6 +602,65 @@ summary {
 	width: 100%;
 }
 
+.c-btn {
+	text-align: center;
+}
+
+.c-btn a {
+	align-items: center;
+	background-color: #274a75;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #C6D6EB;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "fertigo-pro", serif;
+	font-size: 18px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px;
+	transition: 0.3s;
+	width: 180px;
+}
+
+.c-btn a:hover {
+	background-color: #C6D6EB;
+	box-shadow: 0 0 0;
+	color: #274a75;
+	text-decoration: none;
+}
+
+.p-class__btn {
+	margin: 0 auto;
+	padding-top: 1.875rem;
+	text-align: center;
+}
+
+.p-class__btn a {
+	align-items: center;
+	background-color: #274a75;
+	box-shadow: 5px 5px 0 #C6D6EB;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "fertigo-pro", serif;
+	font-size: 18px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px;
+	transition: 0.3s;
+	width: 180px;
+}
+
+.p-class__btn a:hover {
+	background-color: #274a75;
+	box-shadow: 0 0 0;
+	color: #274a75;
+	text-decoration: none;
+}
+
 .p-header_hamburger {
 	height: 2.0625rem;
 	position: relative;
@@ -609,7 +668,7 @@ summary {
 }
 
 .p-header_hamburger span {
-	background: #393939;
+	background: #000;
 	display: block;
 	height: 4px;
 	left: 0;
@@ -637,7 +696,7 @@ summary {
 }
 
 .p-header_hamburger.active span {
-	background: #393939;
+	background: #000;
 }
 
 .p-header_hamburger.active span:nth-of-type(1) {
@@ -671,7 +730,7 @@ summary {
 }
 
 .c-top-btn:hover {
-	background-color: #393939;
+	background-color: #000;
 	transition: all .3s;
 }
 
@@ -707,24 +766,308 @@ summary {
 }
 
 .p-about {
-	background: #f7f7f7;
-	padding: 5rem 2.5rem;
+	background: #f4f4f4;
+	margin: 12.5rem 0;
+	position: relative;
+}
+
+.p-about:before {
+	color: #e6e6e6;
+	content: "Sumiya-ballet";
+	font-family: "fertigo-pro", serif !important;
+	font-size: 7.5rem;
+	font-weight: bold;
+	position: absolute;
+	right: calc(50% - 40%);
+	top: -150px;
 }
 
 .p-about__inner {
 	margin: 0 auto;
 	max-width: 75rem;
+	padding: 5rem 2.5rem;
 	width: 100%;
 }
 
 .p-about__title {
-	text-align: center;
+	position: relative;
 }
 
 .p-about__text {
+	border: 2px solid #000;
+	border-radius: 20px;
+	box-shadow: 2px 2px 1px #c7c7c7;
+	color: #000;
+	font-size: 1.25rem;
 	margin: 0 auto;
-	max-width: 43.75rem;
-	padding-top: 2.5rem;
+	margin: 2em auto;
+	margin-top: 1.25rem;
+	max-width: 56.25rem;
+	padding: 1.875rem 3.125rem;
+	position: relative;
+	width: 100%;
+}
+
+.p-about__message {
+	padding-bottom: 15px;
+}
+
+.p-about__name {
+	text-align: right;
+}
+
+.p-class {
+	background-color: #ECF1F8;
+	color: #274a75;
+	padding: 12.5rem 2.5rem;
+}
+
+.p-class__inner {
+	margin: auto;
+	max-width: 61.25rem;
+	width: 100%;
+}
+
+.p-class__title {
+	color: #000;
+	position: relative;
+}
+
+.p-class__title:before {
+	color: #274a75;
+	content: "Class";
+	font-family: "fertigo-pro", serif;
+	font-size: 5rem;
+	font-weight: bold;
+	left: 50%;
+	position: absolute;
+	top: -160px;
+	transform: translateX(-50%);
+}
+
+.p-section__sub-title {
+	text-align: center;
+}
+
+.p-class__cards {
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 15rem;
+}
+
+.p-class__card {
+	background: #fff;
+	margin-bottom: 1.875rem;
+	margin-left: 2.5rem;
+	padding: 3.125rem 0;
+	position: relative;
+	text-align: center;
+	width: calc(33.3% - 40px * 2 / 3);
+}
+
+.p-class__card:nth-child(3n + 1) {
+	margin-left: 0;
+}
+
+.p-class__card:nth-child(3n) {
+	background: #fff;
+}
+
+.p-class__header {
+	color: #000;
+	font-size: 1.125rem;
+	font-weight: bold;
+	padding-bottom: 1.875rem;
+}
+
+.p-class__text {
+	color: #000;
+}
+
+.p-class__card::after {
+	background: #274a75;
+	border-radius: 50%;
+	color: white;
+	font-family: "Noto Serif JP", serif;
+	font-size: 1.875rem;
+	font-style: italic;
+	font-weight: bold;
+	height: 150px;
+	left: 50%;
+	line-height: 1;
+	padding-top: 50px;
+	position: absolute;
+	top: -55%;
+	top: -120px;
+	transform: translateX(-50%);
+	width: 150px;
+}
+
+.p-class__card:first-of-type::after {
+	content: "kids&\Ayouth";
+	font-family: "fertigo-pro", serif;
+	white-space: pre;
+}
+
+.p-class__card:nth-of-type(2)::after {
+	background: #fff;
+	border: 5px solid #274a75;
+	color: #274a75;
+	content: "adult";
+	font-family: "fertigo-pro", serif;
+	padding-top: 52px;
+}
+
+.p-class__card:nth-of-type(3)::after {
+	content: "kids&\Ayouth";
+	font-family: "fertigo-pro", serif;
+	white-space: pre;
+}
+
+.p-company {
+	padding-bottom: 6.25rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+
+.p-company__inner {
+	margin: 0 auto;
+	max-width: 56.25rem;
+	width: 100%;
+}
+
+.p-company__title {
+	padding-bottom: 40px;
+	position: relative;
+}
+
+.p-company__title:before {
+	color: #e6e6e6;
+	content: "Features";
+	font-family: "fertigo-pro", serif;
+	font-size: 7.5rem;
+	font-weight: bold;
+	left: calc(50% - 60%);
+	position: absolute;
+	top: -160px;
+}
+
+.p-company__title {
+	padding-bottom: 40px;
+}
+
+.p-company__title span {
+	color: #274a75;
+	font-family: "fertigo-pro", serif;
+	font-size: 3.125rem;
+}
+
+.p-company__card:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.p-company__cards {
+	padding-top: 6.25rem;
+}
+
+.p-company__card {
+	box-shadow: 0 0 10px #ddd;
+	display: flex;
+	margin-bottom: 6.25rem;
+	padding: 8px;
+	position: relative;
+}
+
+.p-company__card::after {
+	-webkit-background-clip: text;
+	color: #274a75;
+	font-family: "fertigo-pro", serif;
+	font-size: 5rem;
+	font-style: italic;
+	font-weight: bold;
+	left: 0;
+	line-height: 1;
+	position: absolute;
+	top: -18%;
+}
+
+.p-company__card:nth-of-type(even)::after {
+	-webkit-background-clip: text;
+	color: #274a75;
+	font-family: "fertigo-pro", serif;
+	font-size: 5rem;
+	font-style: italic;
+	font-weight: bold;
+	left: 88%;
+	line-height: 1;
+	position: absolute;
+	top: -18%;
+}
+
+.p-company__card:first-of-type::after {
+	content: "01";
+}
+
+.p-company__card:nth-of-type(2)::after {
+	content: "02";
+}
+
+.p-company__card:nth-of-type(3)::after {
+	content: "03";
+}
+
+.card__texts {
+	background: #fff;
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 3.125rem;
+	padding-top: 2.1875rem;
+	width: 55%;
+}
+
+.p-company__card:nth-child(even) .card__texts {
+	color: #000;
+	padding-left: 3.125rem;
+	padding-right: 1.875rem;
+}
+
+.card__title {
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-bottom: 1.875rem;
+}
+
+.card__title span {
+	color: #274a75;
+	font-family: "fertigo-pro", serif;
+	font-size: 1.875rem;
+	margin-right: 3px;
+}
+
+.card__text {
+	color: #000;
+	padding-bottom: 1.25rem;
+}
+
+.card__images {
+	height: auto;
+	width: 45%;
+}
+
+.card__figure {
+	height: 0;
+	padding-top: 68.57%;
+	position: relative;
+	width: 100%;
+}
+
+.card__figure img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .p-footer {
@@ -745,10 +1088,12 @@ summary {
 }
 
 .p-footer__title {
-	color: #393939;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	color: #000;
+	font-family: "fertigo-pro", serif;
 	font-size: 32px;
 	font-weight: bold;
+	line-height: 1;
+	text-align: center;
 }
 
 .p-footer__btn {
@@ -759,7 +1104,7 @@ summary {
 }
 
 .p-footer__btn img {
-	border: 0.0625rem solid #393939;
+	border: 0.0625rem solid #000;
 	display: block;
 	left: 50%;
 	padding: 1.03125rem 0.65625rem;
@@ -783,18 +1128,18 @@ summary {
 }
 
 .p-footer_nav ul li {
-	color: #393939;
+	color: #000;
 	padding-left: 2rem;
 }
 
 .p-footer__copylight {
-	color: #393939;
+	color: #000;
 	text-align: center;
 }
 
 .p-footer_nav ul li {
 	border-left: 2px solid #2e6c83;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "fertigo-pro", serif;
 	font-size: 1.5rem;
 	font-weight: bold;
 	line-height: 1.35;
@@ -847,6 +1192,12 @@ summary {
 	z-index: 100;
 }
 
+.p-header-logo {
+	font-family: "fertigo-pro", serif;
+	line-height: 1;
+	text-align: center;
+}
+
 .p-header_nav.open {
 	opacity: 1;
 	pointer-events: auto;
@@ -867,20 +1218,25 @@ summary {
 }
 
 .p-header_nav_list a {
-	color: #393939;
+	color: #000;
 	color: #fff;
 	display: block;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "fertigo-pro", serif;
 	font-size: 1.25rem;
 	line-height: 1;
 	list-style: none;
 	padding-left: 6.5625rem;
 	position: relative;
+	position: relative;
 	text-decoration: none;
 	text-decoration: none;
 }
 
-.p-header_nav_list a:after {
+.p-header_nav_list a::after {
+	position: absolute;
+}
+
+.p-header_nav_list::after {
 	background: #fff;
 	bottom: 0rem;
 	content: "";
@@ -893,8 +1249,12 @@ summary {
 	width: 12.5rem;
 }
 
-.p-header_nav_list a:hover::after {
+.p-header_nav_list:hover::after {
 	transform: scale(1, 1);
+}
+
+.p-header_nav_list li:last-child a {
+	color: #FF9900;
 }
 
 .p-header_btn {
@@ -920,6 +1280,7 @@ summary {
 }
 
 .j-header.change-color {
+	background-color: rgba(255, 255, 255, 0.8);
 	transition: all  0.5s ease;
 }
 
@@ -929,7 +1290,7 @@ summary {
 
 .p-header-nav__items ul li {
 	border-left: 2px solid #2e6c83;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.35;
@@ -941,6 +1302,7 @@ summary {
 
 .p-header-nav__items ul li a {
 	display: block;
+	font-family: "fertigo-pro", serif;
 	transform: skewX(-150deg);
 }
 
@@ -965,6 +1327,7 @@ summary {
 #menu-item-23 a:after {
 	content: '講師';
 	display: block;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 }
 
@@ -975,6 +1338,7 @@ summary {
 #menu-item-21 a:after {
 	content: 'コンクール';
 	display: block;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 }
 
@@ -985,6 +1349,7 @@ summary {
 #menu-item-20 a:after {
 	content: 'ギャラリー';
 	display: block;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 }
 
@@ -995,6 +1360,7 @@ summary {
 #menu-item-22 a:after {
 	content: 'クラス';
 	display: block;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 }
 
@@ -1010,6 +1376,7 @@ summary {
 	color: #FF9900;
 	content: 'お問い合わせ';
 	display: block;
+	font-family: "Noto Serif JP", serif;
 	font-size: 1rem;
 }
 
@@ -1082,8 +1449,10 @@ summary {
 .p-mv_title-2nd,
 .p-mv_title-3rd {
 	background: #fff;
-	color: #003041;
+	color: #000;
+	font-family: "Noto Serif JP", serif;
 	font-size: 2.5rem;
+	font-weight: 900;
 	left: 50%;
 	line-height: 1.25;
 	padding-bottom: 1.875rem;
@@ -1099,31 +1468,31 @@ summary {
 }
 
 .p-mv_title-1st {
-	border: solid 3px #003041;
+	border: solid 3px #000;
 }
 
 .p-mv_title-2nd {
-	border: solid 3px #003041;
+	border: solid 3px #000;
 }
 
 .p-mv_title-3rd {
-	border: solid 3px #003041;
+	border: solid 3px #000;
 }
 
 .p-mv_title-1st span,
 .p-mv_title-2nd span,
 .p-mv_title-3rd span { /*フォントカラー*/
-	background: #006E93; /*フォントサイズ*/
+	background: #274a75; /*フォントサイズ*/
 	color: #FFF;
 	display: inline-block;
 	font-size: 1.125rem; /*背景色*/
-	font-weight: normal;
+	font-weight: bold;
 	padding: 7px 15px;
 	position: relative;
 }
 
 .p-mv_title-1st span {
-	background: #006E93; /*背景色*/
+	background: #274a75; /*背景色*/
 }
 
 .p-mv_title-2nd span {
@@ -1159,10 +1528,9 @@ summary {
 }
 
 .p-mv__news {
-	background: #006E93;
-	background: #003041;
+	background: #274a75;
 	color: #fff;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-family: "Noto Serif JP", serif;
 	font-size: 18px;
 	font-weight: bold;
 	padding-bottom: 11px;
@@ -1185,8 +1553,22 @@ summary {
 	display: block;
 }
 
+.is-tab {
+	display: none;
+}
+
 .is-sp {
 	display: none;
+}
+
+.is-ssp {
+	display: none;
+}
+
+.p-section__title {
+	color: #000;
+	font-size: 36px;
+	text-align: center;
 }
 
 .p-test {
@@ -1209,6 +1591,22 @@ html:focus-within {
 	animation-iteration-count: 1 !important;
 	scroll-behavior: auto !important;
 	transition-duration: 0.01ms !important;
+}
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1100px) {
+
+.p-company__title:before {
+	left: calc(50% - 45%);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+.slide-img-1 {
+	background: url(../../assets/img/mv-tab-5.jpg) no-repeat top center/cover;
 }
 
 }
@@ -1260,6 +1658,10 @@ html {
 	font-size: 1.875rem;
 }
 
+.p-about:before {
+	font-size: 5.625rem;
+}
+
 .p-footer__inner {
 	flex-direction: column;
 	padding: 0 2rem;
@@ -1279,6 +1681,10 @@ html {
 	font-size: 18px;
 }
 
+.is-tab {
+	display: block;
+}
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1293,7 +1699,131 @@ html {
 }
 
 .p-about {
-	padding: 5rem 0.9375rem;
+	margin-top: 150px;
+	padding: 5rem 0.9375rem 2.5rem;
+}
+
+.p-about:before {
+	font-size: 3.75rem;
+	right: calc(50% - 45%);
+	top: -80px;
+}
+
+.p-about__inner {
+	max-width: 37.5rem;
+	padding-bottom: 2.5rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	padding-top: 0;
+}
+
+.p-about__text {
+	font-size: 1rem;
+	padding: 1.875rem 0.9375rem;
+}
+
+.p-class {
+	padding-bottom: 7.5rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.p-class__title:before {
+	font-size: 3.75rem;
+}
+
+.p-class__cards {
+	padding-top: 1rem;
+}
+
+.p-class__card {
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 180px;
+	max-width: 450px;
+	width: 100%;
+}
+
+.p-class__card:nth-child(3n + 1) {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.p-class__header {
+	font-size: 1.5rem;
+}
+
+.p-class__card::after {
+	padding-top: 2.8125rem;
+}
+
+.p-company {
+	margin-top: 150px;
+	padding-bottom: 40px;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.p-company__title:before {
+	font-size: 3.75rem;
+	left: calc(50% - 45%);
+	top: -110px;
+}
+
+.p-company__card:nth-child(even) {
+	flex-direction: column;
+}
+
+.p-company__cards {
+	padding-top: 3.125rem;
+}
+
+.p-company__card {
+	flex-direction: column;
+	margin: auto;
+	margin-bottom: 6.25rem;
+	max-width: 37.5rem;
+}
+
+.p-company__card::after {
+	font-size: 4.375rem;
+	left: 48%;
+	top: -5%;
+	transform: translateX(-50%);
+}
+
+.p-company__card:nth-of-type(even)::after {
+	font-size: 4.375rem;
+	left: 48%;
+	top: -5%;
+	transform: translateX(-50%);
+}
+
+.card__texts {
+	padding-bottom: 35px;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+	padding-top: 3.125rem;
+	text-align: center;
+	width: 100%;
+}
+
+.p-company__card:nth-child(even) .card__texts {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.card__title {
+	font-size: 1.5rem;
+}
+
+.card__text {
+	text-align: left;
+}
+
+.card__images {
+	width: 100%;
 }
 
 .p-footer__title {
@@ -1327,11 +1857,15 @@ html {
 	width: 18.75rem;
 }
 
+.p-header-logo {
+	font-size: 1.5rem;
+}
+
 .p-header_nav_list .menu-item:not(:first-child) {
 	margin-top: 1.6875rem;
 }
 
-.p-header_nav_list a:after {
+.p-header_nav_list::after {
 	width: 6.25rem;
 }
 
@@ -1355,6 +1889,7 @@ html {
 
 .mv-container {
 	height: calc(var(--vh, 1vh) * 100 - 130px);
+	max-width: 37.5rem;
 }
 
 .swiper-wrapper {
@@ -1399,6 +1934,10 @@ html {
 	display: block;
 }
 
+.p-section__title {
+	font-size: 24px;
+}
+
 .p-test {
 	color: green;
 	font-size: 1.875rem;
@@ -1410,7 +1949,34 @@ html {
 
 }
 
+@media screen and (max-width: 500px) {
+
+.p-about {
+	margin-bottom: 0;
+	margin-top: 120px;
+}
+
+.p-about:before {
+	font-size: 2.5rem;
+	top: -49px;
+}
+
+.p-company__title:before {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+}
+
 @media screen and (max-width: 375px) {
+
+.p-company__card::after {
+	font-size: 3.75rem;
+}
+
+.p-company__card:nth-of-type(even)::after {
+	font-size: 3.75rem;
+}
 
 .p-header {
 	height: 5rem;
@@ -1418,6 +1984,34 @@ html {
 
 .slide-img-2 {
 	background: url(../../assets/img/mv-sp-6.jpg) no-repeat top right/cover;
+}
+
+.is-ssp {
+	display: block;
+}
+
+}
+
+@-webkit-keyframes zoomUp {
+
+0% {
+	transform: scale(1);
+}
+
+100% {
+	transform: scale(1.15);
+}
+
+}
+
+@keyframes zoomUp {
+
+0% {
+	transform: scale(1);
+}
+
+100% {
+	transform: scale(1.15);
 }
 
 }

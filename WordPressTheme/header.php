@@ -12,6 +12,9 @@
  <!-- google font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/dbx2bft.css">
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -21,7 +24,7 @@
       
      
     
-      <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">sumiya</a></h1>
+      <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">Sumiya<br>ballet</a></h1>
      
       <div class="p-header-nav">
       <?php

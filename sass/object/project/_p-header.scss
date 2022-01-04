@@ -69,7 +69,14 @@
 //  right: rem(0);
 //  }
 // }
- 
+ .p-header-logo{
+   font-family: $font-logo;
+   line-height: 1;
+   text-align:center;
+   @include mq(sp){
+     font-size: rem(24);
+   }
+ }
     .p-header_nav.open {
         right: 0;
         opacity: 1;
@@ -92,22 +99,25 @@
             }
         }
     }
-    .p-header_nav_list{
-        
-        a{   
+    .p-header_nav_list a{
+    
+        position: relative;
         padding-left: rem(105);
         display: block;
         color: $black;
         font-size: rem(20);  
-        font-family: $font-family-base; 
+        font-family: $second-font-family; 
         text-decoration: none; 
         list-style: none;
         line-height: 1;
         position: relative;
         text-decoration: none;
         color:$white;
-        
-    &:after{
+    }
+    .p-header_nav_list a::after{
+      position: absolute;
+    }   
+    .p-header_nav_list::after{
     position: absolute;
     content: "";
     background: $white;
@@ -123,11 +133,13 @@
      width: rem(100);
      }
     }
-    &:hover::after {
+    .p-header_nav_list:hover::after {
         transform: scale(1, 1);
       }
-    }
-    }
+      .p-header_nav_list li:last-child a{ 
+        color: $orange;
+      }
+    
     
     // .p-header_nav_list{
     //     .menu-item:nth-child(n + 2):not(:nth-child(n + 5)){
@@ -186,7 +198,7 @@
  }         
 
  .j-header.change-color{
-    // background-color: $white-alpha;
+    background-color: $white-alpha;
     transition: all  0.5s ease;
   }
 
@@ -220,9 +232,11 @@
   .p-header-nav__items ul li a{
     transform: skewX(-150deg);
     display: block;
+    font-family: $second-font-family;
   }
   .p-header-nav__items ul li:last-child{
       border-right: 2px solid $base-background;
+     
   }
   .p-header-nav__items ul li a:hover{
    opacity: .7;
@@ -239,6 +253,7 @@ opacity: .7;
     content: '講師';
     display: block;
     font-size: rem(16);
+    font-family: $font-family-base;
   }
   #menu-item-23 a:hover:after{
     opacity: .7;
@@ -247,6 +262,7 @@ opacity: .7;
     content: 'コンクール';
     display: block;
     font-size: rem(16);
+    font-family: $font-family-base;
   }
   #menu-item-21 a:hover:after{
     opacity: .7;
@@ -255,6 +271,7 @@ opacity: .7;
     content: 'ギャラリー';
     display: block;
     font-size: rem(16);
+    font-family: $font-family-base;
   }
   #menu-item-20 a:hover:after{
     opacity: .7;
@@ -265,19 +282,21 @@ opacity: .7;
     content: 'クラス';
     display: block;
     font-size: rem(16);
+    font-family: $font-family-base;
   }
   #menu-item-22 a:hover:after{
     opacity: .7;
       }
 
 　#menu-item-19 a{
-    color: $orange;
+    color: $orange ;
 }
   #menu-item-19 a:after {
     content: 'お問い合わせ';
     display: block;
     font-size: rem(16);
     color: $orange;
+    font-family: $font-family-base;
     
   }
   #menu-item-19 a:hover:after{

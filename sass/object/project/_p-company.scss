@@ -1,0 +1,220 @@
+.p-company{
+padding-left: rem(40);
+padding-right: rem(40);
+padding-bottom: rem(100);
+@include mq(sp){
+padding-left: rem(15);
+padding-right: rem(15);
+margin-top: 150px;
+padding-bottom: 40px;
+}
+}
+.p-company__inner{
+    width: 100%;
+    max-width: rem(900);
+    margin: 0 auto;
+    }
+.p-company__title{
+ padding-bottom: 40px; 
+ position: relative;  
+}
+.p-company__title:before{
+    content:"Features"; 
+    position: absolute;
+    font-size: rem(120);
+    color: $light-gray;
+     top: -160px;
+    font-weight: bold;
+    left: calc(50% - 60%);
+    font-family: $second-font-family;
+    @include mq(sp){
+   left: calc(50% - 45%);
+     font-size: rem(60);
+     top: -110px;
+    }
+   
+    }
+  
+    @media screen and (min-width: 767px) and (max-width: 1100px){
+        .p-company__title:before{
+            left: calc(50% - 45%);
+            
+        }
+    }
+    @media screen and (max-width: 500px){
+        .p-company__title:before{
+            left: 50%;
+            transform: translateX(-50%);   
+           
+          
+        }
+    }
+   
+.p-company__title{
+ padding-bottom: 40px;   
+}
+
+.p-company__title span{
+ font-size: rem(50);
+ color: $base-color; 
+ font-family: $second-font-family; 
+}
+
+.p-company__card:nth-child(even){
+   flex-direction: row-reverse; 
+  @include mq(sp){
+    flex-direction: column;
+  }
+}
+.p-company__cards{
+    padding-top: rem(100);
+ @include mq(sp){
+     padding-top: rem(50);
+ }   
+}
+.p-company__card{
+display: flex;
+padding: 8px;
+box-shadow: 0 0 10px #ddd;
+position: relative;
+margin-bottom: rem(100);
+@include mq(sp){
+margin-bottom: rem(100);    
+max-width: rem(600);
+margin: auto;
+ flex-direction: column;   
+}
+}
+.p-company__card::after{
+    position: absolute;
+    line-height: 1;
+    font-size: rem(80);
+    // background: linear-gradient( #7D621C 0%, #BBBBBA 50%, #7D621C 100%);
+    -webkit-background-clip: text;
+    // background: $white;
+    color: $base-color;
+    top: -18%;
+    left: 0;
+    font-family: $second-font-family;
+    font-weight: bold;
+    font-style: italic;
+    @include mq(sp){
+     top: -5%; 
+     left: 48%;
+     transform: translateX(-50%); 
+     font-size: rem(70); 
+    }
+    @include mq(ssp){
+     
+     font-size: rem(60); 
+    }
+}
+.p-company__card:nth-of-type(even)::after{
+    position: absolute;
+    line-height: 1;
+    font-size: rem(80);
+    -webkit-background-clip: text;
+    top: -18%;
+    left: 88%;
+    color: $base-color;
+    font-style:italic;
+    
+    font-family: $second-font-family;
+    font-weight: bold;
+    
+    @include mq(sp){
+        top: -5%;  
+        left: 48%;
+        transform: translateX(-50%);
+        font-size: rem(70); 
+        // left: 0;
+       }
+       @include mq(ssp){
+        
+        font-size: rem(60); 
+       } 
+  
+}
+.p-company__card:first-of-type::after{
+    content: "01";
+}
+.p-company__card:nth-of-type(2)::after{
+    content: "02";
+}
+.p-company__card:nth-of-type(3)::after{
+    content: "03";
+    
+}
+.card__texts{
+width: 55%;
+padding-left: 30px;
+padding-right: rem(50);
+display: inline-block;
+padding-top: rem(35);
+background: $white;
+@include mq(sp){
+    padding-top: rem(50);
+    width: 100%; 
+    text-align: center; 
+    padding-left: rem(15); 
+    padding-right: rem(15);
+    padding-bottom: 35px;
+}
+}
+.p-company__card:nth-child(even) .card__texts{
+padding-right: rem(30);    
+padding-left: rem(50);
+ color: $black;
+
+ @include mq(sp){
+     padding-left: rem(15);
+     padding-right: rem(15);
+ }
+  
+}
+.card__title{
+
+color: $black;
+font-size: rem(24);
+font-weight: bold;
+padding-bottom: rem(30);
+@include mq(sp){
+    font-size: rem(24);
+}
+}
+.card__title span{
+    font-family: $second-font-family; 
+    font-size: rem(30);
+    color: $base-color;
+    
+    margin-right: 3px;
+}
+.card__text{
+color: $black;
+padding-bottom: rem(20);
+@include mq(sp){
+    text-align: left;
+    // padding-bottom: rem(50);
+}
+}
+
+.card__images{
+width: 45%;
+height: auto;
+@include mq(sp){
+width: 100%;    
+}
+}
+.card__figure{
+padding-top: 68.57%;
+width: 100%;
+height: 0;
+position: relative;
+}
+.card__figure img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
