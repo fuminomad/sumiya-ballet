@@ -30,7 +30,7 @@
 
 <div class="p-mv__wrapper">
   <div class="p-mv__texts">
-    <div class="p-mv__news">最新ニュースが入ります。</div>
+    <div class="p-mv__news">22年９月 55周年公演開催決定</div>
   </div>
 </div>
   </div>
@@ -39,7 +39,7 @@
 </section>
 <section class="l-about p-about">
 <div class="p-about__inner">
-  <h2 class="p-about__title p-section__title">
+  <h2 class="p-about__title c-section__title">
   角屋満李子バレエ団
     </h2>
     <div class="p-about__text">
@@ -54,7 +54,7 @@
 </section>
 <section class="p-company l-company">
 <div class="p-company__inner">
-  <h2 class="p-section__title p-company__title">
+  <h2 class="c-section__title p-company__title">
     教室の<span>3</span>つの特徴
   </h2>
   <div class="p-company__cards card-item">
@@ -94,7 +94,7 @@
     </div>
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title">趣味のお稽古から<br class="is-sp">プロダンサーまで</div>
+        <div class="card__title--3rd">趣味のお稽古から<br class="is-sp">プロバレエダンサーまで</div>
         <p class="card__text">
         趣味でお稽古をする生徒からイギリスのランベールスクールなどの海外留学,
         そしてプロバレエダンサーとして活躍している人材を輩出しています。
@@ -117,7 +117,7 @@
 
 <section class="p-class l-class">
 <div class="p-class__inner">
-  <h2 class="p-section__title p-class__title">
+  <h2 class="c-section__title p-class__title">
   コンクールクラスや<br class="is-tab">コンテンポラリーダンスも充実
   </h2>
   <h3 class="p-section__sub-title">

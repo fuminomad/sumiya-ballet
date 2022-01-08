@@ -24,7 +24,9 @@
       
      
     
-      <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">Sumiya<br>ballet</a></h1>
+      <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">
+       <img src="<?php echo get_template_directory_uri() ?>/assets/img/sumiya-logo-3.png" alt="ロゴ" loading="lazy" width="135" height="71">
+       </a></h1>
      
       <div class="p-header-nav">
       <?php

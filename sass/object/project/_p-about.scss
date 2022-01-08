@@ -1,6 +1,7 @@
 .p-about{
 margin: rem(200) 0;
 background: $bg-white;
+
 position: relative;
 @include mq(sp){
     margin-top: 150px;
@@ -14,23 +15,47 @@ position: relative;
         margin-bottom: 0; 
     }
 }
-.p-about:before{
-    content:"Sumiya-ballet"; 
+.p-about::after{
+    content:""; 
     position: absolute;
-    font-size: rem(120);
-    color: $light-gray;
-    font-family:$second-font-family !important;
+    // font-size: rem(120);
+    // color: $light-gray;
+    // font-family:$second-font-family !important;
      top: -150px;
-    font-weight: bold;
+     background: url(../img/about-title.png)no-repeat center center / contain;
     right: calc(50% - 40%);
+    width: rem(789);
+    height: rem(120);
     @include mq(tab){
-    font-size: rem(90);    
+    width: rem(615); 
+    height: rem(120);  
     }
     @include mq(sp){
-    right: calc(50% - 45%);
-     font-size: rem(60);
-     top: -80px;
+     width: rem(473);
+     height: rem(72);
+     top: rem(-100);
+     left: 50%;
+     transform: translate(-50%);
     }
+   
+    }
+    @media screen and (max-width:500px){
+        .p-about::after{
+            width: rem(307);
+            height: rem(48);
+            top: rem(-80);
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    @media screen and (max-width:374px){
+        .p-about::after{
+            width: rem(230);
+            height: rem(36);
+            top: rem(-80);
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
     @media screen and (max-width: 500px){
         .p-about:before{
@@ -83,6 +108,7 @@ padding: rem(30) rem(50);
 padding-bottom: 15px;
 }
 .p-about__name{
-
+font-weight: bold;    
+padding-top: 15px;
 text-align: right;
 }

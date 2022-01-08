@@ -1,6 +1,10 @@
 .p-footer{
-    padding-top: rem(40);
+    background: $base-color;
+    padding-top: rem(80);
     padding-bottom: rem(40);
+    @include mq(sp){
+     padding-top: rem(72);   
+    }
 }
 
 .p-footer__inner{
@@ -23,7 +27,7 @@
         font-family: $second-font-family;
         font-size: 32px;
         font-weight: bold;
-        color: $black;
+        color: $white;
         text-align: center;
         line-height: 1;
         @include mq(sp){
@@ -38,7 +42,7 @@
     bottom: 0;
   }
 .p-footer__btn img{
-    border: rem(1) solid $black;
+    border: rem(1) solid $white;
     padding: rem(16.5) rem(10.5);  
     position: absolute;
 	top: 50%;
@@ -66,7 +70,7 @@ display: flex;
 
 }
 .p-footer_nav ul li{
-    color: $black;
+    color: $white;
     padding-left: rem(32);
     @include mq(sp){
         // padding-left: 0;
@@ -76,11 +80,11 @@ display: flex;
 
 .p-footer__copylight{
     text-align: center;
-    color: $black;
+    color: $white;
+    padding-top: rem(40);
     @include mq(sp){
-        padding-top: rem(20);
         padding-bottom: rem(20);
-        padding-top: rem(40);
+        
     }
 }
 .p-footer_nav ul li{
@@ -95,15 +99,27 @@ display: flex;
       border-left: 2px solid $base-background;
       transform: skewX(150deg);
       @include mq(sp){
-          font-size: rem(16);
+          transform: skewX(0);
+          font-size: rem(18);
           border-left: none;
       }
   }
   .p-footer_nav ul li a:last-child{
     transform: skewX(-150deg);
     display: inline-block;
+    @include mq(sp){
+    transform: skewX(0);
+
+    }
 }
   
   .menu-item-19 a{
       color: $orange;
+  }
+  .p-footer__logo{
+    width: rem(118);
+    height: rem(68);
+    @include mq(tab){
+     margin-bottom: 50px;   
+    }
   }

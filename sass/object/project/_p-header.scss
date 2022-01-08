@@ -23,15 +23,19 @@
 }
     
     .p-header-logo{
-        // font-family: $third-font-family;
-
+       width: 118px;
+       height: 67.5px;
+      @include mq(sp){
+      width: 105px;
+      height: 60px;  
+      }
     }
 
   .p-header_nav {
     width: rem(500);
     height: rem(600);
     color: $white;
-    background: rgba($color: $base-background, $alpha: 0.9);
+    background: rgba($color: $base-color, $alpha: 0.9);
     // background: rgba(38,38,38,0.9);
     position: absolute;
     top: rem(100);
@@ -114,28 +118,32 @@
         text-decoration: none;
         color:$white;
     }
-    .p-header_nav_list a::after{
-      position: absolute;
-    }   
-    .p-header_nav_list::after{
-    position: absolute;
-    content: "";
-    background: $white;
-    width: rem(200);
-    bottom: rem(0);
-    left: rem(105);
-    height: rem(2);
-   
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: transform .5s;
-     @include mq(sp){
-     width: rem(100);
-     }
+    .p-header_nav_list a:hover{
+      opacity: 0.6;
+     
     }
-    .p-header_nav_list:hover::after {
-        transform: scale(1, 1);
-      }
+    // .p-header_nav_list a::after{
+    //   position: absolute;
+    // }   
+    // .p-header_nav_list::after{
+    // position: absolute;
+    // content: "";
+    // background: $white;
+    // width: rem(200);
+    // bottom: rem(0);
+    // left: rem(105);
+    // height: rem(2);
+   
+    // transform: scale(0, 1);
+    // transform-origin: left top;
+    // transition: transform .5s;
+    //  @include mq(sp){
+    //  width: rem(100);
+    //  }
+    // }
+    // .p-header_nav_list:hover::after {
+    //     transform: scale(1, 1);
+    //   }
       .p-header_nav_list li:last-child a{ 
         color: $orange;
       }

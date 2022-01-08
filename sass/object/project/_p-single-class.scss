@@ -1,0 +1,63 @@
+.l-page-class{
+    margin-top: rem(200);
+}
+.l-page-class__inner{
+    max-width: rem(1200);
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.l-page-class__title{
+    text-align: center;
+    font-family: $font-family-base;
+    font-size: rem(36);
+    padding-bottom: rem(20);
+    display: inline-block;
+    position: relative;
+    
+    padding: 20px 40px;
+    margin-bottom: 50px;
+}
+.l-page-class__title::before{
+    position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  background:
+    radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top / 23px 23px no-repeat,
+    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px no-repeat,
+    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px 23px no-repeat,
+    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom / 23px 23px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat;
+}
+.l-page-class__title::after{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    content: "";
+    box-shadow: 0 0 0 1px #ca4;
+ 
+}
+.l-page-class__subtitle{
+    text-align: center;
+    font-family: $font-family-base;
+    font-size: rem(36);
+    padding-bottom: rem(80);
+    color: $base-color;
+}
+
+.l-page-class__image{
+    text-align: center;
+}

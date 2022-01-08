@@ -1,11 +1,12 @@
 .p-class{
 background-color: $light-blue;
 color: $base-color ;
-padding: rem(200) rem(40);
+padding: rem(300) rem(40) rem(120);
 @include mq(sp){
  padding-left: rem(15);
  padding-right: rem(15); 
  padding-bottom: rem(120);  
+ padding-top: rem(200);
 }
 }
 .p-class__inner{
@@ -19,17 +20,22 @@ position: relative;
 color: $black;
 }
 .p-class__title:before{
-    content:"Class"; 
+    content:""; 
     position: absolute;
-    font-size: rem(80);
-    color: $base-color;
-     top: -160px;
-    font-weight: bold;
+    top: rem(-160);
     left: 50%;
     transform: translateX(-50%);
-    font-family: $second-font-family;
-   @include mq(sp){
-    font-size: rem(60);
+    background: url(../img/class-title.png)no-repeat center center / contain;
+    width: rem(234);
+    height: rem(73);
+    @include mq(sp){
+    top: rem(-140);
+    width: rem(187);
+    height: rem(58);
+   }
+    @include mq(ssp){
+    width: rem(163);
+    height: rem(51);
    }
     }
 .p-section__sub-title{
@@ -45,6 +51,7 @@ text-align: center;
 }
 .p-class__card{
 background: $white;
+box-shadow: 0 0 5px $base-color;
 
 margin-bottom: rem(30);
 width: calc(33.3% - 40px * 2 / 3);
@@ -52,6 +59,7 @@ width: calc(33.3% - 40px * 2 / 3);
  text-align: center;
  padding:rem(50) 0 ;
  position: relative;
+ 
  @include mq(sp){
   width: 100%;
   max-width: 450px;  
@@ -84,6 +92,9 @@ font-weight: bold;
 }
 .p-class__text{
 color:$black;
+color: $base-color;
+font-weight: bold;
+font-size: rem(18);
 }
 // .p-class__card:nth-child(3n) .p-class__text{
 //     color:$white;
@@ -99,15 +110,16 @@ color:$black;
     line-height: 1;
     font-size: rem(30);
     color: white;
-    top: -55%;
+    top: -56%;
     top: -120px;
     left: 50%;
     transform: translateX(-50%); 
     background: $base-color;
-    width: 150px;
-    height: 150px;
-    padding-top: 50px;
+    // width: 150px;
+    // height: 150px;
+    // padding-top: 50px;
     border-radius: 50%;
+    padding: 50px 41px;
     font-family:$font-family-base;
     font-weight: bold;
     font-style: italic;
@@ -131,13 +143,59 @@ color:$black;
 .p-class__card:nth-of-type(2)::after{
     content: "adult";
     background: $white;
-    padding-top: 52px;
     color: $base-color;
     border:5px solid $base-color;
     font-family: $second-font-family;
+    padding: 59px 44px 62px 37px;
+    top: -124px
+
+;
 }
 .p-class__card:nth-of-type(3)::after{
     content: "kids&\Ayouth";
     white-space: pre;
     font-family: $second-font-family;
+}
+
+.p-overview{
+
+}
+.p-overview__title{
+
+}
+.p-overview__wrapper{
+
+}
+.p-overview__wrapper {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    // border-bottom: none;
+}
+.p-overview__wrapper dt{
+    background: #f5f5f5;
+	padding: 5px;
+	width: 150px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	
+}
+.p-overview__wrapper dd{
+    background: #fff;
+	padding: 5px;
+	width: calc(100% - 150px);
+	border-bottom: 1px solid #ccc;
+	// border-right: 1px solid #ccc;
+}
+.p-overview__maps{
+    padding-top: 400 / 750 * 100%;  
+    position: relative;
+    width: 100%;
+}
+.p-overview__maps iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

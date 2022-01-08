@@ -43,14 +43,18 @@
    display: inline-block;
     font-size: 18px;
     font-weight: 700;
+    border-radius: 5px;
     background-color: $base-color;
-    box-shadow: 5px 5px 0 $blue;
+    box-shadow: 5px 5px 0 $white;
     transition: 0.3s;
+    border: 1px solid $base-color;
     font-family: $second-font-family;
   }
   .p-class__btn a:hover {
     text-decoration: none;
-    background-color: $base-color;
+    background-color: $white;
+    border: 1px solid $base-color;
+   
     box-shadow: 0 0 0;
     color: $base-color;
   }

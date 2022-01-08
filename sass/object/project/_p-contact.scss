@@ -1,0 +1,82 @@
+.p-contact{
+    margin-top: rem(220);
+    margin-bottom: rem(100);
+    @include mq(sp){
+      margin-top: rem(100);
+    }
+    }
+    
+    .p-contact__inner{
+    // padding-top: rem(120);
+    }
+    
+    .p-contact__forms{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: rem(720);
+        background: $blue;
+        background:
+    radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top / 23px 23px no-repeat,
+    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px no-repeat,
+    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px 23px no-repeat,
+    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom / 23px 23px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat !important;
+        padding-top: rem(80);
+        @include mq(sp){
+            max-width: rem(600);
+            // width: 100%;
+        }
+    }
+    
+    .p-contact__texts{
+      padding-top: rem(50);
+      text-align: center;
+      padding-bottom: rem(50);
+      
+    }
+    
+    .p-contact__text{
+      line-height: 1.75;
+      padding-left: 7%;
+      padding-right: 7%;
+      text-align: center;
+      @include mq(sp){
+      text-align: left;
+    
+      }
+    }
+
+    .passing-txt{
+        text-align: center;
+
+        padding-bottom: rem(60);
+        color: $base-color;
+        font-size: 46px;
+        @include mq(sp){
+        font-size: rem(36);
+        }
+    }
+    
+    .wpcf7-spinner::before{
+        @include mq(sp){
+     display: none !important;
+        }
+    }
+    .wpcf7-spinner{
+    @include mq(sp){
+    display: none !important;
+     }
+    }
+    .submit-btn{
+    @include mq(sp){
+    text-align: center;
+     }
+    }

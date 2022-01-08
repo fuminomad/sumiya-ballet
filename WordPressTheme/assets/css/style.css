@@ -579,7 +579,7 @@ summary {
 /* Remove all animations and transitions for people that prefer not to see them */
 
 .l-footer {
-	background: #f4f4f4;
+	background: #fff;
 }
 
 .l-header {
@@ -614,7 +614,7 @@ summary {
 	color: #fff;
 	display: flex;
 	display: inline-block;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 18px;
 	font-weight: 700;
 	justify-content: space-between;
@@ -640,11 +640,13 @@ summary {
 .p-class__btn a {
 	align-items: center;
 	background-color: #274a75;
-	box-shadow: 5px 5px 0 #C6D6EB;
+	border: 1px solid #274a75;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #fff;
 	color: #fff;
 	display: flex;
 	display: inline-block;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 18px;
 	font-weight: 700;
 	justify-content: space-between;
@@ -655,7 +657,8 @@ summary {
 }
 
 .p-class__btn a:hover {
-	background-color: #274a75;
+	background-color: #fff;
+	border: 1px solid #274a75;
 	box-shadow: 0 0 0;
 	color: #274a75;
 	text-decoration: none;
@@ -712,6 +715,12 @@ summary {
 	bottom: 50%;
 	transform: translateY(50%) rotate(-45deg);
 	width: 100%;
+}
+
+.c-section__title {
+	color: #000;
+	font-size: 36px;
+	text-align: center;
 }
 
 .c-test {
@@ -771,15 +780,14 @@ summary {
 	position: relative;
 }
 
-.p-about:before {
-	color: #e6e6e6;
-	content: "Sumiya-ballet";
-	font-family: "fertigo-pro", serif !important;
-	font-size: 7.5rem;
-	font-weight: bold;
+.p-about::after {
+	background: url(../img/about-title.png) no-repeat center center/contain;
+	content: "";
+	height: 7.5rem;
 	position: absolute;
 	right: calc(50% - 40%);
 	top: -150px;
+	width: 49.3125rem;
 }
 
 .p-about__inner {
@@ -813,13 +821,15 @@ summary {
 }
 
 .p-about__name {
+	font-weight: bold;
+	padding-top: 15px;
 	text-align: right;
 }
 
 .p-class {
 	background-color: #ECF1F8;
 	color: #274a75;
-	padding: 12.5rem 2.5rem;
+	padding: 18.75rem 2.5rem 7.5rem;
 }
 
 .p-class__inner {
@@ -834,15 +844,14 @@ summary {
 }
 
 .p-class__title:before {
-	color: #274a75;
-	content: "Class";
-	font-family: "fertigo-pro", serif;
-	font-size: 5rem;
-	font-weight: bold;
+	background: url(../img/class-title.png) no-repeat center center/contain;
+	content: "";
+	height: 4.5625rem;
 	left: 50%;
 	position: absolute;
-	top: -160px;
+	top: -10rem;
 	transform: translateX(-50%);
+	width: 14.625rem;
 }
 
 .p-section__sub-title {
@@ -857,6 +866,7 @@ summary {
 
 .p-class__card {
 	background: #fff;
+	box-shadow: 0 0 5px #274a75;
 	margin-bottom: 1.875rem;
 	margin-left: 2.5rem;
 	padding: 3.125rem 0;
@@ -882,6 +892,9 @@ summary {
 
 .p-class__text {
 	color: #000;
+	color: #274a75;
+	font-size: 1.125rem;
+	font-weight: bold;
 }
 
 .p-class__card::after {
@@ -892,20 +905,18 @@ summary {
 	font-size: 1.875rem;
 	font-style: italic;
 	font-weight: bold;
-	height: 150px;
 	left: 50%;
 	line-height: 1;
-	padding-top: 50px;
+	padding: 50px 41px;
 	position: absolute;
-	top: -55%;
+	top: -56%;
 	top: -120px;
 	transform: translateX(-50%);
-	width: 150px;
 }
 
 .p-class__card:first-of-type::after {
 	content: "kids&\Ayouth";
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	white-space: pre;
 }
 
@@ -914,18 +925,54 @@ summary {
 	border: 5px solid #274a75;
 	color: #274a75;
 	content: "adult";
-	font-family: "fertigo-pro", serif;
-	padding-top: 52px;
+	font-family: "Roboto Slab", serif;
+	padding: 59px 44px 62px 37px;
+	top: -124px;
 }
 
 .p-class__card:nth-of-type(3)::after {
 	content: "kids&\Ayouth";
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	white-space: pre;
 }
 
+.p-overview__wrapper {
+	border: 1px solid #ccc;
+	display: flex;
+	width: 100%;
+}
+
+.p-overview__wrapper dt {
+	background: #f5f5f5;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 5px;
+	width: 150px;
+}
+
+.p-overview__wrapper dd {
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	padding: 5px;
+	width: calc(100% - 150px);
+}
+
+.p-overview__maps {
+	padding-top: 53.33333%;
+	position: relative;
+	width: 100%;
+}
+
+.p-overview__maps iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .p-company {
-	padding-bottom: 6.25rem;
+	padding-bottom: 5rem;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
 }
@@ -942,14 +989,13 @@ summary {
 }
 
 .p-company__title:before {
-	color: #e6e6e6;
-	content: "Features";
-	font-family: "fertigo-pro", serif;
-	font-size: 7.5rem;
-	font-weight: bold;
+	background: url(../img/company-title.png) no-repeat center center/contain;
+	content: "";
+	height: 6.625rem;
 	left: calc(50% - 60%);
 	position: absolute;
-	top: -160px;
+	top: -10rem;
+	width: 28.875rem;
 }
 
 .p-company__title {
@@ -958,7 +1004,7 @@ summary {
 
 .p-company__title span {
 	color: #274a75;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 3.125rem;
 }
 
@@ -981,7 +1027,7 @@ summary {
 .p-company__card::after {
 	-webkit-background-clip: text;
 	color: #274a75;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 5rem;
 	font-style: italic;
 	font-weight: bold;
@@ -994,7 +1040,7 @@ summary {
 .p-company__card:nth-of-type(even)::after {
 	-webkit-background-clip: text;
 	color: #274a75;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 5rem;
 	font-style: italic;
 	font-weight: bold;
@@ -1036,11 +1082,20 @@ summary {
 	font-size: 1.5rem;
 	font-weight: bold;
 	padding-bottom: 1.875rem;
+	text-align: center;
+}
+
+.card__title--3rd {
+	color: #000;
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-bottom: 1.875rem;
+	text-align: center;
 }
 
 .card__title span {
 	color: #274a75;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 1.875rem;
 	margin-right: 3px;
 }
@@ -1070,9 +1125,45 @@ summary {
 	width: 100%;
 }
 
+.p-contact {
+	margin-bottom: 6.25rem;
+	margin-top: 13.75rem;
+}
+
+.p-contact__forms {
+	background: #C6D6EB;
+	background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top/23px 23px no-repeat, radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top/23px 23px no-repeat, radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom/23px 23px no-repeat, radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom/23px 23px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left top/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right top/51% 3px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom/51% 3px no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) left top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom/3px 51% no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) right top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom/3px 51% no-repeat !important;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 45rem;
+	padding-top: 5rem;
+	width: 90%;
+}
+
+.p-contact__texts {
+	padding-bottom: 3.125rem;
+	padding-top: 3.125rem;
+	text-align: center;
+}
+
+.p-contact__text {
+	line-height: 1.75;
+	padding-left: 7%;
+	padding-right: 7%;
+	text-align: center;
+}
+
+.passing-txt {
+	color: #274a75;
+	font-size: 46px;
+	padding-bottom: 3.75rem;
+	text-align: center;
+}
+
 .p-footer {
+	background: #274a75;
 	padding-bottom: 2.5rem;
-	padding-top: 2.5rem;
+	padding-top: 5rem;
 }
 
 .p-footer__inner {
@@ -1088,8 +1179,8 @@ summary {
 }
 
 .p-footer__title {
-	color: #000;
-	font-family: "fertigo-pro", serif;
+	color: #fff;
+	font-family: "Roboto Slab", serif;
 	font-size: 32px;
 	font-weight: bold;
 	line-height: 1;
@@ -1104,7 +1195,7 @@ summary {
 }
 
 .p-footer__btn img {
-	border: 0.0625rem solid #000;
+	border: 0.0625rem solid #fff;
 	display: block;
 	left: 50%;
 	padding: 1.03125rem 0.65625rem;
@@ -1128,18 +1219,19 @@ summary {
 }
 
 .p-footer_nav ul li {
-	color: #000;
+	color: #fff;
 	padding-left: 2rem;
 }
 
 .p-footer__copylight {
-	color: #000;
+	color: #fff;
+	padding-top: 2.5rem;
 	text-align: center;
 }
 
 .p-footer_nav ul li {
 	border-left: 2px solid #2e6c83;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 1.5rem;
 	font-weight: bold;
 	line-height: 1.35;
@@ -1156,6 +1248,11 @@ summary {
 
 .menu-item-19 a {
 	color: #FF9900;
+}
+
+.p-footer__logo {
+	height: 4.25rem;
+	width: 7.375rem;
 }
 
 .p-header {
@@ -1177,8 +1274,13 @@ summary {
 	width: 100%;
 }
 
+.p-header-logo {
+	height: 67.5px;
+	width: 118px;
+}
+
 .p-header_nav {
-	background: rgba(46, 108, 131, 0.9);
+	background: rgba(39, 74, 117, 0.9);
 	color: #fff;
 	display: none;
 	height: 37.5rem;
@@ -1221,7 +1323,7 @@ summary {
 	color: #000;
 	color: #fff;
 	display: block;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 1.25rem;
 	line-height: 1;
 	list-style: none;
@@ -1232,25 +1334,8 @@ summary {
 	text-decoration: none;
 }
 
-.p-header_nav_list a::after {
-	position: absolute;
-}
-
-.p-header_nav_list::after {
-	background: #fff;
-	bottom: 0rem;
-	content: "";
-	height: 0.125rem;
-	left: 6.5625rem;
-	position: absolute;
-	transform: scale(0, 1);
-	transform-origin: left top;
-	transition: transform .5s;
-	width: 12.5rem;
-}
-
-.p-header_nav_list:hover::after {
-	transform: scale(1, 1);
+.p-header_nav_list a:hover {
+	opacity: 0.6;
 }
 
 .p-header_nav_list li:last-child a {
@@ -1302,7 +1387,7 @@ summary {
 
 .p-header-nav__items ul li a {
 	display: block;
-	font-family: "fertigo-pro", serif;
+	font-family: "Roboto Slab", serif;
 	transform: skewX(-150deg);
 }
 
@@ -1390,12 +1475,13 @@ summary {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
 	padding-top: 8.125rem;
+	padding-top: 6.25rem;
 	width: 100%;
 }
 
 .mv-container {
 	height: 100%;
-	height: calc(var(--vh, 1vh) * 100 - 180px);
+	height: calc(var(--vh, 1vh) * 100 - 145px);
 	margin: 0 auto;
 	max-width: 75rem;
 	position: relative;
@@ -1423,7 +1509,7 @@ summary {
 
 .slide-img {
 	height: 100%;
-	height: calc(var(--vh, 1vh) * 100 - 11.18rem);
+	height: calc(var(--vh, 1vh) * 100 - 9.06rem);
 	left: 0;
 	position: absolute;
 	top: 0;
@@ -1467,16 +1553,28 @@ summary {
 	z-index: 2;
 }
 
-.p-mv_title-1st {
-	border: solid 3px #000;
+.p-mv_title-1st::before,
+.p-mv_title-2nd::before,
+.p-mv_title-3rd::before {
+	background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top/23px 25px no-repeat, radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top/23px 25px no-repeat, radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom/23px 25px no-repeat, radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom/23px 25px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left top/51% 5px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right top/51% 5px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom/51% 5px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom/51% 5px no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) left top/5px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom/5px 51% no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) right top/5px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom/5px 51% no-repeat;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
-.p-mv_title-2nd {
-	border: solid 3px #000;
-}
-
-.p-mv_title-3rd {
-	border: solid 3px #000;
+.p-mv_title-1st::after,
+.p-mv_title-2nd::after,
+.p-mv_title-3rd::after {
+	bottom: 10px;
+	box-shadow: 0 0 0 1px #ca4;
+	content: "";
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
 
 .p-mv_title-1st span,
@@ -1531,11 +1629,11 @@ summary {
 	background: #274a75;
 	color: #fff;
 	font-family: "Noto Serif JP", serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
-	padding-bottom: 11px;
+	padding-bottom: 10px;
 	padding-left: 50px;
-	padding-top: 11px;
+	padding-top: 10px;
 }
 
 .p-mv__wrapper {
@@ -1565,10 +1663,166 @@ summary {
 	display: none;
 }
 
-.p-section__title {
-	color: #000;
-	font-size: 36px;
+.l-page-class {
+	margin-top: 12.5rem;
+}
+
+.l-page-class__inner {
+	margin: 0 auto;
+	max-width: 75rem;
 	text-align: center;
+	width: 100%;
+}
+
+.l-page-class__title {
+	display: inline-block;
+	font-family: "Noto Serif JP", serif;
+	font-size: 2.25rem;
+	margin-bottom: 50px;
+	padding: 20px 40px;
+	padding-bottom: 1.25rem;
+	position: relative;
+	text-align: center;
+}
+
+.l-page-class__title::before {
+	background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top/23px 23px no-repeat, radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top/23px 23px no-repeat, radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom/23px 23px no-repeat, radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom/23px 23px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left top/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right top/51% 3px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom/51% 3px no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) left top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom/3px 51% no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) right top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom/3px 51% no-repeat;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.l-page-class__title::after {
+	bottom: 10px;
+	box-shadow: 0 0 0 1px #ca4;
+	content: "";
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.l-page-class__subtitle {
+	color: #274a75;
+	font-family: "Noto Serif JP", serif;
+	font-size: 2.25rem;
+	padding-bottom: 5rem;
+	text-align: center;
+}
+
+.l-page-class__image {
+	text-align: center;
+}
+
+/*ContactForm7のテーブル化レスポンシブ調整*/
+
+/*テーブルを親要素の幅いっぱいに伸ばす*/
+
+.table-res-form {
+	width: 100%;
+}
+
+/*一行ごとに上ボーダー*/
+
+.table-res-form tr {
+	border-top: 1px #DDD solid;
+}
+
+/*一番上の行だけボーダーなし*/
+
+.table-res-form tr:first-child {
+	border-top: none;
+}
+
+/*背景色つける*/
+
+.table-res-form tr:last-child {
+	border-left: none;
+	border-right: none;
+}
+
+/*thとtd内の余白指定*/
+
+.table-res-form th,
+.table-res-form td {
+	padding: 1.5em;
+}
+
+/*th（項目欄）は30%幅、テキストを右寄せ*/
+
+.table-res-form th {
+	text-align: right;
+	width: 30%;
+}
+
+/*「必須」部分のスタイリング*/
+
+.table-res-form .requied {
+	background: red;
+	border-radius: 2px;
+	color: #FFF;
+	display: inline-block;
+	font-size: 0.8em;
+	padding: 0.3em 0.3em 0.2em;
+}
+
+/*ここから768px以下の指定*/
+
+/*ここまで768px以下の指定---終わり*/
+
+/*ここから入力欄のスタイル指定*/
+
+/*各入力フォームスタイリング*/
+
+.table-res-form input[type="text"],
+input[type="email"],
+textarea {
+	border: 1px #274a75 solid;
+	border-radius: 5px;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	width: 90%;
+}
+
+/*入力欄にフォーカスしたら変化*/
+
+.table-res-form input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	background: #EEFFFF;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*送信ボタンスタイリング*/
+
+.table-res-form input[type="submit"] {
+	background: #274a75;
+	border: 1px #274a75 solid;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+	color: #fff;
+	font-weight: bold;
+	padding: 0.5em 4em;
+}
+
+/*送信ボタン・マウスオーバー時スタイリング*/
+
+.table-res-form input[type="submit"]:hover {
+	background: #006599;
+	box-shadow: none;
+}
+
+table,
+th,
+td {
+	border: none;
+}
+
+select {
+	border: 1px solid #666;
 }
 
 .p-test {
@@ -1599,6 +1853,26 @@ html:focus-within {
 
 .p-company__title:before {
 	left: calc(50% - 45%);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+
+.p-company__card::after {
+	top: -38px;
+}
+
+.p-company__card:nth-of-type(even)::after {
+	top: -38px;
+}
+
+.card__texts {
+	padding-bottom: 1.875rem;
+}
+
+.card__figure img {
+	top: 2.5rem;
 }
 
 }
@@ -1658,13 +1932,24 @@ html {
 	font-size: 1.875rem;
 }
 
-.p-about:before {
-	font-size: 5.625rem;
+.p-about::after {
+	height: 7.5rem;
+	width: 38.4375rem;
+}
+
+.p-company__title:before {
+	height: 5.9375rem;
+	top: -8.75rem;
+	width: 26.375rem;
 }
 
 .p-footer__inner {
 	flex-direction: column;
 	padding: 0 2rem;
+}
+
+.p-footer__logo {
+	margin-bottom: 50px;
 }
 
 .p-mv_title-1st,
@@ -1687,6 +1972,31 @@ html {
 
 }
 
+@media only screen and (max-width: 768px) {
+
+/*thとtdをブロック化して幅100％にして、縦積み*/
+
+.table-res-form th,
+.table-res-form td {
+	display: block;
+	width: 100%;
+}
+
+/*th（項目名）欄の不要な余白削除・テキスト左寄せ*/
+
+.table-res-form th {
+	padding-bottom: 0;
+	text-align: left;
+}
+
+/*不要な最終行の左のthを非表示にする*/
+
+.table-res-form .empty {
+	display: none;
+}
+
+}
+
 @media screen and (max-width: 767px) {
 
 html {
@@ -1698,15 +2008,21 @@ html {
 	padding: 0 1.875rem;
 }
 
+.c-section__title {
+	font-size: 24px;
+}
+
 .p-about {
 	margin-top: 150px;
 	padding: 5rem 0.9375rem 2.5rem;
 }
 
-.p-about:before {
-	font-size: 3.75rem;
-	right: calc(50% - 45%);
-	top: -80px;
+.p-about::after {
+	height: 4.5rem;
+	left: 50%;
+	top: -6.25rem;
+	transform: translate(-50%);
+	width: 29.5625rem;
 }
 
 .p-about__inner {
@@ -1726,10 +2042,13 @@ html {
 	padding-bottom: 7.5rem;
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
+	padding-top: 12.5rem;
 }
 
 .p-class__title:before {
-	font-size: 3.75rem;
+	height: 3.625rem;
+	top: -8.75rem;
+	width: 11.6875rem;
 }
 
 .p-class__cards {
@@ -1767,8 +2086,10 @@ html {
 
 .p-company__title:before {
 	font-size: 3.75rem;
+	height: 4.625rem;
 	left: calc(50% - 45%);
 	top: -110px;
+	width: 20.1875rem;
 }
 
 .p-company__card:nth-child(even) {
@@ -1818,12 +2139,48 @@ html {
 	font-size: 1.5rem;
 }
 
+.card__title--3rd {
+	font-size: 1.25rem;
+}
+
 .card__text {
 	text-align: left;
 }
 
 .card__images {
 	width: 100%;
+}
+
+.p-contact {
+	margin-top: 6.25rem;
+}
+
+.p-contact__forms {
+	max-width: 37.5rem;
+}
+
+.p-contact__text {
+	text-align: left;
+}
+
+.passing-txt {
+	font-size: 2.25rem;
+}
+
+.wpcf7-spinner::before {
+	display: none !important;
+}
+
+.wpcf7-spinner {
+	display: none !important;
+}
+
+.submit-btn {
+	text-align: center;
+}
+
+.p-footer {
+	padding-top: 4.5rem;
 }
 
 .p-footer__title {
@@ -1842,13 +2199,21 @@ html {
 
 .p-footer__copylight {
 	padding-bottom: 1.25rem;
-	padding-top: 1.25rem;
-	padding-top: 2.5rem;
 }
 
 .p-footer_nav ul li {
 	border-left: none;
-	font-size: 1rem;
+	font-size: 1.125rem;
+	transform: skewX(0);
+}
+
+.p-footer_nav ul li a:last-child {
+	transform: skewX(0);
+}
+
+.p-header-logo {
+	height: 60px;
+	width: 105px;
 }
 
 .p-header_nav {
@@ -1863,10 +2228,6 @@ html {
 
 .p-header_nav_list .menu-item:not(:first-child) {
 	margin-top: 1.6875rem;
-}
-
-.p-header_nav_list::after {
-	width: 6.25rem;
 }
 
 .p-header_btn {
@@ -1888,7 +2249,7 @@ html {
 }
 
 .mv-container {
-	height: calc(var(--vh, 1vh) * 100 - 130px);
+	height: calc(var(--vh, 1vh) * 100 - 125px);
 	max-width: 37.5rem;
 }
 
@@ -1897,7 +2258,7 @@ html {
 }
 
 .slide-img {
-	height: calc(var(--vh, 1vh) * 100 - 8.125rem);
+	height: calc(var(--vh, 1vh) * 100 - 7.8125rem);
 }
 
 .slide-img-1 {
@@ -1927,15 +2288,17 @@ html {
 }
 
 .p-mv__news {
-	font-size: 16px;
+	padding-left: 1.125rem;
 }
 
 .is-sp {
 	display: block;
 }
 
-.p-section__title {
-	font-size: 24px;
+.table-res-form input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
 }
 
 .p-test {
@@ -1956,9 +2319,25 @@ html {
 	margin-top: 120px;
 }
 
+.p-about::after {
+	height: 3rem;
+	left: 50%;
+	top: -5rem;
+	transform: translate(-50%);
+	width: 19.1875rem;
+}
+
 .p-about:before {
 	font-size: 2.5rem;
 	top: -49px;
+}
+
+.p-company__title:before {
+	height: 4.625rem;
+	left: 50%;
+	top: -5rem;
+	transform: translate(-50%);
+	width: 20.1875rem;
 }
 
 .p-company__title:before {
@@ -1969,6 +2348,20 @@ html {
 }
 
 @media screen and (max-width: 375px) {
+
+.p-class__title:before {
+	height: 3.1875rem;
+	width: 10.1875rem;
+}
+
+.p-company__title:before {
+	height: 3.3125rem;
+	left: calc(50% - 45%);
+	left: 50%;
+	top: -5rem;
+	transform: translate(-50%);
+	width: 14.375rem;
+}
 
 .p-company__card::after {
 	font-size: 3.75rem;
@@ -1988,6 +2381,18 @@ html {
 
 .is-ssp {
 	display: block;
+}
+
+}
+
+@media screen and (max-width: 374px) {
+
+.p-about::after {
+	height: 2.25rem;
+	left: 50%;
+	top: -5rem;
+	transform: translate(-50%);
+	width: 14.375rem;
 }
 
 }
