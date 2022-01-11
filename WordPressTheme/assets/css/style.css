@@ -337,7 +337,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	background: #fff;
 	color: #000;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6;
@@ -602,6 +602,28 @@ summary {
 	width: 100%;
 }
 
+.l-page__classes {
+	margin-bottom: 6.25rem;
+	margin-top: 200px;
+}
+
+.l-page__classes__inner {
+	margin: 0 auto;
+	max-width: 75rem;
+	padding: 0 40px;
+	text-align: center;
+	width: 100%;
+}
+
+.l-page__classes__title {
+	font-size: 1.5rem;
+	padding-bottom: 5rem;
+}
+
+.classes__cards {
+	padding-bottom: 0.625rem;
+}
+
 .c-btn {
 	text-align: center;
 }
@@ -633,34 +655,114 @@ summary {
 
 .p-class__btn {
 	margin: 0 auto;
-	padding-top: 1.875rem;
+	padding-top: 0.625rem;
 	text-align: center;
 }
 
 .p-class__btn a {
 	align-items: center;
-	background-color: #274a75;
-	border: 1px solid #274a75;
+	background-color: #FF9900;
 	border-radius: 5px;
-	box-shadow: 5px 5px 0 #fff;
+	box-shadow: 5px 5px 0 #C6D6EB;
 	color: #fff;
 	display: flex;
 	display: inline-block;
 	font-family: "Roboto Slab", serif;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 10px;
 	transition: 0.3s;
-	width: 180px;
+}
+
+.p-class__btn a:hover {
+	background-color: #C6D6EB;
+	box-shadow: 0 0 0;
+	color: #274a75;
+	text-decoration: none;
+}
+
+.p-class__btn a {
+	align-items: center;
+	background-color: #FF9900;
+	border: 1px solid #FF9900;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #fff;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 15px 40px;
+	transition: 0.3s;
 }
 
 .p-class__btn a:hover {
 	background-color: #fff;
-	border: 1px solid #274a75;
+	border: 1px solid #FF9900;
+	box-shadow: 0 0 0;
+	color: #FF9900;
+	text-decoration: none;
+}
+
+.p-class__btn-2nd {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 0.625rem;
+	text-align: center;
+}
+
+.p-class__btn-2nd a {
+	align-items: center;
+	background-color: #FF9900;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #C6D6EB;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-size: 16px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 10px;
+	transition: 0.3s;
+}
+
+.p-class__btn-2nd a:hover {
+	background-color: #C6D6EB;
 	box-shadow: 0 0 0;
 	color: #274a75;
+	text-decoration: none;
+}
+
+.p-class__btn-2nd a {
+	align-items: center;
+	background-color: #FF9900;
+	border: 1px solid #FF9900;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #fff;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 15px 40px;
+	transition: 0.3s;
+}
+
+.p-class__btn-2nd a:hover {
+	background-color: #fff;
+	border: 1px solid #FF9900;
+	box-shadow: 0 0 0;
+	color: #FF9900;
 	text-decoration: none;
 }
 
@@ -671,7 +773,7 @@ summary {
 }
 
 .p-header_hamburger span {
-	background: #000;
+	background: #333;
 	display: block;
 	height: 4px;
 	left: 0;
@@ -699,7 +801,7 @@ summary {
 }
 
 .p-header_hamburger.active span {
-	background: #000;
+	background: #333;
 }
 
 .p-header_hamburger.active span:nth-of-type(1) {
@@ -718,7 +820,7 @@ summary {
 }
 
 .c-section__title {
-	color: #000;
+	color: #333;
 	font-size: 36px;
 	text-align: center;
 }
@@ -739,7 +841,7 @@ summary {
 }
 
 .c-top-btn:hover {
-	background-color: #000;
+	background-color: #333;
 	transition: all .3s;
 }
 
@@ -802,10 +904,10 @@ summary {
 }
 
 .p-about__text {
-	border: 2px solid #000;
+	border: 2px solid #333;
 	border-radius: 20px;
 	box-shadow: 2px 2px 1px #c7c7c7;
-	color: #000;
+	color: #333;
 	font-size: 1.25rem;
 	margin: 0 auto;
 	margin: 2em auto;
@@ -828,6 +930,7 @@ summary {
 
 .p-class {
 	background-color: #ECF1F8;
+	background-color: #f4f4f4;
 	color: #274a75;
 	padding: 18.75rem 2.5rem 7.5rem;
 }
@@ -839,7 +942,7 @@ summary {
 }
 
 .p-class__title {
-	color: #000;
+	color: #333;
 	position: relative;
 }
 
@@ -884,14 +987,14 @@ summary {
 }
 
 .p-class__header {
-	color: #000;
+	color: #333;
 	font-size: 1.125rem;
 	font-weight: bold;
 	padding-bottom: 1.875rem;
 }
 
 .p-class__text {
-	color: #000;
+	color: #333;
 	color: #274a75;
 	font-size: 1.125rem;
 	font-weight: bold;
@@ -901,7 +1004,7 @@ summary {
 	background: #274a75;
 	border-radius: 50%;
 	color: white;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.875rem;
 	font-style: italic;
 	font-weight: bold;
@@ -934,41 +1037,6 @@ summary {
 	content: "kids&\Ayouth";
 	font-family: "Roboto Slab", serif;
 	white-space: pre;
-}
-
-.p-overview__wrapper {
-	border: 1px solid #ccc;
-	display: flex;
-	width: 100%;
-}
-
-.p-overview__wrapper dt {
-	background: #f5f5f5;
-	border-bottom: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	padding: 5px;
-	width: 150px;
-}
-
-.p-overview__wrapper dd {
-	background: #fff;
-	border-bottom: 1px solid #ccc;
-	padding: 5px;
-	width: calc(100% - 150px);
-}
-
-.p-overview__maps {
-	padding-top: 53.33333%;
-	position: relative;
-	width: 100%;
-}
-
-.p-overview__maps iframe {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 .p-company {
@@ -1072,13 +1140,13 @@ summary {
 }
 
 .p-company__card:nth-child(even) .card__texts {
-	color: #000;
+	color: #333;
 	padding-left: 3.125rem;
 	padding-right: 1.875rem;
 }
 
 .card__title {
-	color: #000;
+	color: #333;
 	font-size: 1.5rem;
 	font-weight: bold;
 	padding-bottom: 1.875rem;
@@ -1086,7 +1154,7 @@ summary {
 }
 
 .card__title--3rd {
-	color: #000;
+	color: #333;
 	font-size: 1.25rem;
 	font-weight: bold;
 	padding-bottom: 1.875rem;
@@ -1101,7 +1169,7 @@ summary {
 }
 
 .card__text {
-	color: #000;
+	color: #333;
 	padding-bottom: 1.25rem;
 }
 
@@ -1320,7 +1388,7 @@ summary {
 }
 
 .p-header_nav_list a {
-	color: #000;
+	color: #333;
 	color: #fff;
 	display: block;
 	font-family: "Roboto Slab", serif;
@@ -1375,7 +1443,7 @@ summary {
 
 .p-header-nav__items ul li {
 	border-left: 2px solid #2e6c83;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.35;
@@ -1399,10 +1467,15 @@ summary {
 	opacity: .7;
 }
 
-#menu-item-24 a:after {
-	content: 'トップ';
+#menu-item-314 a:after {
+	content: '教室一覧';
 	display: block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+}
+
+#menu-item-314 a:hover:after {
+	opacity: .7;
 }
 
 #menu-item-23 a:hover:after {
@@ -1412,7 +1485,7 @@ summary {
 #menu-item-23 a:after {
 	content: '講師';
 	display: block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
@@ -1423,7 +1496,7 @@ summary {
 #menu-item-21 a:after {
 	content: 'コンクール';
 	display: block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
@@ -1434,7 +1507,7 @@ summary {
 #menu-item-20 a:after {
 	content: 'ギャラリー';
 	display: block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
@@ -1445,7 +1518,7 @@ summary {
 #menu-item-22 a:after {
 	content: 'クラス';
 	display: block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
@@ -1461,7 +1534,7 @@ summary {
 	color: #FF9900;
 	content: 'お問い合わせ';
 	display: block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
@@ -1536,7 +1609,7 @@ summary {
 .p-mv_title-3rd {
 	background: #fff;
 	color: #000;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
 	left: 50%;
@@ -1628,7 +1701,7 @@ summary {
 .p-mv__news {
 	background: #274a75;
 	color: #fff;
-	font-family: "Noto Serif JP", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	padding-bottom: 10px;
@@ -1651,6 +1724,10 @@ summary {
 	display: block;
 }
 
+.is-pc {
+	display: block;
+}
+
 .is-tab {
 	display: none;
 }
@@ -1663,20 +1740,29 @@ summary {
 	display: none;
 }
 
+.section {
+	background: #f4f4f4;
+	padding: 200px 0;
+}
+
 .l-page-class {
-	margin-top: 12.5rem;
+	background: #e6e6e6;
+	padding-bottom: 6.25rem;
+	padding-top: 12.5rem;
 }
 
 .l-page-class__inner {
 	margin: 0 auto;
 	max-width: 75rem;
+	padding: 0 40px;
 	text-align: center;
 	width: 100%;
 }
 
 .l-page-class__title {
+	background: #fff;
 	display: inline-block;
-	font-family: "Noto Serif JP", serif;
+	font-family: "Roboto Slab", serif;
 	font-size: 2.25rem;
 	margin-bottom: 50px;
 	padding: 20px 40px;
@@ -1706,15 +1792,301 @@ summary {
 }
 
 .l-page-class__subtitle {
+	background: #20337f;
+	background: #274a75;
+	background-image: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(-45deg, #fff 10px, transparent 0), linear-gradient(135deg, #fff 10px, transparent 0), linear-gradient(-135deg, #fff 10px, transparent 0);
+	box-shadow: 0 0 5px #274a75;
 	color: #274a75;
-	font-family: "Noto Serif JP", serif;
+	color: #fee512;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 2.25rem;
-	padding-bottom: 5rem;
+	margin: 0 auto;
+	margin-bottom: 3.125rem;
+	padding-bottom: 2.5rem;
+	padding-top: 2.5rem;
+	position: relative;
+	text-align: center;
+	width: 70%;
+}
+
+.l-page-class__subtitle::before {
+	bottom: 1px;
+	box-shadow: 0 0 0 5px #fff;
+	content: "";
+	left: 1px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	z-index: 5;
+}
+
+.l-page-class__subtitle::after {
+	bottom: 10px;
+	box-shadow: 0 0 0 1px #fff;
+	content: "";
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.l-page-class__subtitle span {
+	color: #fff;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.l-page-class__subtitle span::before,
+.l-page-class__subtitle span::after {
+	content: '';
+	position: absolute;
+}
+
+.l-page-class__subtitle span::after {
+	right: -37px;
+	transform: rotate(-60deg);
+}
+
+.l-page-class__figure {
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	width: 70%;
+}
+
+.l-page-class__figure img {
+	position: relative;
+}
+
+.l-page-class__time {
+	background: #fff;
+	border: 3px solid #7C8A97;
+	border-radius: 0 10px 10px 10px;
+	color: #333;
+	display: inline-block;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1.875rem;
+	margin-top: 5rem;
+	padding: 30px 50px 30px 70px;
+	position: relative;
+	text-align: left;
+}
+
+.l-page-class__time:before {
+	background: #7C8A97;
+	border-radius: 10px 10px 0 0;
+	color: #fff;
+	content: 'クラシックバレエ';
+	font-size: 15px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	left: -3px;
+	padding: 0 1em;
+	position: absolute;
+	top: -42px;
+}
+
+.l-page-class__figure:after {
+	border: 5px solid #fff;
+	border-image-repeat: round;
+	border-image-slice: 20;
+	content: '';
+	height: calc(100% - 20px);
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: calc(100% - 20px);
+}
+
+.wp-block-image {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.wp-block-image img {
+	max-width: 100%;
+	min-width: 600px;
+	vertical-align: top;
+}
+
+.wp-block-image::-webkit-scrollbar {
+	height: 4px;
+}
+
+/*スクロールバー全体の背景*/
+
+.wp-block-image::-webkit-scrollbar-track {
+	background: #eee;
+}
+
+/*スクロールバーの動く部分*/
+
+.wp-block-image::-webkit-scrollbar-thumb {
+	background: #ff99ab;
+	border: none;
+}
+
+/*スクロールバーの動く部分のホバー（マウスオーバー）*/
+
+.wp-block-image::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
+
+.p-overview {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.p-overview__title {
+	background: #274a75;
+	border: 2px solid #000;
+	color: #fff;
+	margin-top: 40px;
+	padding: 1.5rem;
+	position: relative;
 	text-align: center;
 }
 
-.l-page-class__image {
+.p-overview__wrapper {
+	border: 1px solid #7C8A97;
+	display: flex;
+	width: 100%;
+}
+
+.p-overview__wrapper dl {
+	background: #fff;
+	width: 30%;
+}
+
+.p-overview__wrapper dt {
+	background: #7C8A97;
+	border-bottom: 1px solid #7C8A97;
+	border-right: 1px solid #7C8A97;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.p-overview__wrapper dd:last-child {
+	border-bottom: 0;
+}
+
+.p-overview__wrapper dd {
+	background: #fff;
+	border-bottom: 1px solid #7C8A97;
+	color: #333;
+	padding: 20px 5px;
+}
+
+.p-overview__maps {
+	margin-left: auto;
+	padding-top: 53.33333%;
+	position: relative;
+	width: 100%;
+	width: 70%;
+}
+
+.p-overview__maps iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-overview__title {
+	background: #fff;
+	color: #333;
+	display: block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 1.5rem;
+	padding: 20px 40px;
+	padding-bottom: 1.25rem;
+	position: relative;
 	text-align: center;
+}
+
+.p-overview__title::before {
+	background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top/23px 23px no-repeat, radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top/23px 23px no-repeat, radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom/23px 23px no-repeat, radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom/23px 23px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left top/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right top/51% 3px no-repeat, linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom/51% 3px no-repeat, linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom/51% 3px no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) left top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom/3px 51% no-repeat, linear-gradient(180deg, transparent 20px, #ca4 23px) right top/3px 51% no-repeat, linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom/3px 51% no-repeat;
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.p-overview__title::after {
+	bottom: 10px;
+	box-shadow: 0 0 0 1px #ca4;
+	content: "";
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.l-page-class__contact {
+	padding-top: 5rem;
+}
+
+.l-page-class__text {
+	color: #333;
+	font-size: 1.5rem;
+	margin: auto;
+	margin-bottom: 30px;
+	position: relative;
+	width: 80%;
+}
+
+.l-page-class__text::before,
+.l-page-class__text::after {
+	background: #274a75;
+	content: '';
+	height: 4px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.l-page-class__text::before {
+	top: -5px;
+}
+
+.l-page-class__text::after {
+	bottom: -5px;
+}
+
+.l-page-class__text a {
+	margin-top: 1.875rem;
+}
+
+.p-btn_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.l-page-class__text-2nd {
+	padding-bottom: 0.9375rem;
+	padding-top: 0.9375rem;
+}
+
+.l-page-class__text-2nd p {
+	-webkit-text-decoration: underline double #ff99ab;
+	display: inline-block;
+	text-decoration: underline double #ff99ab;
+}
+
+.p-class__btn-totsuka {
+	margin-top: 5rem;
+}
+
+.p-class__scroll {
+	color: #ff99ab;
+	display: none;
+	font-weight: bold;
 }
 
 /*ContactForm7のテーブル化レスポンシブ調整*/
@@ -2008,6 +2380,10 @@ html {
 	padding: 0 1.875rem;
 }
 
+.p-class__btn-2nd {
+	padding-bottom: 1.5625rem;
+}
+
 .c-section__title {
 	font-size: 24px;
 }
@@ -2291,8 +2667,78 @@ html {
 	padding-left: 1.125rem;
 }
 
+.is-pc {
+	display: none;
+}
+
 .is-sp {
 	display: block;
+}
+
+.l-page-class {
+	padding-top: 6.25rem;
+}
+
+.l-page-class__inner {
+	padding: 0 15px;
+}
+
+.l-page-class__subtitle {
+	font-size: 1.875rem;
+	margin-bottom: 5rem;
+	max-width: 37.5rem;
+	width: 100%;
+}
+
+.l-page-class__subtitle span {
+	font-size: 1.125rem;
+}
+
+.l-page-class__time {
+	display: block;
+	font-size: 1.125rem;
+	margin: 50px auto  30px;
+	max-width: 37.5rem;
+	padding: 1rem 1.5rem 1rem 3rem;
+}
+
+.l-page-class__figure:after {
+	display: none;
+}
+
+.wp-block-image {
+	margin-bottom: 40px;
+	max-width: 37.5rem;
+	overflow-x: auto;
+}
+
+.p-overview {
+	max-width: 37.5rem;
+	width: 100%;
+}
+
+.p-overview__wrapper {
+	display: block;
+}
+
+.p-overview__wrapper dl {
+	width: 100%;
+}
+
+.p-overview__maps {
+	width: 100%;
+}
+
+.l-page-class__text {
+	font-size: 1.125rem;
+}
+
+.p-btn_wrapper {
+	display: block;
+}
+
+.p-class__btn-totsuka {
+	margin-top: 2.5rem;
 }
 
 .table-res-form input[type="text"],
@@ -2308,6 +2754,14 @@ textarea {
 
 .u-hidden-sp {
 	display: none;
+}
+
+}
+
+@media screen and (max-width: 629px) {
+
+.p-class__scroll {
+	display: block;
 }
 
 }
@@ -2381,6 +2835,10 @@ textarea {
 
 .is-ssp {
 	display: block;
+}
+
+.l-page-class__figure {
+	width: 100%;
 }
 
 }

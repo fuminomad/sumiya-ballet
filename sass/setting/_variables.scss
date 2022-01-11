@@ -8,6 +8,7 @@ $text-color: #000; // テキスト色
 $blue:#167AAC;
 $blue:#C6D6EB;
 $black:#000;
+$black:#333;
 $base-background: #2e6c83;
 $white:#fff;
 $orange:#FF9900;
@@ -21,10 +22,10 @@ $white-alpha:rgba($color: $white, $alpha: 0.8);
 $opacity: 0.7; // 透過度
 
 // フォント
-// $font-family-base: 'Noto Sans JP', sans-serif;// ベースフォント
+$third-font-family: 'Noto Sans JP', sans-serif;// ベースフォント
 $font-family-base: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;// ベースフォント
 $font-family-base: 'Noto Serif JP', serif;// ベースフォント
-
+$font-family-base: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo,sans-serif;// ベースフォント
 // $second-font-family:'Montserrat', sans-serif;
 // $font-family-base:'Roboto Slab', serif;
 $second-font-family:'Roboto Slab', serif;

@@ -157,7 +157,7 @@
 
 
 </div>
-<div class="p-class__btn">
+<div class="c-btn">
          <a href="">more</a>
        </div>
 </div>

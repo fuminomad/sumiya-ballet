@@ -317,6 +317,12 @@ width: 100%;
     display: block;
   }
  
+  .is-pc{
+    display: block;
+    @include mq(sp){
+      display: none;
+    }
+  }
   .is-tab{
     display: none;
     @include mq(tab){

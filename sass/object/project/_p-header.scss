@@ -249,10 +249,14 @@
   .p-header-nav__items ul li a:hover{
    opacity: .7;
   }
-  #menu-item-24 a:after {
-    content: 'トップ';
+  #menu-item-314 a:after {
+    content: '教室一覧';
     display: block;
     font-size: rem(16);
+    font-family: $font-family-base;
+  }
+  #menu-item-314 a:hover:after{
+opacity: .7;
   }
   #menu-item-23 a:hover:after{
 opacity: .7;

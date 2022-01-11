@@ -1,0 +1,36 @@
+.l-page__classes{
+    margin-top: 200px;
+    margin-bottom: rem(100);
+}
+
+.l-page__classes__inner{
+width: 100%;
+padding:0 40px;
+max-width: rem(1200);
+margin: 0 auto;
+text-align: center;
+}
+.l-page__classes__wrapper{
+
+}
+.l-page__classes__title{
+padding-bottom: rem(80);
+font-size: rem(24);
+}
+// .l-page__classes__cards{
+//     display: flex;
+//     flex-wrap: wrap;
+//     // margin-top: rem(220);
+//     @include mq(sp){
+//         // margin-top: rem(129);
+//     }
+// }
+.classes__cards{
+
+}
+.classes__card{
+}
+.classes__cards{
+    // background: $base-color;
+    padding-bottom: rem(10);
+}
