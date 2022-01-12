@@ -624,6 +624,18 @@ summary {
 	padding-bottom: 0.625rem;
 }
 
+.l-page-contact {
+	background: #f4f4f4;
+	padding-top: 10rem;
+}
+
+.l-page-contact__inner {
+	margin: auto;
+	max-width: 75rem;
+	padding: 0 40px;
+	width: 100%;
+}
+
 .c-btn {
 	text-align: center;
 }
@@ -636,14 +648,14 @@ summary {
 	color: #fff;
 	display: flex;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 18px;
-	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
+	max-width: 180px;
 	padding: 10px;
 	transition: 0.3s;
-	width: 180px;
+	width: 150px;
 }
 
 .c-btn a:hover {
@@ -667,9 +679,8 @@ summary {
 	color: #fff;
 	display: flex;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 10px;
@@ -694,7 +705,6 @@ summary {
 	display: inline-block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 15px 40px;
@@ -724,9 +734,8 @@ summary {
 	color: #fff;
 	display: flex;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 16px;
-	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 10px;
@@ -763,6 +772,35 @@ summary {
 	border: 1px solid #FF9900;
 	box-shadow: 0 0 0;
 	color: #FF9900;
+	text-decoration: none;
+}
+
+.c-btn-contact {
+	text-align: center;
+}
+
+.c-btn-contact a {
+	align-items: center;
+	background-color: #274a75;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #C6D6EB;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 18px;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 180px;
+	padding: 10px;
+	transition: 0.3s;
+	width: 150px;
+}
+
+.c-btn-contact a:hover {
+	background-color: #C6D6EB;
+	box-shadow: 0 0 0;
+	color: #274a75;
 	text-decoration: none;
 }
 
@@ -822,6 +860,7 @@ summary {
 .c-section__title {
 	color: #333;
 	font-size: 36px;
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -900,6 +939,7 @@ summary {
 }
 
 .p-about__title {
+	font-weight: normal;
 	position: relative;
 }
 
@@ -923,7 +963,7 @@ summary {
 }
 
 .p-about__name {
-	font-weight: bold;
+	font-weight: normal;
 	padding-top: 15px;
 	text-align: right;
 }
@@ -958,6 +998,7 @@ summary {
 }
 
 .p-section__sub-title {
+	font-weight: normal;
 	text-align: center;
 }
 
@@ -989,15 +1030,15 @@ summary {
 .p-class__header {
 	color: #333;
 	font-size: 1.125rem;
-	font-weight: bold;
+	font-weight: normal;
 	padding-bottom: 1.875rem;
 }
 
 .p-class__text {
 	color: #333;
-	color: #274a75;
+	color: #333;
 	font-size: 1.125rem;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .p-class__card::after {
@@ -1019,7 +1060,7 @@ summary {
 
 .p-class__card:first-of-type::after {
 	content: "kids&\Ayouth";
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	white-space: pre;
 }
 
@@ -1028,14 +1069,14 @@ summary {
 	border: 5px solid #274a75;
 	color: #274a75;
 	content: "adult";
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	padding: 59px 44px 62px 37px;
 	top: -124px;
 }
 
 .p-class__card:nth-of-type(3)::after {
 	content: "kids&\Ayouth";
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	white-space: pre;
 }
 
@@ -1072,7 +1113,7 @@ summary {
 
 .p-company__title span {
 	color: #274a75;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 3.125rem;
 }
 
@@ -1095,7 +1136,7 @@ summary {
 .p-company__card::after {
 	-webkit-background-clip: text;
 	color: #274a75;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 5rem;
 	font-style: italic;
 	font-weight: bold;
@@ -1108,7 +1149,7 @@ summary {
 .p-company__card:nth-of-type(even)::after {
 	-webkit-background-clip: text;
 	color: #274a75;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 5rem;
 	font-style: italic;
 	font-weight: bold;
@@ -1145,25 +1186,40 @@ summary {
 	padding-right: 1.875rem;
 }
 
+.line_narrow {
+	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #ffb2d8 0%) repeat scroll 0 0;
+	display: inline;
+	line-height: 1;
+	margin-bottom: 30px;
+	margin-left: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.line_narrow-2nd {
+	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #ffb2d8 0%) repeat scroll 0 0;
+	display: inline;
+	line-height: 1;
+}
+
 .card__title {
 	color: #333;
 	font-size: 1.5rem;
-	font-weight: bold;
-	padding-bottom: 1.875rem;
+	font-weight: normal;
 	text-align: center;
 }
 
 .card__title--3rd {
 	color: #333;
 	font-size: 1.25rem;
-	font-weight: bold;
-	padding-bottom: 1.875rem;
+	font-weight: normal;
+	margin-left: 0;
 	text-align: center;
 }
 
 .card__title span {
 	color: #274a75;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.875rem;
 	margin-right: 3px;
 }
@@ -1171,6 +1227,7 @@ summary {
 .card__text {
 	color: #333;
 	padding-bottom: 1.25rem;
+	padding-top: 1.875rem;
 }
 
 .card__images {
@@ -1193,9 +1250,47 @@ summary {
 	width: 100%;
 }
 
+.p-contact-top {
+	background: #f4f4f4;
+	padding-top: 3.75rem;
+}
+
+.p-contact-top__texts {
+	text-align: center;
+}
+
+.p-contact-top__title {
+	display: inline-block;
+	font-weight: normal;
+	max-width: 43.75rem;
+	width: 100%;
+}
+
+.p-contact-top__title span {
+	display: inline-block;
+}
+
+.p-contact-top__buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: auto;
+	max-width: 43.75rem;
+	padding-bottom: 5rem;
+	padding-top: 40px;
+}
+
+.p-contact-top__button {
+	width: 25%;
+}
+
+.p-contact-top__button {
+	padding-top: 1.875rem;
+}
+
 .p-contact {
-	margin-bottom: 6.25rem;
-	margin-top: 13.75rem;
+	margin-top: 7.5rem;
+	padding-bottom: 6.25rem;
 }
 
 .p-contact__forms {
@@ -1219,13 +1314,28 @@ summary {
 	padding-left: 7%;
 	padding-right: 7%;
 	text-align: center;
+	text-align: left;
 }
 
 .passing-txt {
 	color: #274a75;
-	font-size: 46px;
-	padding-bottom: 3.75rem;
+	font-size: 36px;
+	font-weight: normal;
+	padding-bottom: 1.25rem;
 	text-align: center;
+}
+
+.p-contact-top__tel-box {
+	padding-top: 2.5rem;
+}
+
+.p-contact-top__tels {
+	display: flex;
+	justify-content: center;
+}
+
+.p-contact-top__tel {
+	font-size: 1.5rem;
 }
 
 .p-footer {
@@ -1248,7 +1358,7 @@ summary {
 
 .p-footer__title {
 	color: #fff;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 32px;
 	font-weight: bold;
 	line-height: 1;
@@ -1299,7 +1409,7 @@ summary {
 
 .p-footer_nav ul li {
 	border-left: 2px solid #2e6c83;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.5rem;
 	font-weight: bold;
 	line-height: 1.35;
@@ -1391,7 +1501,7 @@ summary {
 	color: #333;
 	color: #fff;
 	display: block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.25rem;
 	line-height: 1;
 	list-style: none;
@@ -1455,7 +1565,7 @@ summary {
 
 .p-header-nav__items ul li a {
 	display: block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	transform: skewX(-150deg);
 }
 
@@ -1483,7 +1593,7 @@ summary {
 }
 
 #menu-item-23 a:after {
-	content: '講師';
+	content: '教師一覧';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
@@ -1612,6 +1722,7 @@ summary {
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 2.5rem;
 	font-weight: 900;
+	font-weight: normal;
 	left: 50%;
 	line-height: 1.25;
 	padding-bottom: 1.875rem;
@@ -1668,6 +1779,8 @@ summary {
 
 .p-mv_title-2nd span {
 	background: #F4BE7F; /*背景色*/
+	background: #F4D292; /*背景色*/
+	color: #333;
 }
 
 .p-mv_title-3rd span {
@@ -1678,7 +1791,7 @@ summary {
 .p-mv_title-2nd span::before,
 .p-mv_title-3rd span::before {
 	border: none;
-	border-bottom: solid 15px transparent;
+	border-bottom: solid 11px transparent;
 	border-right: solid 20px #959e9b;
 	content: '';
 	left: 0;
@@ -1690,7 +1803,7 @@ summary {
 .p-mv_title-2nd span::after,
 .p-mv_title-3rd span::after {
 	border: none;
-	border-bottom: solid 15px transparent;
+	border-bottom: solid 11px transparent;
 	border-left: solid 20px #959e9b;
 	content: '';
 	position: absolute;
@@ -1745,6 +1858,63 @@ summary {
 	padding: 200px 0;
 }
 
+.p-page-section__subtitle {
+	background: #20337f;
+	background: #274a75;
+	background-image: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(-45deg, #fff 10px, transparent 0), linear-gradient(135deg, #fff 10px, transparent 0), linear-gradient(-135deg, #fff 10px, transparent 0);
+	box-shadow: 0 0 5px #274a75;
+	color: #274a75;
+	color: #fee512;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 2.25rem;
+	font-weight: normal;
+	margin: 0 auto;
+	margin-bottom: 3.125rem;
+	padding-bottom: 2.5rem;
+	padding-top: 2.5rem;
+	position: relative;
+	text-align: center;
+	width: 70%;
+}
+
+.p-page-section__subtitle::before {
+	bottom: 1px;
+	box-shadow: 0 0 0 5px #fff;
+	content: "";
+	left: 1px;
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	z-index: 5;
+}
+
+.p-page-section__subtitle::after {
+	bottom: 10px;
+	box-shadow: 0 0 0 1px #fff;
+	content: "";
+	left: 10px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.p-page-section__subtitle span {
+	color: #fff;
+	font-size: 1.5rem;
+	position: relative;
+}
+
+.p-page-section__subtitle span::before,
+.p-page-section__subtitle span::after {
+	content: '';
+	position: absolute;
+}
+
+.p-page-section__subtitle span::after {
+	right: -37px;
+	transform: rotate(-60deg);
+}
+
 .l-page-class {
 	background: #e6e6e6;
 	padding-bottom: 6.25rem;
@@ -1762,7 +1932,7 @@ summary {
 .l-page-class__title {
 	background: #fff;
 	display: inline-block;
-	font-family: "Roboto Slab", serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 2.25rem;
 	margin-bottom: 50px;
 	padding: 20px 40px;
@@ -1791,6 +1961,14 @@ summary {
 	top: 10px;
 }
 
+.l-page__classes__title h1 {
+	font-weight: normal;
+}
+
+.classes__card-title {
+	font-weight: normal;
+}
+
 .l-page-class__subtitle {
 	background: #20337f;
 	background: #274a75;
@@ -1800,6 +1978,7 @@ summary {
 	color: #fee512;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 2.25rem;
+	font-weight: normal;
 	margin: 0 auto;
 	margin-bottom: 3.125rem;
 	padding-bottom: 2.5rem;
@@ -1855,6 +2034,7 @@ summary {
 }
 
 .l-page-class__figure img {
+	box-shadow: 20px 20px 0 #7C8A97;
 	position: relative;
 }
 
@@ -1865,7 +2045,7 @@ summary {
 	color: #333;
 	display: inline-block;
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: normal;
 	margin-bottom: 1.875rem;
 	margin-top: 5rem;
 	padding: 30px 50px 30px 70px;
@@ -1880,7 +2060,7 @@ summary {
 	content: 'クラシックバレエ';
 	font-size: 15px;
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: normal;
 	left: -3px;
 	padding: 0 1em;
 	position: absolute;
@@ -1888,16 +2068,29 @@ summary {
 }
 
 .l-page-class__figure:after {
-	border: 5px solid #fff;
+	border: 7px solid #fff;
 	border-image-repeat: round;
 	border-image-slice: 20;
 	content: '';
-	height: calc(100% - 20px);
+	height: calc(100% - 5px);
+	height: 100%;
 	left: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: calc(100% - 20px);
+	width: calc(100% - 5px);
+	width: 100%;
+}
+
+.l-page-class__figure:before {
+	background: url(../../assets/img/logo-gray.png) no-repeat center center/contain;
+	bottom: 0;
+	content: "";
+	height: 100px;
+	position: absolute;
+	right: 10px;
+	width: 100px;
+	z-index: 2;
 }
 
 .wp-block-image {
@@ -1907,7 +2100,7 @@ summary {
 
 .wp-block-image img {
 	max-width: 100%;
-	min-width: 600px;
+	min-width: 750px;
 	vertical-align: top;
 }
 
@@ -1936,6 +2129,7 @@ summary {
 
 .p-overview {
 	margin: 0 auto;
+	max-width: 50rem;
 	width: 80%;
 }
 
@@ -1947,6 +2141,24 @@ summary {
 	padding: 1.5rem;
 	position: relative;
 	text-align: center;
+}
+
+.p-overview__wrapper-2nd {
+	display: block;
+}
+
+.p-overview__wrapper-2nd dl {
+	background: #fff;
+	width: 100%;
+}
+
+.p-overview__wrapper-2nd dt {
+	background: #7C8A97;
+	border-bottom: 1px solid #7C8A97;
+	border-right: 1px solid #7C8A97;
+	color: #fff;
+	font-weight: bold;
+	padding: 5px;
 }
 
 .p-overview__wrapper {
@@ -2002,6 +2214,7 @@ summary {
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.5rem;
+	font-weight: normal;
 	padding: 20px 40px;
 	padding-bottom: 1.25rem;
 	position: relative;
@@ -2037,6 +2250,7 @@ summary {
 	font-size: 1.5rem;
 	margin: auto;
 	margin-bottom: 30px;
+	max-width: 50rem;
 	position: relative;
 	width: 80%;
 }
@@ -2087,6 +2301,10 @@ summary {
 	color: #ff99ab;
 	display: none;
 	font-weight: bold;
+}
+
+.l-page-class__times {
+	margin-bottom: 80px;
 }
 
 /*ContactForm7のテーブル化レスポンシブ調整*/
@@ -2151,6 +2369,7 @@ summary {
 
 .table-res-form input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
 	border: 1px #274a75 solid;
 	border-radius: 5px;
@@ -2315,6 +2534,10 @@ html {
 	width: 26.375rem;
 }
 
+.p-contact-top__button {
+	width: 50%;
+}
+
 .p-footer__inner {
 	flex-direction: column;
 	padding: 0 2rem;
@@ -2380,6 +2603,10 @@ html {
 	padding: 0 1.875rem;
 }
 
+.l-page__classes {
+	margin-top: 6.25rem;
+}
+
 .p-class__btn-2nd {
 	padding-bottom: 1.5625rem;
 }
@@ -2404,14 +2631,16 @@ html {
 .p-about__inner {
 	max-width: 37.5rem;
 	padding-bottom: 2.5rem;
-	padding-left: 0.9375rem;
-	padding-right: 0.9375rem;
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
 	padding-top: 0;
 }
 
 .p-about__text {
 	font-size: 1rem;
 	padding: 1.875rem 0.9375rem;
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
 }
 
 .p-class {
@@ -2428,6 +2657,7 @@ html {
 }
 
 .p-class__cards {
+	padding-bottom: 5rem;
 	padding-top: 1rem;
 }
 
@@ -2511,6 +2741,14 @@ html {
 	padding-right: 0.9375rem;
 }
 
+.line_narrow {
+	margin-left: 0;
+}
+
+.line_narrow-2nd {
+	margin-left: 0;
+}
+
 .card__title {
 	font-size: 1.5rem;
 }
@@ -2527,6 +2765,10 @@ html {
 	width: 100%;
 }
 
+.p-contact-top__title {
+	font-size: 1.125rem;
+}
+
 .p-contact {
 	margin-top: 6.25rem;
 }
@@ -2535,12 +2777,8 @@ html {
 	max-width: 37.5rem;
 }
 
-.p-contact__text {
-	text-align: left;
-}
-
 .passing-txt {
-	font-size: 2.25rem;
+	font-size: 1.5rem;
 }
 
 .wpcf7-spinner::before {
@@ -2553,6 +2791,10 @@ html {
 
 .submit-btn {
 	text-align: center;
+}
+
+.p-contact-top__tel {
+	font-size: 1.25rem;
 }
 
 .p-footer {
@@ -2675,6 +2917,17 @@ html {
 	display: block;
 }
 
+.p-page-section__subtitle {
+	font-size: 1.875rem;
+	margin-bottom: 5rem;
+	max-width: 37.5rem;
+	width: 100%;
+}
+
+.p-page-section__subtitle span {
+	font-size: 1.125rem;
+}
+
 .l-page-class {
 	padding-top: 6.25rem;
 }
@@ -2694,6 +2947,10 @@ html {
 	font-size: 1.125rem;
 }
 
+.l-page-class__figure img {
+	box-shadow: 10px 10px 0 #7C8A97;
+}
+
 .l-page-class__time {
 	display: block;
 	font-size: 1.125rem;
@@ -2702,13 +2959,13 @@ html {
 	padding: 1rem 1.5rem 1rem 3rem;
 }
 
-.l-page-class__figure:after {
-	display: none;
+.l-page-class__figure:before {
+	height: 60px;
+	width: 60px;
 }
 
 .wp-block-image {
 	margin-bottom: 40px;
-	max-width: 37.5rem;
 	overflow-x: auto;
 }
 
@@ -2731,6 +2988,8 @@ html {
 
 .l-page-class__text {
 	font-size: 1.125rem;
+	max-width: 37.5rem;
+	width: 100%;
 }
 
 .p-btn_wrapper {
@@ -2743,6 +3002,7 @@ html {
 
 .table-res-form input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
 	width: 100%;
 }
@@ -2803,6 +3063,10 @@ textarea {
 
 @media screen and (max-width: 375px) {
 
+.l-page-contact__inner {
+	padding: 0 15px;
+}
+
 .p-class__title:before {
 	height: 3.1875rem;
 	width: 10.1875rem;
@@ -2825,12 +3089,16 @@ textarea {
 	font-size: 3.75rem;
 }
 
+.p-contact-top__button {
+	width: 100%;
+}
+
 .p-header {
 	height: 5rem;
 }
 
 .slide-img-2 {
-	background: url(../../assets/img/mv-sp-6.jpg) no-repeat top right/cover;
+	background: url(../../assets/img/mv-sp-6.jpg) no-repeat top center/cover;
 }
 
 .is-ssp {

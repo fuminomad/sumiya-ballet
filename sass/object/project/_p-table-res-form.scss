@@ -65,7 +65,7 @@
 /*ここから入力欄のスタイル指定*/
 
 /*各入力フォームスタイリング*/
-.table-res-form input[type="text"], input[type="email"], textarea {
+.table-res-form input[type="text"], input[type="email"],input[type="tel"], textarea {
     border: 1px $base-color solid;
     padding: 0.5em;
     border-radius: 5px;

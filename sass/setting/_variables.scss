@@ -18,8 +18,10 @@ $bg-white:#f4f4f4;
 $light-gray:#e6e6e6;
 $light-blue:#ECF1F8;
 $white-alpha:rgba($color: $white, $alpha: 0.8);
+$yellow:#fee512;
 // マウスホバー
 $opacity: 0.7; // 透過度
+
 
 // フォント
 $third-font-family: 'Noto Sans JP', sans-serif;// ベースフォント
@@ -29,6 +31,7 @@ $font-family-base: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メ�
 // $second-font-family:'Montserrat', sans-serif;
 // $font-family-base:'Roboto Slab', serif;
 $second-font-family:'Roboto Slab', serif;
+$second-font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo,sans-serif;// ベースフォント
 // $second-font-family:'fertigo-pro', serif;
 // $third-font-family: futura-pt-condensed, sans-serif;
 $font-logo: 'fertigo-pro', serif;

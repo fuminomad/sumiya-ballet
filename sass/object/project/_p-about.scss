@@ -73,13 +73,13 @@ margin: 0 auto;
 @include mq(sp){
     max-width: rem(600);
     padding-top: 0 ;
-    padding-left: rem(15);
-    padding-right: rem(15);
+    padding-left: rem(10);
+    padding-right: rem(10);
     padding-bottom: rem(40);
 }
 }
 .p-about__title{
-
+font-weight: normal;
 position: relative;
 
 }
@@ -102,13 +102,15 @@ padding: rem(30) rem(50);
 @include mq(sp){
  font-size: rem(16); 
  padding: rem(30) rem(15);  
+ padding-left: rem(15);
+ padding-right: rem(15);
 }
 }
 .p-about__message{
 padding-bottom: 15px;
 }
 .p-about__name{
-font-weight: bold;    
+font-weight: normal;    
 padding-top: 15px;
 text-align: right;
 }

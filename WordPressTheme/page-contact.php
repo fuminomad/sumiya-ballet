@@ -1,29 +1,70 @@
 <?php get_header(); ?>
+<div class="l-page-contact">
+<div class="l-page-contact__inner">
+
+
+
+<section class="p-contact-top">
+<h1 class="p-page-section__subtitle">
+    <?php the_title(); ?>
+    <br><span>
+       お問い合わせ</span>
+    </h1> 
+<div class="p-contact-top__texts">
+  <h2 class="p-contact-top__title">
+  <span>カルチャーでの体験レッスンは</span><span>各カルチャーに直接</span><span>お問い合わせください</span>
+  </h2>
+  <div class="p-contact-top__buttons">
+    <div class="c-btn-contact p-contact-top__button">
+      <a href="//fuminomad.com/test-2--ballet/#minami">南林間</a>
+    </div>
+    <div class="c-btn-contact p-contact-top__button">
+      <a href="//fuminomad.com/test-2--ballet/#totsuka">戸塚</a>
+    </div>
+    <div class="c-btn-contact p-contact-top__button">
+      <a href="//fuminomad.com/test-2--ballet/#honatsugi">本厚木</a>
+    </div>
+    <div class="c-btn-contact p-contact-top__button">
+      <a href="//fuminomad.com/test-2--ballet/#ebina">海老名</a>
+    </div>
+  </div>
+  <h2 class="p-contact-top__title">
+  <span>スタジオ(相模大野、鶴間、西三田、綾瀬)の</span><span>体験レッスン、お問い合わせは</span><span>メールまたはお電話で</span><span>受け付けております</span>
+  </h2>
+</div>
+  <div class="p-contact-top__tel-box">
+   <ul class="p-contact-top__tels">
+     <li class="p-contact-top__tel">tel:</li>
+     <li class="p-contact-top__tel">
+       <a href="tel:042-743-7816">042-743-7816</a>
+     </li>
+   </ul>
+  </div>
+</section>
+
 <section class="p-contact l-contact" id="contact">
   <div class="p-contact__inner">
     <div class="p-contact__forms">
   <div class="passing">
     <div class="passing-box">
       <div class="passing-bar">
-        <h2 class="passing-txt">Contact</h2>
+        <h2 class="passing-txt">角屋満李子バレエ団</h2>
       </div>
     </div>
   </div>
  
-    <!-- <div class="p-contact__texts">
-      <p class="p-contact__text">ホームページ制作のウェブルーツでは、<br class="is-pc">
-       シンプルで分かりやすいご提案を心がけております。<br class="is-pc">
-        オンラインでのお打ち合わせを基本としておりますので、<br class="is-pc">
-        全国からご注文いただいただく事が可能です。</p>
+    <div class="p-contact__texts">
+      <p class="p-contact__text">
+      <span>当バレエ団からのメールが迷惑メールフォルダに</span><span>振り分けられる可能性もございますので</span><span>ご確認頂けると幸いでございます。</span><br><span>また、迅速な対応を心がけておりますが、</span><span>休業日その他の関係でお返事に</span><span>数日かかる場合がございます。</span><br><span>お問い合わせをいただきましてから</span><span>5日以上当バレエ団より連絡がない場合は、</span><span>メール送信のトラブルも考えられますので、</span><span>電話でご確認いただければ幸いでございます。</span></p>
 
 
 
-    </div> -->
+    </div>
 
   <?php echo do_shortcode('[contact-form-7 id="27" title="お問い合わせフォーム"]'); ?>
   </div>
 </div>
 </section>
-
-
+</div>
+</div>
 <?php get_footer(); ?>

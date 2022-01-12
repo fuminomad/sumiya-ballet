@@ -97,7 +97,7 @@ padding-top: 56.25% ;
     background: url(../../assets/img/mv-sp-6.jpg)no-repeat top center / cover;
   }
    @include mq(ssp){
-    background: url(../../assets/img/mv-sp-6.jpg)no-repeat  top right / cover;
+    background: url(../../assets/img/mv-sp-6.jpg)no-repeat  top center / cover;
   }
   }
 .slide-img-3{
@@ -132,7 +132,7 @@ padding-right: 15px;
 line-height: 1.25;
 font-family: $font-family-base;
 font-weight: 900;
-// font-weight: normal;
+font-weight: normal;
 @include mq(tab){
   font-size: 35px;
   padding-top: 15px;
@@ -214,6 +214,9 @@ font-weight: 900;
 }
 .p-mv_title-2nd span{
   background: #F4BE7F;/*背景色*/
+  background: #F4D292;/*背景色*/
+  color: $black;
+  
 }
 .p-mv_title-3rd span{
   background: #6E322D;/*背景色*/
@@ -224,7 +227,7 @@ font-weight: 900;
   top: 100%;
   left: 0;
   border: none;
-  border-bottom: solid 15px transparent;
+  border-bottom: solid 11px transparent;
   border-right: solid 20px rgb(149, 158, 155);/*折り返し部分*/
 
   }
@@ -234,7 +237,7 @@ font-weight: 900;
   top: 100%;
   right: 0;
   border: none;
-  border-bottom: solid 15px transparent;
+  border-bottom: solid 11px transparent;
   border-left: solid 20px rgb(149, 158, 155);/*折り返し部分*/
 }
 
@@ -341,3 +344,5 @@ width: 100%;
       display: block;
     }
   }
+
+ 

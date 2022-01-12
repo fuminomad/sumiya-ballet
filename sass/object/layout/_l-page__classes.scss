@@ -1,6 +1,9 @@
 .l-page__classes{
     margin-top: 200px;
     margin-bottom: rem(100);
+@include mq(sp){
+    margin-top:rem(100);
+}
 }
 
 .l-page__classes__inner{

@@ -41,6 +41,7 @@ color: $black;
     }
 .p-section__sub-title{
 text-align: center;
+font-weight: normal;
 }
 .p-class__cards{
     display: flex;
@@ -48,6 +49,7 @@ text-align: center;
     padding-top: rem(240);
     @include mq(sp){
     padding-top: rem(16);
+    padding-bottom: rem(80);
     }
 }
 .p-class__card{
@@ -86,15 +88,15 @@ width: calc(33.3% - 40px * 2 / 3);
 padding-bottom: rem(30);
 color: $black;
 font-size: rem(18);
-font-weight: bold;
+font-weight: normal;
 @include mq(sp){
  font-size: rem(24);   
 }
 }
 .p-class__text{
 color:$black;
-color: $base-color;
-font-weight: bold;
+color: $black;
+font-weight: normal;
 font-size: rem(18);
 }
 // .p-class__card:nth-child(3n) .p-class__text{

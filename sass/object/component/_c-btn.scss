@@ -8,16 +8,17 @@
     align-items: center;
     margin: 0 auto;
     padding: 10px;
-    width: 180px;
+    width: 150px;
     color: $white;
    display: inline-block;
     font-size: 18px;
-    font-weight: 700;
+    // font-weight: 700;
     background-color: $base-color;
     box-shadow: 5px 5px 0 $blue;
     transition: 0.3s;
     border-radius: 5px;
     font-family: $second-font-family;
+    max-width: 180px;
   }
   
   .c-btn a:hover {
@@ -43,7 +44,7 @@
     color: $white;
    display: inline-block;
     font-size: 16px;
-    font-weight: 700;
+    // font-weight: 700;
     border-radius: 5px;
     background-color: $orange;
     box-shadow: 5px 5px 0 $blue;
@@ -67,7 +68,7 @@
     color: $white;
    display: inline-block;
     font-size: 16px;
-    font-weight: 700;
+    // font-weight: 700;
     border-radius: 5px;
     background-color: $orange;
     box-shadow: 5px 5px 0 $white;
@@ -101,7 +102,7 @@
     color: $white;
    display: inline-block;
     font-size: 16px;
-    font-weight: 700;
+    // font-weight: 700;
     border-radius: 5px;
     background-color: $orange;
     box-shadow: 5px 5px 0 $blue;
@@ -141,4 +142,32 @@
     color: $orange;
   }
 
- 
+  .c-btn-contact{
+    text-align: center;
+}
+
+.c-btn-contact a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: 150px;
+    color: $white;
+   display: inline-block;
+    font-size: 18px;
+    // font-weight: 700;
+    background-color: $base-color;
+    box-shadow: 5px 5px 0 $blue;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: $second-font-family;
+    max-width: 180px;
+  }
+  
+  .c-btn-contact a:hover {
+    text-decoration: none;
+    background-color: $blue;
+    box-shadow: 0 0 0;
+    color: $base-color;
+  }

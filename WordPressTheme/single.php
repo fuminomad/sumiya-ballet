@@ -26,16 +26,36 @@
    
     <div class="l-page__wrapper">
 
-   
-   <div class="l-page-class__image">
-     <figure class="l-page-class__figure">
+        <div class="l-page-class__image">
+            <figure class="l-page-class__figure">
+         <?php if(get_post_meta($post->ID, 'class_image', true)): ?>
      <?php 
 	$class_image = scf::get('class_image'); 
 	echo wp_get_attachment_image( $class_image, 'large' ); 
             ?>
+<?php endif; ?>
 </figure>
    </div>
-<div class="l-page-class__overview p-overview">
+   
+   <?php if ( has_tag('ayase') ): ?>
+	<div class="l-page-class__overview p-overview">
+   <h2 class="p-overview__title"><?php the_title(); ?></h2>
+    <div class="p-overview__wrapper-2nd">
+
+        <dl>
+            <dt>住所</dt><dd><?php $address = scf::get('address'); echo nl2br( $address ); ?></dd>
+           
+            
+           
+            
+        </dl>
+       
+     </div>
+ </div>
+
+</div>
+<?php else: ?>
+    <div class="l-page-class__overview p-overview">
    <h2 class="p-overview__title"><?php the_title(); ?></h2>
     <div class="p-overview__wrapper">
 
@@ -49,10 +69,13 @@
         <div class="p-overview__maps">
         <iframe src="<?php $google_maps = scf::get('google_maps'); echo sanitize_text_field( $google_maps ); ?>" width="400" height="750" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-    </div>
-</div>
+     </div>
+ </div>
 
 </div>
+	<?php endif; ?>  
+   
+
 <?php if ( has_tag('studio') ): ?>
    
 
@@ -63,14 +86,14 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="/contact/">お問い合わせ</a>
+        <a href="//fuminomad.com/test-2--ballet/contact/">お問い合わせ</a>
          </div>
     </div>
    <?php else: ?>
 	<?php endif; ?>
 
 <?php if ( has_tag('minami') ): ?>
-    <div class="l-page-class__contacts">
+    <div class="l-page-class__contacts" id="minami">
 	<div class="l-page-class__contact">
      <div class="l-page-class__text">
         <p>体験レッスンお申し込み</p>
@@ -92,7 +115,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="/contact/">角屋満李子バレエ団</a>
+        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
          </div>
     </div>
     </div>
@@ -101,7 +124,7 @@
    <?php else: ?>
 	<?php endif; ?>
 <?php if ( has_tag('honatsugi') ): ?>
-    <div class="l-page-class__contacts">
+    <div class="l-page-class__contacts" id="honatsugi">
 	<div class="l-page-class__contact">
      <div class="l-page-class__text">
         <p>体験レッスンお申し込み</p>
@@ -123,7 +146,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="/contact/">角屋満李子バレエ団</a>
+        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
          </div>
     </div>
     </div>
@@ -133,7 +156,7 @@
 	<?php endif; ?>
 
 <?php if ( has_tag('totsuka') ): ?>
-    <div class="l-page-class__contacts">
+    <div class="l-page-class__contacts" id="totsuka">
 	<div class="l-page-class__contact">
     <div class="l-page-class__text">
         <p>体験レッスンお申し込み
@@ -158,7 +181,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="/contact/">角屋満李子バレエ団</a>
+        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
          </div>
     </div>
 	
@@ -166,7 +189,7 @@
    <?php else: ?>
 	<?php endif; ?>
 <?php if ( has_tag('ebina') ): ?>
-    <div class="l-page-class__contacts">
+    <div class="l-page-class__contacts" id="ebina">
 	<div class="l-page-class__contact">
     <div class="l-page-class__text">
         <p>体験レッスンお申し込み
@@ -194,7 +217,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="/contact/">角屋満李子バレエ団</a>
+        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
          </div>
     </div>
 	

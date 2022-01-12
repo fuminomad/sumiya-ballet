@@ -241,6 +241,7 @@
     transform: skewX(-150deg);
     display: block;
     font-family: $second-font-family;
+    
   }
   .p-header-nav__items ul li:last-child{
       border-right: 2px solid $base-background;
@@ -262,7 +263,7 @@ opacity: .7;
 opacity: .7;
   }
   #menu-item-23 a:after {
-    content: '講師';
+    content: '教師一覧';
     display: block;
     font-size: rem(16);
     font-family: $font-family-base;

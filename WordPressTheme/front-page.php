@@ -11,14 +11,14 @@
       </div>
     </div>
     <div class="swiper-slide">
-    <h2 class="p-mv_title-2nd">角屋満李子バレエ団<br> <span>バレエを通して美しい心と<br class="is-sp">姿勢を育みます</span>
+    <h2 class="p-mv_title-2nd">角屋満李子バレエ団<br> <span>バレエを通して美しい心と<br class="is-sp">身体を育みます</span>
 </h2>
       <div class="slide-img slide-img-2">
       
       </div>
     </div>
     <div class="swiper-slide">
-    <h2 class="p-mv_title-3rd">角屋満李子バレエ団<br> <span>1966年創業、おかげさまで<br class="is-sp">55周年</span>
+    <h2 class="p-mv_title-3rd">角屋満李子バレエ団<br> <span>1966年創設 <br class="is-sp">55年の歴史あるスタジオ</span>
 </h2>
       <div class="slide-img slide-img-3">
      
@@ -30,7 +30,7 @@
 
 <div class="p-mv__wrapper">
   <div class="p-mv__texts">
-    <div class="p-mv__news">22年９月 55周年公演開催決定</div>
+    <div class="p-mv__news">2022年9月3(土) 公演開催予定</div>
   </div>
 </div>
   </div>
@@ -44,10 +44,11 @@
     </h2>
     <div class="p-about__text">
    <p class="p-about__message">
-     1966年創業、設立者である角屋満李子から引き継ぎ、生徒一人一人がしっかりとした基礎を身に付けられるように心がけた細やかなレッスンを行っています。
+   1966年 相模大野の地に角屋満李子先生がお教室を開き、クラシックバレエの基礎、踊る楽しさを大切に健やかな人間性を築き、心身ともに成長できるように指導してまいりました。
+
     </p>
    <p class="p-about__message">
-     また、バレエを通して健やかな心と身体に育っていって欲しいという想いがあります。    </p>
+   2007年より教室を引継ぎ、より一層細やかな指導とともに、ひとりひとりの個性を活かしバレエを通して豊かな芸術性を育むよう教師一同心がけております。 </p>
   <p class="p-about__name">主宰 吉田千文</p>
     </div>
 </div>
@@ -61,12 +62,12 @@
 
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title">年に一度、<br class="is-sp">大規模な発表会</div>
+        <div class="card__title line_narrow">年に一度、<br class="is-sp">大規模な発表会</div>
         <p class="card__text">
          毎年、相模大野グリーンホールにて3歳からのプチバレリーナ、本格的なクラシックバレエ、コンテンポラリーダンスなどの多彩な演目による公演を行っております。
        </p>
        <div class="c-btn">
-         <a href="">more</a>
+         <a href="//fuminomad.com/test-2--ballet/gallery/">gallery</a>
        </div>
 
       </div>
@@ -78,12 +79,12 @@
     </div>
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title">相模大野を拠点に<br class="is-sp"><span>８</span>教室</div>
+        <div class="card__title line_narrow">相模大野を拠点に<br class="is-sp"><span>８</span>教室</div>
         <p class="card__text">
           本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室あり約120名の生徒が在籍しております。
         </p>
         <div class="c-btn">
-         <a href="">more</a>
+         <a href="//fuminomad.com/test-2--ballet/category/archive/">教室一覧</a>
        </div>
       </div>
       <div class="card__images">
@@ -94,13 +95,13 @@
     </div>
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title--3rd">趣味のお稽古から<br class="is-sp">プロバレエダンサーまで</div>
+        <div class="card__title--3rd line_narrow">趣味のお稽古から<br class="is-sp">プロバレエダンサーまで</div>
         <p class="card__text">
         趣味でお稽古をする生徒からイギリスのランベールスクールなどの海外留学,
         そしてプロバレエダンサーとして活躍している人材を輩出しています。
       </p>
       <div class="c-btn">
-         <a href="">more</a>
+         <a href="//fuminomad.com/test-2--ballet/competitions/">competitions</a>
        </div>
       </div>
       <div class="card__images">
@@ -129,7 +130,7 @@
 <div class="p-class__header">
   クラシックバレエ
   </div>
-<p class="p-class__text">
+<p class="p-class__text  line_narro line_narrow-2nd">
 ３歳から高校生までの<br>クラスがあります
 </p>
 </div>
@@ -139,7 +140,7 @@
   クラシックバレエ<br>
   成人初心者〜経験者
   </div>
-<p class="p-class__text">
+<p class="p-class__text  line_narrow-2nd">
 相模大野、綾瀬、戸塚のみ
 </p>
 </div>
@@ -149,7 +150,7 @@
   コンクールクラス<br>
  コンテンポラリーダンス
   </div>
-<p class="p-class__text">
+<p class="p-class__text  line_narrow-2nd">
 相模大野スタジオのみ
 </p>
 </div>
@@ -158,7 +159,7 @@
 
 </div>
 <div class="c-btn">
-         <a href="">more</a>
+         <a href="//fuminomad.com/test-2--ballet/category/archive/">教室一覧</a>
        </div>
 </div>
 </section>

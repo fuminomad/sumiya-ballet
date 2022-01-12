@@ -61,15 +61,6 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 	}
 });
 
-// 100pxスクロールしたら半透明にする
-
-jQuery( window ).on( 'scroll', function() {
-	if ( 100 < jQuery( this ).scrollTop() ) { 
-	  jQuery( '.j-header' ).addClass( 'change-color' );
-	} else {
-	  jQuery( '.j-header' ).removeClass( 'change-color' );
-	}
-  });
 
 // topに戻るボタン
 

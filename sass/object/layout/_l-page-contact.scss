@@ -1,0 +1,14 @@
+.l-page-contact{
+background: $bg-white;
+padding-top: rem(160);
+}
+
+.l-page-contact__inner{
+    width: 100%;
+    max-width: rem(1200);
+    margin: auto;
+    padding: 0 40px;
+    @include mq(ssp){
+        padding: 0 15px;
+    }
+}
