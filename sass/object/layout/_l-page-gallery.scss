@@ -1,0 +1,144 @@
+.l-page-gallery{
+    padding-top: rem(200);
+    background: $bg-white;
+    padding-bottom: rem(200);
+}
+.l-page-gallery__inner{
+max-width: rem(799);
+width: 100%;
+padding: 0 40px;
+margin: auto;
+@include mq(sp){
+padding: 0 15px;    
+}
+
+}
+
+.l-page-gallery_slider{
+
+}
+
+// .swiper-wrapper{
+
+// }
+// .swiper-slide{
+//     width: 25%;
+//     height: 100%;
+//     opacity: .5;
+//     overflow: hidden;  
+// }
+// .swiper-button-next{
+
+// }
+// .swiper-button-prev{
+
+// }
+
+
+// .gallery-slider .swiper-wrapper .swiper-slide{
+// position: relative;
+// padding-top: 53.4%;
+// }
+// .gallery-slider .swiper-wrapper .swiper-slide img{
+//    width: 100%;
+//    height: 100%;
+//    top: 0;
+//    left: 0;
+//    position: absolute; 
+// }
+// .slider-thumbnail .swiper-wrapper .swiper-slide{
+//     position: relative;
+//     padding-top: 100%;
+//     }
+//     .slider-thumbnail .swiper-wrapper .swiper-slide img{
+//        width: 100%;
+//        height: 100%;
+//        top: 0;
+//        left: 0;
+//        position: absolute; 
+//     }
+    
+
+
+// .swiper-container {
+//     width: 100%;
+    
+//     //スライダー
+//     &.slider {
+//         height: 80vh;
+//     }
+    
+//     //サムネイル
+//     &.slider-thumbnail {
+//         height: 20vh;
+        
+//         .swiper-wrapper {
+            
+//             .swiper-slide {
+//                 width: 25%;
+//                 height: 100%;
+//                 opacity: .5;
+//                 overflow: hidden;
+
+//                 &.swiper-slide-thumb-active {
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+// }
+// .swiper {
+//     width: 100%;
+    
+//     //スライダー
+//     &.gallery-slider {
+//         height: 80vh;
+//     }
+    
+//     //サムネイル
+//     &.slider-thumbnail {
+//         height: 20vh;
+        
+//         .swiper-wrapper {
+            
+//             .swiper-slide {
+//                 width: 25%;
+//                 height: 100%;
+//                 opacity: .5;
+//                 overflow: hidden;
+
+//                 &.swiper-slide-thumb-active {
+//                     opacity: 1;
+//                 }
+//             }
+//         }
+//     }
+// }
+// // .slider-thumbnail .swiper-wrapper .swiper-slide{
+// //     position: relative;
+// //     padding-top: 100%;
+// //     }
+// //     .slider-thumbnail .swiper-wrapper .swiper-slide img{
+// //        width: 100%;
+// //        height: 100%;
+// //        top: 0;
+// //        left: 0;
+// //        position: absolute; 
+// //     }
+
+// .swiper2 {
+// 	height: 80px;
+// 	margin-top: 10px;
+// }
+// /* 2個目のSwiperのスライドのスタイル */
+// .swiper2 .swiper-slide {
+// 	height: 80px;
+// 	line-height: 80px;
+// 	-webkit-filter: brightness(0.5);
+// 	filter: brightness(0.5);
+// }
+// /* 2個目のSwiperの現在のスライドのスタイル */
+// .swiper2 .swiper-slide-active {
+// 	-webkit-filter: brightness(1);
+// 	filter: brightness(1);
+// }

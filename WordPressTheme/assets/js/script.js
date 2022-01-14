@@ -102,3 +102,22 @@ function setHeight() {
   
   // 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
 //   window.addEventListener('resize', setHeight);
+
+// //サムネイル
+// var sliderThumbnail = new Swiper('.slider-thumbnail', {
+//   slidesPerView: 6,
+//   freeMode: true,
+//   watchSlidesVisibility: true,
+//   watchSlidesProgress: true,
+// });
+
+// //スライダー
+// var slider = new Swiper('.gallery-slider', {
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   thumbs: {
+//     swiper: sliderThumbnail
+//   }
+// });

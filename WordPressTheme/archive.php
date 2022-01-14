@@ -2,9 +2,18 @@
 <section class="l-page__classes">
     <div class="l-page__classes__inner">
       <div class="l-page__classes__wrapper">
-          <div class="l-page__classes__title">
-           <h1>教室一覧</h1>
-          </div>
+          <h1 class="p-page-section__subtitle">
+          Classes
+    <br><span>
+       教室一覧</span>
+          </h1>
+   <div class="p-page__breadcrumb">
+         <?php
+      if ( function_exists( 'bcn_display' ) ) {
+           bcn_display();
+                      }
+                      ?>
+  </div>
           <div class="l-page__classes__cards">
               <?php if(have_posts()): ?>
                <?php while(have_posts()):the_post(); ?>

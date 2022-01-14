@@ -61,7 +61,7 @@
 
         <dl>
             <dt>住所</dt><dd><?php $address = scf::get('address'); echo nl2br( $address ); ?></dd>
-            <dt>TEL</dt><dd><?php $tel = scf::get('tel'); echo sanitize_text_field( $tel ); ?></dd>
+            <dt>TEL</dt><dd><?php $tel2nd = scf::get('tel-2nd'); echo sanitize_text_field( $tel2nd ); ?></dd>
             <dt>アクセス</dt><dd><?php $access = scf::get('access'); echo nl2br( $access ); ?></dd>
            
             
@@ -86,7 +86,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="//fuminomad.com/test-2--ballet/contact/">お問い合わせ</a>
+        <a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
          </div>
     </div>
    <?php else: ?>
@@ -115,7 +115,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
+        <a href="<?php echo home_url('/contact/'); ?>">角屋満李子バレエ団</a>
          </div>
     </div>
     </div>
@@ -146,7 +146,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
+        <a href="<?php echo home_url('/contact/'); ?>">角屋満李子バレエ団</a>
          </div>
     </div>
     </div>
@@ -181,7 +181,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
+        <a href="<?php echo home_url('/contact/'); ?>">角屋満李子バレエ団</a>
          </div>
     </div>
 	
@@ -217,7 +217,7 @@
 
         </div>
       <div class="l-page-class__btns p-class__btn">
-        <a href="//fuminomad.com/test-2--ballet/contact/">角屋満李子バレエ団</a>
+        <a href="<?php echo home_url('/contact/'); ?>">角屋満李子バレエ団</a>
          </div>
     </div>
 	

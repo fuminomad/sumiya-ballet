@@ -187,10 +187,10 @@ padding-right: rem(50);
 display: inline-block;
 padding-top: rem(35);
 background: $white;
+text-align: center; 
 @include mq(sp){
     padding-top: rem(50);
     width: 100%; 
-    text-align: center; 
     padding-left: rem(15); 
     padding-right: rem(15);
     padding-bottom: 35px;
@@ -266,6 +266,7 @@ margin-left: 0;
 color: $black;
 padding-top: rem(30);
 padding-bottom: rem(20);
+text-align: left;
 @include mq(sp){
     text-align: left;
     // padding-bottom: rem(50);

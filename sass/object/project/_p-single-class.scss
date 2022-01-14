@@ -66,6 +66,14 @@
 }
 .classes__card-title{
   font-weight: normal;  
+  display: inline-block;
+  background: $base-color;
+  color: $white;
+  padding: 20px 40px;
+  min-width: 300px;
+  border-radius: 10px;
+  font-weight: bold;
+
 }
 .l-page-class__subtitle{
     width: 70%;
@@ -148,10 +156,10 @@ position: absolute;
 .l-page-class__figure{
     text-align: center;
     position: relative;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
    
-    @include mq(ssp){
+    @include mq(sp){
         width: 100%;
     }
 }
@@ -204,6 +212,7 @@ position: absolute;
    
   }
 .l-page-class__figure:after{
+    display: none;
     content: '';
 	position: absolute;
 	top: 50%;
@@ -218,13 +227,14 @@ position: absolute;
 	border-image-repeat: round;
 	border: 7px solid $white;
     @include mq(sp){
-        // display: none;
+        display: block;
     }
 }
 .l-page-class__figure:before{
+    display: none;
     content: "";
     z-index: 2;
-    background: url(../../assets/img/logo-gray.png) no-repeat center center /contain;
+    background: url(../img/logo-gray.png) no-repeat center center /contain;
     right: 10px;
     bottom: 0;
     position: absolute;
@@ -233,6 +243,7 @@ position: absolute;
     @include mq(sp){
      width: 60px;
      height: 60px;
+     display: block;
     }
 }
 
@@ -486,4 +497,7 @@ display: block;
 }
 .l-page-class__times{
     margin-bottom: 80px;
+    @include mq(sp){
+    margin-bottom: rem(40);
+    }
 }

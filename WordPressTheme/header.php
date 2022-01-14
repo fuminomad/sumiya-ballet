@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <!-- サイト公開時消去 -->
- <meta name="robots" content="noindex" />
+ 
   <!-- adobe fonts -->
   <link rel="stylesheet" href="https://use.typekit.net/dbx2bft.css">
  <!-- google font -->

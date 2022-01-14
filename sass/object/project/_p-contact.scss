@@ -1,7 +1,9 @@
 .p-contact-top{
 padding-top: rem(60);
   background: $bg-white;
-
+@include mq(sp){
+  padding-top: 0;
+}
 }
 .p-contact-top__texts{
 text-align: center;
@@ -155,4 +157,8 @@ padding-bottom: rem(80);
       @include mq(sp){
         font-size: rem(20);
       }
+    }
+    .p-contact-top__tel a{
+     text-decoration: underline;
+     color: $base-color;
     }

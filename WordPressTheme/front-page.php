@@ -34,11 +34,12 @@
   </div>
 </div>
   </div>
-
+  
 
 </section>
 <section class="l-about p-about">
 <div class="p-about__inner">
+
   <h2 class="p-about__title c-section__title">
   角屋満李子バレエ団
     </h2>
@@ -62,12 +63,12 @@
 
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title line_narrow">年に一度、<br class="is-sp">大規模な発表会</div>
+        <div class="card__title line_narrow">年に一度の<br class="is-sp">大きな公演・発表会</div>
         <p class="card__text">
          毎年、相模大野グリーンホールにて3歳からのプチバレリーナ、本格的なクラシックバレエ、コンテンポラリーダンスなどの多彩な演目による公演を行っております。
        </p>
        <div class="c-btn">
-         <a href="//fuminomad.com/test-2--ballet/gallery/">gallery</a>
+         <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
        </div>
 
       </div>
@@ -81,10 +82,10 @@
       <div class="card__texts">
         <div class="card__title line_narrow">相模大野を拠点に<br class="is-sp"><span>８</span>教室</div>
         <p class="card__text">
-          本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室あり約120名の生徒が在籍しております。
+        本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室  約150名の生徒が在籍しております。
         </p>
         <div class="c-btn">
-         <a href="//fuminomad.com/test-2--ballet/category/archive/">教室一覧</a>
+         <a href="<?php echo home_url('/category/archive/'); ?>">教室一覧</a>
        </div>
       </div>
       <div class="card__images">
@@ -95,13 +96,12 @@
     </div>
     <div class="p-company__card card">
       <div class="card__texts">
-        <div class="card__title--3rd line_narrow">趣味のお稽古から<br class="is-sp">プロバレエダンサーまで</div>
+        <div class="card__title--3rd line_narrow">習い事としてのお稽古から<br>プロダンサーまで</div>
         <p class="card__text">
-        趣味でお稽古をする生徒からイギリスのランベールスクールなどの海外留学,
-        そしてプロバレエダンサーとして活躍している人材を輩出しています。
+        習い事の一環としてお稽古する生徒から、ボリショイバレエ学校、ミラノスカラ座バレエ学校、イギリスランベールスクールなど海外留学、そしてプロバレエダンサーとして活躍している人材を輩出しています。
       </p>
       <div class="c-btn">
-         <a href="//fuminomad.com/test-2--ballet/competitions/">competitions</a>
+         <a href="<?php echo home_url('/information/'); ?>">more</a>
        </div>
       </div>
       <div class="card__images">
@@ -159,7 +159,7 @@
 
 </div>
 <div class="c-btn">
-         <a href="//fuminomad.com/test-2--ballet/category/archive/">教室一覧</a>
+         <a href="<?php echo home_url('/category/archive/'); ?>">教室一覧</a>
        </div>
 </div>
 </section>

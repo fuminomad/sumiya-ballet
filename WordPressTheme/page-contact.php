@@ -10,26 +10,33 @@
     <br><span>
        お問い合わせ</span>
     </h1> 
+    <div class="p-page__breadcrumb">
+         <?php
+      if ( function_exists( 'bcn_display' ) ) {
+           bcn_display();
+                      }
+                      ?>
+  </div>
 <div class="p-contact-top__texts">
   <h2 class="p-contact-top__title">
   <span>カルチャーでの体験レッスンは</span><span>各カルチャーに直接</span><span>お問い合わせください</span>
   </h2>
   <div class="p-contact-top__buttons">
     <div class="c-btn-contact p-contact-top__button">
-      <a href="//fuminomad.com/test-2--ballet/#minami">南林間</a>
+      <a href="<?php echo home_url('/minamirinkan/#minami/'); ?>">南林間</a>
     </div>
     <div class="c-btn-contact p-contact-top__button">
-      <a href="//fuminomad.com/test-2--ballet/#totsuka">戸塚</a>
+      <a href="<?php echo home_url('/totuka/#totsuka/'); ?>">戸塚</a>
     </div>
     <div class="c-btn-contact p-contact-top__button">
-      <a href="//fuminomad.com/test-2--ballet/#honatsugi">本厚木</a>
+      <a href="<?php echo home_url('/honatsugi/#honatsugi/'); ?>">本厚木</a>
     </div>
     <div class="c-btn-contact p-contact-top__button">
-      <a href="//fuminomad.com/test-2--ballet/#ebina">海老名</a>
+      <a href="<?php echo home_url('/ebina/#ebina/'); ?>">海老名</a>
     </div>
   </div>
   <h2 class="p-contact-top__title">
-  <span>スタジオ(相模大野、鶴間、西三田、綾瀬)の</span><span>体験レッスン、お問い合わせは</span><span>メールまたはお電話で</span><span>受け付けております</span>
+  <span>スタジオ(相模大野、鶴間、西三田、綾瀬)</span><span>の体験レッスン、お問い合わせは</span><span>メールまたはお電話で</span><span>受け付けております</span>
   </h2>
 </div>
   <div class="p-contact-top__tel-box">

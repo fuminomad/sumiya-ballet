@@ -5,7 +5,7 @@
 .p-page-section__subtitle{
     width: 70%;
     margin: 0 auto;
-    margin-bottom: rem(50);
+    margin-bottom: rem(40);
     position: relative;
     text-align: center;
     font-family: $font-family-base;
@@ -13,6 +13,7 @@
     padding-bottom: rem(40);
     padding-top: rem(40);
     color: $base-color;
+    color: $white;
     // border:5px solid $white;
     font-weight: normal;
     background: #20337f;
