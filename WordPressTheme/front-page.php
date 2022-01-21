@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="p-mv l-mv">
   <div class="p-mv-container mv-container">
-  <div class="swiper mv__wrapper">
+  <div class="swiper mv__wrapper" id="swiper0">
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <h2 class="p-mv_title-1st">角屋満李子バレエ団<br> <span>基礎がしっかり身に付く<br class="is-sp">細やかなレッスン</span>
@@ -30,7 +30,8 @@
 
 <div class="p-mv__wrapper">
   <div class="p-mv__texts">
-    <div class="p-mv__news">2022年9月3(土) 公演開催予定</div>
+    <div class="p-mv__news">22年9月3(土) 公演開催予定</div>
+    <a class="p-mv__icon" href="https://instagram.com/sumiya_ballet?utm_medium=copy_link"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-instagam.png" loading="lazy" width="40" height="40" alt="インスタグラムアイコン"></a>
   </div>
 </div>
   </div>
@@ -67,9 +68,14 @@
         <p class="card__text">
          毎年、相模大野グリーンホールにて3歳からのプチバレリーナ、本格的なクラシックバレエ、コンテンポラリーダンスなどの多彩な演目による公演を行っております。
        </p>
-       <div class="c-btn">
-         <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
-       </div>
+       <div class="card-btns">
+          <div class="c-btn">
+           <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
+          </div>
+          <div class="c-btn">
+            <a href="<?php echo home_url('/performance/'); ?>">公演一覧</a>
+          </div>
+        </div>
 
       </div>
       <div class="card__images">
@@ -82,7 +88,7 @@
       <div class="card__texts">
         <div class="card__title line_narrow">相模大野を拠点に<br class="is-sp"><span>８</span>教室</div>
         <p class="card__text">
-        本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室  約150名の生徒が在籍しております。
+        本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室(鶴間・西三田・綾瀬・南林間・戸塚・本厚木・海老名) 約150名の生徒が在籍しております。
         </p>
         <div class="c-btn">
          <a href="<?php echo home_url('/category/archive/'); ?>">教室一覧</a>
@@ -97,7 +103,7 @@
     <div class="p-company__card card">
       <div class="card__texts">
         <div class="card__title--3rd line_narrow">習い事としてのお稽古から<br>プロダンサーまで</div>
-        <p class="card__text">
+        <p class="card__text-3rd">
         習い事の一環としてお稽古する生徒から、ボリショイバレエ学校、ミラノスカラ座バレエ学校、イギリスランベールスクールなど海外留学、そしてプロバレエダンサーとして活躍している人材を輩出しています。
       </p>
       <div class="c-btn">

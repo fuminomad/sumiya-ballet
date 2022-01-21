@@ -9,7 +9,13 @@
        教師紹介</span>
     </h1> 
 <div class="p-page-teachers__top">
-    
+<div class="p-page__breadcrumb">
+         <?php
+      if ( function_exists( 'bcn_display' ) ) {
+           bcn_display();
+                      }
+                      ?>
+  </div>
 <div class="p-page-teachers__wrapper">
     <div class="p-page-teachers__cards teachers__cards">
        

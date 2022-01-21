@@ -144,13 +144,13 @@ font-size: rem(18);
 }
 
 .p-class__card:nth-of-type(2)::after{
-    content: "adult";
+    content: "senior";
     background: $white;
     color: $base-color;
     border:5px solid $base-color;
     font-family: $second-font-family;
-    padding: 59px 44px 62px 37px;
-    top: -124px
+    padding: 60px 33px 62px 30px;
+    top: -122px
 
 ;
 }

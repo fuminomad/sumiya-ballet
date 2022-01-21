@@ -602,12 +602,13 @@ summary {
 	width: 100%;
 }
 
-.l-page__classes {
-	margin-bottom: 6.25rem;
-	margin-top: 200px;
+.l-page-classes {
+	background: #f4f4f4;
+	padding-bottom: 6.25rem;
+	padding-top: 200px;
 }
 
-.l-page__classes__inner {
+.l-page-classes__inner {
 	margin: 0 auto;
 	max-width: 75rem;
 	padding: 0 40px;
@@ -615,12 +616,14 @@ summary {
 	width: 100%;
 }
 
-.l-page__classes__title {
+.l-page-classes__title {
 	font-size: 1.5rem;
 	padding-bottom: 5rem;
 }
 
 .classes__cards {
+	display: inline-block;
+	margin: 10px 15px 0;
 	padding-bottom: 0.625rem;
 }
 
@@ -644,7 +647,7 @@ summary {
 
 .l-page-gallery__inner {
 	margin: auto;
-	max-width: 49.9375rem;
+	max-width: 62.5rem;
 	padding: 0 40px;
 	width: 100%;
 }
@@ -667,7 +670,7 @@ summary {
 	margin: 0 auto;
 	max-width: 180px;
 	padding: 10px;
-	transition: 0.3s;
+	transition: 0.5s;
 	width: 150px;
 }
 
@@ -676,6 +679,7 @@ summary {
 	box-shadow: 0 0 0;
 	color: #274a75;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .p-class__btn {
@@ -698,7 +702,7 @@ summary {
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 10px;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 .p-class__btn a:hover {
@@ -706,6 +710,7 @@ summary {
 	box-shadow: 0 0 0;
 	color: #274a75;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .p-class__btn a {
@@ -731,6 +736,7 @@ summary {
 	box-shadow: 0 0 0;
 	color: #FF9900;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .p-class__btn-2nd {
@@ -738,29 +744,7 @@ summary {
 	margin-right: 20px;
 	padding-top: 0.625rem;
 	text-align: center;
-}
-
-.p-class__btn-2nd a {
-	align-items: center;
-	background-color: #FF9900;
-	border-radius: 5px;
-	box-shadow: 5px 5px 0 #C6D6EB;
-	color: #fff;
-	display: flex;
-	display: inline-block;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-	font-size: 16px;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding: 10px;
-	transition: 0.3s;
-}
-
-.p-class__btn-2nd a:hover {
-	background-color: #C6D6EB;
-	box-shadow: 0 0 0;
-	color: #274a75;
-	text-decoration: none;
+	transition: 0.5s;
 }
 
 .p-class__btn-2nd a {
@@ -777,16 +761,52 @@ summary {
 	font-weight: 700;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding: 15px 40px;
-	transition: 0.3s;
+	min-width: 7.5rem;
+	padding: 10px;
+	transition: 0.5s;
 }
 
 .p-class__btn-2nd a:hover {
 	background-color: #fff;
-	border: 1px solid #FF9900;
 	box-shadow: 0 0 0;
 	color: #FF9900;
 	text-decoration: none;
+	transition: 0.5s;
+}
+
+.p-class__btn-3rd {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-top: 0.625rem;
+	text-align: center;
+	transition: 0.5s;
+}
+
+.p-class__btn-3rd a {
+	align-items: center;
+	background-color: #274a75;
+	border: 1px solid #274a75;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #C6D6EB;
+	color: #fff;
+	display: flex;
+	display: inline-block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	justify-content: space-between;
+	margin: 0 auto;
+	min-width: 7.5rem;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.p-class__btn-3rd a:hover {
+	background-color: #C6D6EB;
+	box-shadow: 0 0 0;
+	color: #274a75;
+	text-decoration: none;
+	transition: 0.5s;
 }
 
 .c-btn-contact {
@@ -808,6 +828,7 @@ summary {
 	max-width: 180px;
 	padding: 10px;
 	transition: 0.3s;
+	transition: 0.5s;
 	width: 150px;
 }
 
@@ -816,6 +837,7 @@ summary {
 	box-shadow: 0 0 0;
 	color: #274a75;
 	text-decoration: none;
+	transition: 0.5s;
 }
 
 .p-header_hamburger {
@@ -929,6 +951,65 @@ summary {
 	opacity: 1;
 }
 
+.l-page-performance-classes {
+	background: #f4f4f4;
+	padding-bottom: 6.25rem;
+	padding-top: 200px;
+}
+
+.l-page-performance-classes__inner {
+	margin: 0 auto;
+	max-width: 75rem;
+	padding: 0 40px;
+	text-align: center;
+	width: 100%;
+}
+
+.l-page-performance-classes__cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.performance-classes__cards {
+	background: #fff;
+	box-shadow: 0 0 10px #ddd;
+	margin-bottom: 5rem;
+	margin-left: 2.5rem;
+	width: calc(33.3% - 40px * 2 / 3);
+}
+
+.performance-classes__cards:nth-child(3n + 1) {
+	margin-left: 0;
+}
+
+.performance-classes__card-title {
+	color: #333;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 1.5rem;
+	padding: 20px 10px;
+	padding-bottom: 1.25rem;
+	padding-top: 1.25rem;
+}
+
+.performance-classes__img {
+	height: auto;
+}
+
+.performance-classes__figure {
+	height: 0;
+	padding-top: 141%;
+	position: relative;
+	width: 100%;
+}
+
+.performance-classes__figure img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .p-about {
 	background: #f4f4f4;
 	margin: 12.5rem 0;
@@ -985,7 +1066,7 @@ summary {
 .p-page__breadcrumb {
 	margin: 0 auto;
 	max-width: 62.5rem;
-	padding: 20px 0 60px;
+	padding: 20px 0 40px;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
 	text-align: left;
@@ -1091,10 +1172,10 @@ summary {
 	background: #fff;
 	border: 5px solid #274a75;
 	color: #274a75;
-	content: "adult";
+	content: "senior";
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-	padding: 59px 44px 62px 37px;
-	top: -124px;
+	padding: 60px 33px 62px 30px;
+	top: -122px;
 }
 
 .p-class__card:nth-of-type(3)::after {
@@ -1111,7 +1192,7 @@ summary {
 
 .p-company__inner {
 	margin: 0 auto;
-	max-width: 56.25rem;
+	max-width: 62.5rem;
 	width: 100%;
 }
 
@@ -1211,7 +1292,7 @@ summary {
 }
 
 .line_narrow {
-	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #ffb2d8 0%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #fee512 0%) repeat scroll 0 0;
 	display: inline;
 	line-height: 1;
 	margin-bottom: 30px;
@@ -1221,7 +1302,7 @@ summary {
 }
 
 .line_narrow-2nd {
-	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #ffb2d8 0%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(transparent 80%, #fee512 0%) repeat scroll 0 0;
 	display: inline;
 	line-height: 1;
 }
@@ -1250,9 +1331,25 @@ summary {
 
 .card__text {
 	color: #333;
-	padding-bottom: 1.25rem;
+	padding-bottom: 2.1875rem;
 	padding-top: 1.875rem;
 	text-align: left;
+}
+
+.card__text-3rd {
+	color: #333;
+	padding-bottom: 0.625rem;
+	padding-top: 1.875rem;
+	text-align: left;
+}
+
+.card-btns {
+	display: flex;
+	justify-content: center;
+}
+
+.card-btns .c-btn {
+	margin-left: 1.25rem;
 }
 
 .card__images {
@@ -1440,7 +1537,7 @@ summary {
 .p-footer_nav ul li {
 	border-left: 2px solid #2e6c83;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.35;
 	padding-left: 1.875rem;
@@ -1454,13 +1551,18 @@ summary {
 	transform: skewX(-150deg);
 }
 
-.menu-item-19 a {
-	color: #FF9900;
+.p-footer_nav ul li:hover {
+	opacity: 0.7;
 }
 
 .p-footer__logo {
 	height: 4.25rem;
 	width: 7.375rem;
+}
+
+.p-footer__icon {
+	padding-top: 30px;
+	text-align: center;
 }
 
 .p-header {
@@ -1489,6 +1591,8 @@ summary {
 
 .p-header_nav {
 	background: rgba(39, 74, 117, 0.9);
+	background: rgba(124, 138, 151, 0.9);
+	background: rgba(117, 43, 39, 0.9);
 	color: #fff;
 	display: none;
 	height: 37.5rem;
@@ -1496,7 +1600,6 @@ summary {
 	pointer-events: none;
 	position: absolute;
 	right: -100%;
-	top: 6.25rem;
 	transition: .5s;
 	width: 31.25rem;
 	z-index: 100;
@@ -1533,7 +1636,7 @@ summary {
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1.25rem;
-	line-height: 1;
+	line-height: 1.25;
 	list-style: none;
 	padding-left: 6.5625rem;
 	position: relative;
@@ -1563,12 +1666,13 @@ summary {
 	height: 100%;
 	left: 0;
 	position: fixed;
-	top: 0;
+	top: 100px;
 	width: 100%;
 	z-index: 99;
 }
 
 .p-header_nav-background.open {
+	background: rgba(0, 0, 0, 0.7);
 	display: block;
 }
 
@@ -1587,8 +1691,8 @@ summary {
 	font-size: 1rem;
 	font-weight: bold;
 	line-height: 1.35;
-	padding-left: 1.875rem;
-	padding-right: 1.875rem;
+	padding-left: 1.75rem;
+	padding-right: 1.75rem;
 	text-align: center;
 	transform: skewX(150deg);
 }
@@ -1605,81 +1709,181 @@ summary {
 
 .p-header-nav__items ul li a:hover {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-314 a:after {
+.menu-item-431 a:after {
+	content: 'トップ';
+	display: block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 1rem;
+	transition: all 0.5s;
+}
+
+.menu-item-431 a:hover:after {
+	opacity: .7;
+	transition: all 0.5s;
+}
+
+.menu-item-431 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-314 a:after {
 	content: '教室一覧';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+	transition: all 0.5s;
 }
 
-#menu-item-314 a:hover:after {
+.menu-item-314 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-23 a:hover:after {
+.menu-item-314 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-23 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-23 a:after {
+.menu-item-23 a:after {
 	content: '教師一覧';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+	transition: all 0.5s;
 }
 
-#menu-item-23 a:hover:after {
+.menu-item-23 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-21 a:after {
+.menu-item-23 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-21 a:after {
 	content: 'お知らせ';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
 }
 
-#menu-item-21 a:hover:after {
+.menu-item-21 a:hover:after {
 	opacity: .7;
 }
 
-#menu-item-20 a:after {
+.menu-item-21 a:hover {
+	opacity: .7;
+}
+
+.menu-item-21 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-20 a:after {
 	content: 'ギャラリー';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+	transition: all 0.5s;
 }
 
-#menu-item-20 a:hover:after {
+.menu-item-20 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-22 a:after {
+.menu-item-20 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-22 a:after {
 	content: 'クラス';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+	transition: all 0.5s;
 }
 
-#menu-item-22 a:hover:after {
+.menu-item-22 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
 }
 
-#menu-item-19 a {
+.menu-item-22 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-19 a {
 	color: #FF9900;
+	transition: all 0.5s;
 }
 
-#menu-item-19 a:after {
+.menu-item-19 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.menu-item-19 a:after {
 	color: #FF9900;
 	content: 'お問い合わせ';
 	display: block;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-size: 1rem;
+	transition: all 0.5s;
 }
 
-#menu-item-19 a:hover:after {
+.menu-item-19 a:hover:after {
 	opacity: .7;
+	transition: all 0.5s;
+}
+
+.menu-item-19 a:hover {
+	opacity: .5;
+	transition: all 0.5s;
+}
+
+.p-page-information {
+	background: #f4f4f4;
+	padding-bottom: 6.25rem;
+	padding-top: 12.5rem;
+}
+
+.p-page-information__inner {
+	margin: auto;
+	max-width: 62.5rem;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+	width: 100%;
+}
+
+.p-page-information__wrapper {
+	padding-bottom: 5rem;
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 5rem;
+}
+
+.p-page-information__titles {
+	border-bottom: 1px solid #fee512;
+	padding: 30px 0;
+}
+
+.p-page-information__text {
+	padding-top: 0.625rem;
 }
 
 .l-mv {
@@ -1708,19 +1912,19 @@ summary {
 	width: 100%;
 }
 
-.swiper-wrapper {
+.mv__wrapper .swiper-wrapper {
 	height: 100%;
 	height: calc(var(--vh, 1vh) * 100 - 179px);
 	width: 100%;
 }
 
-.swiper-slide {
+.mv__wrapper .swiper-wrapper .swiper-slide {
 	height: 100%;
 	padding-top: 56.25%;
 	position: relative;
 }
 
-.slide-img {
+.mv__wrapper .swiper-wrapper .swiper-slide .slide-img {
 	height: 100%;
 	height: calc(var(--vh, 1vh) * 100 - 9.06rem);
 	left: 0;
@@ -1730,17 +1934,17 @@ summary {
 }
 
 .slide-img-1 {
-	background: url(../img/mv-pc-1.jpg) no-repeat top center/cover;
+	background: url(../img/mv-pc-1-3.jpg) no-repeat top center/cover;
 	display: block;
 }
 
 .slide-img-2 {
-	background: url(../img/mv-pc-2.jpg) no-repeat top center/cover;
+	background: url(../img/mv-pc-2-5.jpg) no-repeat top center/cover;
 	display: block;
 }
 
 .slide-img-3 {
-	background: url(../img/mv-pc-3.jpg) no-repeat top center/cover;
+	background: url(../img/mv-pc-3-4.jpg) no-repeat top center/cover;
 	display: block;
 }
 
@@ -1810,11 +2014,11 @@ summary {
 .p-mv_title-2nd span {
 	background: #F4BE7F; /*背景色*/
 	background: #F4D292; /*背景色*/
-	color: #6E322D;
+	color: #752B27;
 }
 
 .p-mv_title-3rd span {
-	background: #6E322D; /*背景色*/
+	background: #752B27; /*背景色*/
 }
 
 .p-mv_title-1st span::before,
@@ -1850,6 +2054,16 @@ summary {
 	padding-bottom: 10px;
 	padding-left: 50px;
 	padding-top: 10px;
+	position: relative;
+}
+
+.p-mv__icon {
+	bottom: -43px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	width: 40px;
+	z-index: 5;
 }
 
 .p-mv__wrapper {
@@ -1893,6 +2107,7 @@ summary {
 	background: #274a75;
 	background-image: linear-gradient(45deg, #fff 10px, transparent 0), linear-gradient(-45deg, #fff 10px, transparent 0), linear-gradient(135deg, #fff 10px, transparent 0), linear-gradient(-135deg, #fff 10px, transparent 0);
 	box-shadow: 0 0 5px #274a75;
+	box-shadow: 5px 5px 0 #C6D6EB;
 	color: #274a75;
 	color: #fff;
 	color: #fee512;
@@ -1901,11 +2116,12 @@ summary {
 	font-weight: normal;
 	margin: 0 auto;
 	margin-bottom: 2.5rem;
+	max-width: 57.5rem;
 	padding-bottom: 2.5rem;
 	padding-top: 2.5rem;
 	position: relative;
 	text-align: center;
-	width: 70%;
+	width: 100%;
 }
 
 .p-page-section__subtitle::before {
@@ -1992,19 +2208,32 @@ summary {
 	top: 10px;
 }
 
-.l-page__classes__title h1 {
+.l-page-classes__title h1 {
 	font-weight: normal;
 }
 
 .classes__card-title {
 	background: #274a75;
+	background-color: #274a75;
 	border-radius: 10px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #C6D6EB;
 	color: #fff;
 	display: inline-block;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
 	font-weight: normal;
 	font-weight: bold;
 	min-width: 300px;
 	padding: 20px 40px;
+	transition: 0.5s;
+}
+
+.classes__card-title:hover {
+	background-color: #C6D6EB;
+	box-shadow: 0 0 0;
+	color: #274a75;
+	text-decoration: none;
+	transition: 0.5s;
 }
 
 .l-page-class__subtitle {
@@ -2053,7 +2282,7 @@ summary {
 	position: relative;
 }
 
-.l-page-class__subtitle span::before,
+span::before,
 .l-page-class__subtitle span::after {
 	content: '';
 	position: absolute;
@@ -2062,6 +2291,11 @@ summary {
 .l-page-class__subtitle span::after {
 	right: -37px;
 	transform: rotate(-60deg);
+}
+
+.l-page-class__image {
+	margin: 0 auto;
+	max-width: 700px;
 }
 
 .l-page-class__figure {
@@ -2134,7 +2368,7 @@ summary {
 }
 
 .wp-block-image {
-	margin: 0 auto;
+	margin: 0 auto 30px;
 	width: 100%;
 }
 
@@ -2168,7 +2402,7 @@ summary {
 }
 
 .p-overview {
-	margin: 0 auto;
+	margin: 80px auto 0;
 	max-width: 50rem;
 	width: 80%;
 }
@@ -2290,9 +2524,7 @@ summary {
 	font-size: 1.5rem;
 	margin: auto;
 	margin-bottom: 30px;
-	max-width: 50rem;
 	position: relative;
-	width: 80%;
 }
 
 .l-page-class__text::before,
@@ -2322,6 +2554,19 @@ summary {
 	justify-content: center;
 }
 
+.p-btn_wrapper--2nd {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	padding-bottom: 1.875rem;
+}
+
+.p-btn_wrapper--3rd {
+	display: flex;
+	justify-content: center;
+}
+
 .l-page-class__text-2nd {
 	padding-bottom: 0.9375rem;
 	padding-top: 0.9375rem;
@@ -2345,6 +2590,195 @@ summary {
 
 .l-page-class__times {
 	margin-bottom: 80px;
+	margin-bottom: 60px;
+}
+
+.p-btn__title--2nd {
+	background: #fff;
+	border-radius: 20px;
+	color: #FF9900;
+	display: inline-block;
+	margin-bottom: 0.625rem;
+	margin-top: 10px;
+	padding: 0.625rem 0.9375rem;
+}
+
+.p-btn__title--3rd {
+	background: #fff;
+	border-radius: 20px;
+	color: #274a75;
+	display: inline-block;
+	margin-bottom: 0.625rem;
+	margin-top: 0.625rem;
+	padding: 0.625rem 0.9375rem;
+}
+
+.l-page-class__contacts {
+	margin: auto;
+	max-width: 50rem;
+	padding: 0 40px;
+	width: 100%;
+}
+
+.l-page-class img {
+	max-width: 500px;
+	width: 100%;
+}
+
+.current-item br {
+	display: none;
+}
+
+.current-item {
+	display: inline-block;
+}
+
+/* slide-box */
+
+.slide-box {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+/* slide */
+
+.slide {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.slide .item {
+	height: 100%;
+	position: relative;
+}
+
+.slide .item a {
+	display: block;
+}
+
+.slide .item::before {
+	content: "";
+	display: block;
+	padding-top: 66.6%;
+}
+
+.slide .item .image {
+	overflow: hidden;
+	position: relative;
+}
+
+.slide .item img {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+.slide > .slick-list,
+.slide > .slick-list > .slick-track,
+.slide > .slick-list > .slick-track > .slick-slide > div {
+	height: 100%;
+	position: relative;
+}
+
+/* slide-navigation */
+
+.slide-navigation {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.slide-navigation .item {
+	cursor: pointer;
+	position: relative;
+}
+
+.slide-navigation .item .image {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+.slide-navigation .item .image::before {
+	content: "";
+	display: block;
+	padding-top: 35%;
+}
+
+.slide-navigation .item .image::after {
+	background: #000;
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.slide-navigation .slick-current .image::after {
+	opacity: 0;
+}
+
+.slide-navigation .item .image {
+	overflow: hidden;
+	position: relative;
+}
+
+.slide-navigation .item .image img {
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* slick */
+
+.slick-vertical .slick-slide {
+	border: 0 solid transparent;
+}
+
+.slick-arrow {
+	z-index: 999;
+}
+
+.slick-prev {
+	bottom: 0;
+	left: 20px;
+	margin: auto;
+	right: auto;
+	top: 25px;
+}
+
+.slick-next {
+	bottom: 0;
+	left: auto;
+	margin: auto;
+	right: 20px;
+	top: 25px;
+}
+
+.slide-wrapper {
+	background: #ddd;
+	border-radius: 20px;
+	margin: 50px auto;
+	max-width: 1000px;
+	padding: 50px;
+	width: 100%;
 }
 
 /*ContactForm7のテーブル化レスポンシブ調整*/
@@ -2469,7 +2903,7 @@ select {
 }
 
 .p-page-teachers__top {
-	padding-top: 40px;
+	padding-top: 15px;
 }
 
 .teachers-card {
@@ -2604,7 +3038,7 @@ html {
 
 @media screen and (min-width: 1000px) and (max-width: 1175px) {
 
-.swiper-slide {
+.mv__wrapper .swiper-wrapper .swiper-slide {
 	padding-top: 64.25%;
 }
 
@@ -2665,6 +3099,11 @@ html {
 	margin-bottom: 50px;
 }
 
+.p-header-nav__items ul li {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
 .p-mv_title-1st,
 .p-mv_title-2nd,
 .p-mv_title-3rd {
@@ -2721,12 +3160,20 @@ html {
 	padding: 0 1.875rem;
 }
 
-.l-page__classes {
-	margin-top: 6.25rem;
+.l-page-classes {
+	padding-top: 8.125rem;
 }
 
-.l-page__classes__inner {
+.l-page-classes__inner {
 	padding: 0 15px;
+}
+
+.classes__cards {
+	margin-top: 0.3125rem;
+}
+
+.l-page-gallery {
+	padding-top: 8.125rem;
 }
 
 .l-page-gallery__inner {
@@ -2737,8 +3184,43 @@ html {
 	padding-bottom: 1.5625rem;
 }
 
+.p-class__btn-3rd {
+	padding-bottom: 1.5625rem;
+}
+
 .c-section__title {
 	font-size: 24px;
+}
+
+.l-page-performance-classes {
+	padding-top: 8.125rem;
+}
+
+.l-page-performance-classes__inner {
+	padding: 0 15px;
+}
+
+.l-page-performance-classes__cards {
+	margin: auto;
+	max-width: 37.5rem;
+}
+
+.performance-classes__cards {
+	margin-bottom: 5rem;
+	margin-left: 1.875rem;
+	width: calc(50% - 30px * 1 / 2);
+}
+
+.performance-classes__cards:nth-child(3n + 1) {
+	margin-left: 30px;
+}
+
+.performance-classes__cards:nth-child(2n + 1) {
+	margin-left: 0;
+}
+
+.performance-classes__card-title {
+	font-size: 1rem;
 }
 
 .p-about {
@@ -2886,6 +3368,18 @@ html {
 	text-align: left;
 }
 
+.card__text-3rd {
+	text-align: left;
+}
+
+.card-btns {
+	flex-direction: column;
+}
+
+.card-btns .c-btn:first-child {
+	margin-bottom: 1.875rem;
+}
+
 .card__images {
 	width: 100%;
 }
@@ -2965,7 +3459,7 @@ html {
 
 .p-header_nav {
 	display: block;
-	height: 18.75rem;
+	height: 28.125rem;
 	width: 18.75rem;
 }
 
@@ -2974,11 +3468,15 @@ html {
 }
 
 .p-header_nav_list .menu-item:not(:first-child) {
-	margin-top: 1.6875rem;
+	margin-top: 1.125rem;
 }
 
 .p-header_btn {
 	display: block;
+}
+
+.p-header_nav-background.open {
+	top: 80px;
 }
 
 .p-header-nav {
@@ -2987,6 +3485,19 @@ html {
 
 .p-header-nav__items ul li {
 	font-size: 1rem;
+}
+
+.p-page-information {
+	padding-top: 8.125rem;
+}
+
+.p-page-information__inner {
+	padding-left: 0.9375rem;
+	padding-right: 0.9375rem;
+}
+
+.p-page-information__wrapper {
+	padding-top: 1.25rem;
 }
 
 .l-mv {
@@ -3000,11 +3511,11 @@ html {
 	max-width: 37.5rem;
 }
 
-.swiper-wrapper {
+.mv__wrapper .swiper-wrapper {
 	height: calc(var(--vh, 1vh) * 100 - 130px);
 }
 
-.slide-img {
+.mv__wrapper .swiper-wrapper .swiper-slide .slide-img {
 	height: calc(var(--vh, 1vh) * 100 - 7.8125rem);
 }
 
@@ -3038,6 +3549,10 @@ html {
 	padding-left: 1.125rem;
 }
 
+.p-mv__icon {
+	right: 10px;
+}
+
 .is-pc {
 	display: none;
 }
@@ -3048,7 +3563,7 @@ html {
 
 .p-page-section__subtitle {
 	font-size: 1.875rem;
-	margin-bottom: 5rem;
+	margin-bottom: 2.5rem;
 	max-width: 37.5rem;
 	width: 100%;
 }
@@ -3134,12 +3649,34 @@ html {
 	display: block;
 }
 
+.p-btn_wrapper--3rd {
+	display: block;
+}
+
 .p-class__btn-totsuka {
 	margin-top: 2.5rem;
 }
 
 .l-page-class__times {
 	margin-bottom: 2.5rem;
+}
+
+.l-page-class__contacts {
+	padding: 0;
+}
+
+.slide-navigation {
+	width: 100%;
+}
+
+.slide-navigation .item .image::before {
+	padding-top: 50%;
+}
+
+.slide-wrapper {
+	margin: 0 calc(50% - 50vw);
+	padding: 25px 0;
+	width: 100vw;
 }
 
 .table-res-form input[type="text"],
@@ -3149,14 +3686,24 @@ textarea {
 	width: 100%;
 }
 
+.p-page-teachers {
+	padding-top: 8.125rem;
+}
+
+.p-page-teachers__inner {
+	padding: 0 0.9375rem;
+}
+
 .teachers-card {
 	flex-direction: column;
 }
 
 .teachers-card__titles {
 	margin: auto;
+	padding-left: 0.625rem;
+	padding-right: 0.625rem;
 	padding-top: 3.75rem;
-	width: 80%;
+	width: 100%;
 }
 
 .teachers-card__title span {
@@ -3282,10 +3829,6 @@ textarea {
 
 .is-ssp {
 	display: block;
-}
-
-.p-page-teachers__inner {
-	padding: 0 0.9375rem;
 }
 
 }

@@ -1,12 +1,13 @@
-.l-page__classes{
-    margin-top: 200px;
-    margin-bottom: rem(100);
+.l-page-classes{
+    background: $bg-white;
+    padding-top: 200px;
+    padding-bottom: rem(100);
 @include mq(sp){
-    margin-top:rem(100);
+    padding-top:rem(130);
 }
 }
 
-.l-page__classes__inner{
+.l-page-classes__inner{
 width: 100%;
 padding:0 40px;
 max-width: rem(1200);
@@ -16,14 +17,14 @@ text-align: center;
     padding: 0 15px;
 }
 }
-.l-page__classes__wrapper{
+.l-page-classes__wrapper{
 
 }
-.l-page__classes__title{
+.l-page-classes__title{
 padding-bottom: rem(80);
 font-size: rem(24);
 }
-// .l-page__classes__cards{
+// .l-page-classes__cards{
 //     display: flex;
 //     flex-wrap: wrap;
 //     // margin-top: rem(220);
@@ -31,12 +32,12 @@ font-size: rem(24);
 //         // margin-top: rem(129);
 //     }
 // }
-.classes__cards{
 
-}
-.classes__card{
-}
 .classes__cards{
-    // background: $base-color;
+   display: inline-block;
     padding-bottom: rem(10);
+    margin: 10px 15px 0;
+    @include mq(sp){
+     margin-top: rem(5);   
+    }
 }

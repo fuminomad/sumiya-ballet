@@ -61,7 +61,7 @@
 
         <dl>
             <dt>住所</dt><dd><?php $address = scf::get('address'); echo nl2br( $address ); ?></dd>
-            <dt>TEL</dt><dd><?php $tel2nd = scf::get('tel-2nd'); echo sanitize_text_field( $tel2nd ); ?></dd>
+            <dt>TEL</dt><dd><?php $tel2nd = scf::get('tel-2nd'); echo nl2br( $tel2nd ); ?></dd>
             <dt>アクセス</dt><dd><?php $access = scf::get('access'); echo nl2br( $access ); ?></dd>
            
             
@@ -103,10 +103,40 @@
                   体験レッスンは南林間カルチャーへ<br class="is-sp">直接お申し込み下さい   
                 </p>
             </div>
-        <div class="p-btn_wrapper">
-
+            <h3 class="p-btn__title--2nd">月曜日</h3>
+        <div class="p-btn_wrapper--2nd">
             <div class="l-page-class__btns p-class__btn-2nd">
-                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_29001005.html">南林間カルチャー</a>
+                <a  href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_29001005.html">園児</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-2nd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_29001006.html">小学生低学年</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-2nd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_29001007.html">小学生高学年</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-2nd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_29000701.html">中学生以上</a>
+            </div>
+            </div>
+            <h3 class="p-btn__title--3rd">火曜日</h3>
+            <div class="p-btn_wrapper--2nd">
+            <div class="l-page-class__btns p-class__btn-3rd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_903040163.html">園児</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-3rd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_903040164.html">小学生低学年</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-3rd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_903040165.html">小学生高学年</a>
+            </div>
+           
+            <div class="l-page-class__btns p-class__btn-3rd">
+                <a href="https://www.culture.gr.jp/spn/detail/minamiri/itemview_29_903026398.html">中学生以上</a>
             </div>
            
         </div>
@@ -237,4 +267,3 @@
 
 <?php get_footer(); ?>
 
-<?php get_footer(); ?>

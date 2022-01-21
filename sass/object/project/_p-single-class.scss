@@ -61,7 +61,7 @@
     box-shadow: 0 0 0 1px #ca4;
  
 }
-.l-page__classes__title h1{
+.l-page-classes__title h1{
     font-weight: normal;
 }
 .classes__card-title{
@@ -73,8 +73,24 @@
   min-width: 300px;
   border-radius: 10px;
   font-weight: bold;
-
+  background-color: $base-color;
+    box-shadow: 5px 5px 0 $blue;
+    transition: 0.5s;
+    border-radius: 5px;
+    font-family: $second-font-family;
 }
+
+.classes__card-title:hover {
+      transition: 0.5s;
+    text-decoration: none;
+    background-color: $blue;
+    box-shadow: 0 0 0;
+    color: $base-color;
+  }
+
+
+
+
 .l-page-class__subtitle{
     width: 70%;
     margin: 0 auto;
@@ -134,7 +150,7 @@
     font-size: rem(18);    
     }
 }
-.l-page-class__subtitle span::before,.l-page-class__subtitle span::after{
+ span::before,.l-page-class__subtitle span::after{
     content: '';
 position: absolute;
 // top: 50%;
@@ -151,6 +167,10 @@ position: absolute;
 .l-page-class__subtitle span::after{
    right: -37px;
 	transform: rotate(-60deg);
+}
+.l-page-class__image{
+max-width: 700px;
+margin: 0 auto;
 }
 
 .l-page-class__figure{
@@ -247,11 +267,11 @@ position: absolute;
     }
 }
 
-// .l-page__wrapper{
+// .l-page-wrapper{
 // display: flex;    
 // }
 .wp-block-image{
-    margin: 0 auto;
+    margin: 0 auto 30px;
     width: 100%;
     @include mq(sp){
       overflow-x: auto;  
@@ -283,7 +303,7 @@ position: absolute;
 .p-overview{
 width: 80%;
 max-width: rem(800);
-margin: 0 auto; 
+margin: 80px auto 0; 
 @include mq(sp){
     width: 100%;
     max-width: rem(600);
@@ -427,8 +447,7 @@ display: block;
     font-size: rem(24);
     // display: inline-block;
    color: $black;
-   max-width: rem(800);
-   width: 80%;
+  
 //    background: $white;
 
    margin: auto;
@@ -468,6 +487,27 @@ display: block;
     display: block;    
     }
 }
+.p-btn_wrapper--2nd{
+    padding-bottom: rem(30);
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    margin:  auto;
+    @include mq(sp){
+    // max-width: rem(400);
+
+    }
+   
+   
+}
+.p-btn_wrapper--3rd{
+    display: flex;
+    justify-content: center;
+    @include mq(sp){
+    display: block;    
+    }
+}
 
 .l-page-class__text-2nd{
     padding-top: rem(15);
@@ -497,7 +537,48 @@ display: block;
 }
 .l-page-class__times{
     margin-bottom: 80px;
+    margin-bottom: 60px;
     @include mq(sp){
     margin-bottom: rem(40);
     }
+}
+
+.p-btn__title--2nd{
+  margin-top: 10px;
+  margin-bottom: rem(10);
+  color: $orange;  
+  padding:rem(10) rem(15);
+  background: $white;
+  display: inline-block;
+  border-radius: 20px;
+}
+.p-btn__title--3rd{
+margin-top: rem(10);
+margin-bottom: rem(10);
+padding:rem(10) rem(15);
+background: $white;
+display: inline-block;
+border-radius: 20px;
+color: $base-color;
+}
+
+.l-page-class__contacts{
+max-width: rem(800);
+width: 100%;
+margin: auto;
+padding: 0 40px;
+@include mq(sp){
+    padding: 0;
+}
+}
+.l-page-class img{
+   max-width: 500px; 
+   width: 100%;
+}
+
+.current-item br{
+    display: none;
+}
+.current-item {
+    display: inline-block;
 }

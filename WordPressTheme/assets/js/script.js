@@ -89,7 +89,7 @@ let swipeOption = {
 	},
 	speed: 1000,
   }
-  new Swiper('.swiper', swipeOption);
+  new Swiper('#swiper0', swipeOption);
 	
 // 1.関数の定義
 function setHeight() {
@@ -103,21 +103,36 @@ function setHeight() {
   // 3.ブラウザのサイズが変更された時・画面の向きを変えた時に再計算する
 //   window.addEventListener('resize', setHeight);
 
-// //サムネイル
-// var sliderThumbnail = new Swiper('.slider-thumbnail', {
-//   slidesPerView: 6,
-//   freeMode: true,
-//   watchSlidesVisibility: true,
-//   watchSlidesProgress: true,
-// });
+// slick
 
-// //スライダー
-// var slider = new Swiper('.gallery-slider', {
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   thumbs: {
-//     swiper: sliderThumbnail
-//   }
-// });
+jQuery(function($){
+	$(function() {
+		var slide_main = $(".slide").slick({
+		  asNavFor: ".slide-navigation",
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		});
+		var slide_sub = $(".slide-navigation").slick({
+		  asNavFor: ".slide",
+		  centerMode: true,
+		  infinite: true,
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  autoplaySpeed: 4000,
+		  speed: 400,
+		  focusOnSelect: true,
+		});
+		var open_window_Width = $(window).width();
+		$(window).resize(function() {
+		  var width = $(window).width();
+		  if (open_window_Width != width) {
+			slide_main.slick("setPosition");
+			slide_sub.slick("setPosition");
+		  }
+		});
+	  });
+});

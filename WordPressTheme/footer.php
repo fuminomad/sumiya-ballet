@@ -17,7 +17,9 @@
           );
           ?>
   </div>
- 
+  <div class="p-footer__icon">
+  <a class="" href="https://instagram.com/sumiya_ballet?utm_medium=copy_link"><img src="<?php echo get_template_directory_uri() ?>/assets/img/icon-instagam-gray.png" loading="lazy" width="40" height="40" alt="インスタグラムアイコン"></a>
+  </div>
    <div class="p-footer__copylights">
     <p class="p-footer__copylight">&copy; 2022 Sumiya-ballet</p> 
    </div>

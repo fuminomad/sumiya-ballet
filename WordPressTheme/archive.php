@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-<section class="l-page__classes">
-    <div class="l-page__classes__inner">
-      <div class="l-page__classes__wrapper">
+<section class="l-page-classes">
+    <div class="l-page-classes__inner">
+      <div class="l-page-classes__wrapper">
           <h1 class="p-page-section__subtitle">
           Classes
     <br><span>
@@ -14,11 +14,11 @@
                       }
                       ?>
   </div>
-          <div class="l-page__classes__cards">
+          <div class="l-page-classes__cards">
               <?php if(have_posts()): ?>
                <?php while(have_posts()):the_post(); ?>
      
-               <div class="l-page__classes__card-item classes__cards">
+               <div class="l-page-classes__card-item classes__cards">
 
                  <a href="<?php the_permalink();?>" class="classes__card">
                    
