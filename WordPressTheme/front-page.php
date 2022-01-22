@@ -68,14 +68,12 @@
         <p class="card__text">
          毎年、相模大野グリーンホールにて3歳からのプチバレリーナ、本格的なクラシックバレエ、コンテンポラリーダンスなどの多彩な演目による公演を行っております。
        </p>
-       <div class="card-btns">
+       
           <div class="c-btn">
            <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
           </div>
-          <div class="c-btn">
-            <a href="<?php echo home_url('/performance/'); ?>">公演一覧</a>
-          </div>
-        </div>
+          
+        
 
       </div>
       <div class="card__images">
@@ -169,4 +167,64 @@
        </div>
 </div>
 </section>
+
+<section class="p-performance l-performance">
+ <div class="p-performance__inner">
+      <h2 class="p-performance__title">
+        公演
+      </h2>
+      <div class="performance-classes">
+
+      
+        <div class="swiper slider1">
+          <div class="swiper-wrapper">
+            
+          <?php
+$args = array(
+  'post_type' => 'performance',
+  'posts_per_page' => -1 
+  
+);
+$the_query = new WP_Query( $args );
+if ( $the_query->have_posts() ) :
+  while ( $the_query->have_posts() ) : $the_query->the_post();?>
+            
+            <div class="performance-classes__cards swiper-slide p-performance__card-item">
+            <a href="<?php the_permalink();?>" class="performance-classes__card">
+                    <div class="performance-classes__card">
+                        <h4 class="performance-classes__card-title">
+                              <?php the_title();?>
+                         </h4>
+                            <div class="performance-classes__img">
+                                <figure class="performance-classes__figure">
+                                  <?php the_post_thumbnail('full'); ?>
+                               </figure>
+                  </div>
+               </div>
+              </a>
+           </div>
+       
+           <?php
+              endwhile;
+              wp_reset_postdata();
+              else :
+              endif;
+              ?>
+
+
+  </div>
+</div> 
+         
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev fa-2x"><i class="fas fa-arrow-circle-left"></i></div>
+  <div class="swiper-button-next fa-2x"><i class="fas fa-arrow-circle-right"></i></div>
+  <div class="swiper-scrollbar"></div>    
+</div>
+<div class="p-performance__btn c-btn">
+  <a href="<?php echo home_url('/performance/'); ?>">公演一覧</a>
+</div>      
+
+</div>
+</section>
+
 <?php get_footer(); ?>

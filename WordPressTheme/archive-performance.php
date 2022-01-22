@@ -14,7 +14,7 @@
                       }
                       ?>
   </div>
-          <div class="l-page-performance-classes__cards">
+          <div class="l-page-performance-classes__cards performance-classes">
               <?php if(have_posts()): ?>
                <?php while(have_posts()):the_post(); ?>
      

@@ -1,0 +1,120 @@
+.p-performance{
+    position: relative;
+    margin:rem(200) 0 ;
+    @include mq(sp){
+        // margin:rem(100) 0 ;
+
+    }
+}
+.p-performance__inner{
+  max-width: rem(1200);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: rem(60);
+  padding-right: rem(60);
+  @include mq(sp){
+      max-width: rem(600);
+    //   padding-left: rem(15);
+    //   padding-right: rem(15);
+  }  
+}
+
+
+.p-performance__title{
+    // color: $base-color !important;
+    position: relative;
+    color: $black;
+    text-align: center;
+    font-size: rem(36);
+    font-family: $font-family-base;
+    padding-bottom: rem(80);
+    font-weight: normal;
+    }
+    .p-performance__title:before{
+        content:""; 
+        position: absolute;
+        top: rem(-80);
+        left: 50%;
+        transform: translateX(-50%);
+        background: url(../img/performance.png)no-repeat center center / contain;
+        width: rem(351);
+        height: rem(110);
+        @include mq(sp){
+        top: rem(-60);
+        width: rem(280);
+        height: rem(87);
+       }
+        @include mq(ssp){
+        width: rem(163);
+        height: rem(51);
+       }
+        }
+        .performance-classes__card-title{
+            font-size: rem(24);
+            font-family: $font-family-base;
+            color: $black;
+            padding-bottom: rem(20);
+            padding-top: rem(20);
+            padding: 20px 10px;
+            text-align: center;
+            font-weight: normal;
+            
+            @include mq(sp){
+             font-size: rem(16);   
+            }
+            }
+            .performance-classes__img{
+                height: auto;
+               
+            }
+            .performance-classes__figure{
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 141% ;
+                
+            }
+            .performance-classes__figure img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+               
+            }
+    
+            .p-performance__card-item{
+                margin-top: rem(30);
+               
+               
+            }
+            .p-performance .swiper-pagination{
+                bottom: -50px;
+                position: absolute;
+              
+            }
+            .swiper-button-next:after, .swiper-button-prev:after {
+                display: none;
+             }
+             .swiper-pagination-bullet {
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                border-radius: 100%;
+                // background: #dbdbdb;
+                outline: none;
+                margin-right: 40px;
+                // @include mq(sp){
+                //     width: 7px;
+                //     height: 7px;
+                // }
+              }
+              
+              .swiper-pagination-bullet-active {
+                opacity: 1;
+                background: $purple;
+              }
+
+            .p-performance__btn{
+              padding-top: rem(120);  
+            }

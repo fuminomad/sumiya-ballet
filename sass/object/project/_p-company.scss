@@ -282,24 +282,24 @@ text-align: left;
     // padding-bottom: rem(50);
 }
 }
-.card-btns{
-    display: flex;
-    justify-content: center;
-    @include mq(sp){
-     flex-direction: column;   
-    }
-}
-.card-btns .c-btn{
-    margin-left: rem(20);
+// .card-btns{
+//     display: flex;
+//     justify-content: center;
 //     @include mq(sp){
-//    margin-bottom: rem(20);     
+//      flex-direction: column;   
 //     }
-}
-.card-btns .c-btn:first-child{
-    @include mq(sp){
-        margin-bottom: rem(30);
-    }
-}
+// }
+// .card-btns .c-btn{
+//     margin-left: rem(20);
+// //     @include mq(sp){
+// //    margin-bottom: rem(20);     
+// //     }
+// }
+// .card-btns .c-btn:first-child{
+//     @include mq(sp){
+//         margin-bottom: rem(30);
+//     }
+// }
 .card__images{
 width: 45%;
 height: auto;

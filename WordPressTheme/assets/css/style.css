@@ -965,49 +965,39 @@ summary {
 	width: 100%;
 }
 
-.l-page-performance-classes__cards {
+.performance-classes {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+}
+
+.swiper-button-prev {
+	color: #6667ab;
+	left: -40px;
+	position: absolute;
+	top: 50%;
+}
+
+.swiper-button-next {
+	color: #6667ab;
+	position: absolute;
+	right: -40px;
+	top: 50%;
+}
+
+.l-page-performance-classes__card-item {
+	margin-bottom: 5rem;
+	margin-left: 2.5rem;
 }
 
 .performance-classes__cards {
 	background: #fff;
 	box-shadow: 0 0 10px #ddd;
-	margin-bottom: 5rem;
-	margin-left: 2.5rem;
 	width: calc(33.3% - 40px * 2 / 3);
 }
 
-.performance-classes__cards:nth-child(3n + 1) {
+.l-page-performance-classes__card-item:nth-child(3n + 1) {
 	margin-left: 0;
-}
-
-.performance-classes__card-title {
-	color: #333;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
-	font-size: 1.5rem;
-	padding: 20px 10px;
-	padding-bottom: 1.25rem;
-	padding-top: 1.25rem;
-}
-
-.performance-classes__img {
-	height: auto;
-}
-
-.performance-classes__figure {
-	height: 0;
-	padding-top: 141%;
-	position: relative;
-	width: 100%;
-}
-
-.performance-classes__figure img {
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
 }
 
 .p-about {
@@ -1341,15 +1331,6 @@ summary {
 	padding-bottom: 0.625rem;
 	padding-top: 1.875rem;
 	text-align: left;
-}
-
-.card-btns {
-	display: flex;
-	justify-content: center;
-}
-
-.card-btns .c-btn {
-	margin-left: 1.25rem;
 }
 
 .card__images {
@@ -2973,6 +2954,102 @@ select {
 	font-size: 3.125rem;
 }
 
+.p-performance {
+	margin: 12.5rem 0;
+	position: relative;
+}
+
+.p-performance__inner {
+	margin: 0 auto;
+	max-width: 75rem;
+	padding-left: 3.75rem;
+	padding-right: 3.75rem;
+	width: 100%;
+}
+
+.p-performance__title {
+	color: #333;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 2.25rem;
+	font-weight: normal;
+	padding-bottom: 5rem;
+	position: relative;
+	text-align: center;
+}
+
+.p-performance__title:before {
+	background: url(../img/performance.png) no-repeat center center/contain;
+	content: "";
+	height: 6.875rem;
+	left: 50%;
+	position: absolute;
+	top: -5rem;
+	transform: translateX(-50%);
+	width: 21.9375rem;
+}
+
+.performance-classes__card-title {
+	color: #333;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+	font-size: 1.5rem;
+	font-weight: normal;
+	padding: 20px 10px;
+	padding-bottom: 1.25rem;
+	padding-top: 1.25rem;
+	text-align: center;
+}
+
+.performance-classes__img {
+	height: auto;
+}
+
+.performance-classes__figure {
+	height: 0;
+	padding-top: 141%;
+	position: relative;
+	width: 100%;
+}
+
+.performance-classes__figure img {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.p-performance__card-item {
+	margin-top: 1.875rem;
+}
+
+.p-performance .swiper-pagination {
+	bottom: -50px;
+	position: absolute;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	display: none;
+}
+
+.swiper-pagination-bullet {
+	border-radius: 100%;
+	display: inline-block;
+	height: 15px;
+	margin-right: 40px;
+	outline: none;
+	width: 15px;
+}
+
+.swiper-pagination-bullet-active {
+	background: #6667ab;
+	opacity: 1;
+}
+
+.p-performance__btn {
+	padding-top: 7.5rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 html:focus-within {
@@ -3200,27 +3277,26 @@ html {
 	padding: 0 15px;
 }
 
-.l-page-performance-classes__cards {
+.performance-classes {
 	margin: auto;
 	max-width: 37.5rem;
 }
 
-.performance-classes__cards {
+.l-page-performance-classes__card-item {
 	margin-bottom: 5rem;
 	margin-left: 1.875rem;
+}
+
+.performance-classes__cards {
 	width: calc(50% - 30px * 1 / 2);
 }
 
-.performance-classes__cards:nth-child(3n + 1) {
+.l-page-performance-classes__card-item:nth-child(3n + 1) {
 	margin-left: 30px;
 }
 
-.performance-classes__cards:nth-child(2n + 1) {
+.l-page-performance-classes__card-item:nth-child(2n + 1) {
 	margin-left: 0;
-}
-
-.performance-classes__card-title {
-	font-size: 1rem;
 }
 
 .p-about {
@@ -3370,14 +3446,6 @@ html {
 
 .card__text-3rd {
 	text-align: left;
-}
-
-.card-btns {
-	flex-direction: column;
-}
-
-.card-btns .c-btn:first-child {
-	margin-bottom: 1.875rem;
 }
 
 .card__images {
@@ -3730,6 +3798,20 @@ textarea {
 	font-size: 1.875rem;
 }
 
+.p-performance__inner {
+	max-width: 37.5rem;
+}
+
+.p-performance__title:before {
+	height: 5.4375rem;
+	top: -3.75rem;
+	width: 17.5rem;
+}
+
+.performance-classes__card-title {
+	font-size: 1rem;
+}
+
 .u-hidden-sp {
 	display: none;
 }
@@ -3829,6 +3911,11 @@ textarea {
 
 .is-ssp {
 	display: block;
+}
+
+.p-performance__title:before {
+	height: 3.1875rem;
+	width: 10.1875rem;
 }
 
 }

@@ -136,3 +136,36 @@ jQuery(function($){
 		});
 	  });
 });
+
+jQuery(function($){
+	var slider1 = new Swiper ('.slider1', {
+		effect: 'slide',
+		loop: true,
+		autoplay: {
+			delay: 5000,
+			disableOnInteraction: true
+		  },
+		spaceBetween: 40,
+		slidesPerView: 1,
+		breakpoints: {
+			768: {
+			  slidesPerView: 2,
+			  spaceBetween: 40,
+			},
+			1200: {
+			  spaceBetween: 40,
+			  slidesPerView: 3,
+			}},
+		pagination: {
+		  el: '.swiper-pagination',
+		  clickable: true
+		},
+		navigation: {
+		  nextEl: '.swiper-button-next',
+		  prevEl: '.swiper-button-prev',
+		},
+		scrollbar: {
+		  el: '.swiper-scrollbar',
+		},
+});
+});
