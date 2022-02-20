@@ -43,8 +43,19 @@
           </div>
                 <?php endwhile; ?>
                    <?php endif; ?> 
-     </div>
-      </div>  
+                   </div>
+             </div>  
+
+             <?php
+$args = array(
+    'mid_size' => 2,
+    'prev_text' => '',
+    'next_text' => '',
+    'screen_reader_text' => ' ',
+);
+the_posts_pagination($args);
+?>
+
     </div>
 </section>
 <?php get_footer(); ?>

@@ -29,14 +29,15 @@
                         <div class="classes__card-info">
                         <p class="classes__card-tag"><?php the_tags('');?></p>
                        </div>
-                        <?php else: ?>
+                       <?php else: ?>
                        <?php endif; ?>
+                       
                     <h4 class="classes__card-title">
                         <?php the_title();?>
                     </h4>
-                </div>
-                 </a>
-          </div>
+                   </div>
+                   </a>
+            </div>
                 <?php endwhile; ?>
                    <?php endif; ?> 
      </div>

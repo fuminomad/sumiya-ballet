@@ -68,13 +68,14 @@
         <p class="card__text">
          毎年、相模大野グリーンホールにて3歳からのプチバレリーナ、本格的なクラシックバレエ、コンテンポラリーダンスなどの多彩な演目による公演を行っております。
        </p>
-       
-          <div class="c-btn">
-           <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
+          <div class="card-btns">
+            <div class="c-btn">
+              <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
+            </div>
+            <div class="c-btn">
+              <a href="<?php echo home_url('/performance/'); ?>">公演一覧</a>
+            </div>
           </div>
-          
-        
-
       </div>
       <div class="card__images">
        <figure class="card__figure">
