@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("gallery"); ?>
 <section class="l-page-gallery p-page-gallery">
   <div class="l-page-gallery__inner p-page-gallery__inner">
   <div class="p-page-gallery__titles">
@@ -118,4 +118,4 @@
     
 </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer("gallery"); ?>

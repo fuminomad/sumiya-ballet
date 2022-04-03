@@ -12,12 +12,11 @@
     color: $white;
    display: inline-block;
     font-size: 18px;
-    // font-weight: 700;
     background-color: $base-color;
     box-shadow: 5px 5px 0 $blue;
     transition: 0.5s;
     border-radius: 5px;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     max-width: 180px;
   }
   
@@ -50,8 +49,7 @@
     background-color: $orange;
     box-shadow: 5px 5px 0 $blue;
     transition: 0.5s;
-    // border: 1px solid $base-color;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     font-weight: bold;
   }
   .p-class__btn a:hover {
@@ -114,7 +112,7 @@
    box-shadow: 5px 5px 0 $white;
    transition: 0.5s;
    border: 1px solid $orange;
-   font-family: $second-font-family;
+   font-family: $font-family-base;
  }
   .p-class__btn-2nd a:hover {
     text-decoration: none;
@@ -150,7 +148,7 @@
     box-shadow: 5px 5px 0 $blue;
     transition: 0.5s;
     border: 1px solid $base-color;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
   }
   .p-class__btn-3rd a:hover {
     text-decoration: none;
@@ -179,7 +177,7 @@
     box-shadow: 5px 5px 0 $blue;
     transition: 0.3s;
     border-radius: 5px;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     max-width: 180px;
     transition: 0.5s;
   }

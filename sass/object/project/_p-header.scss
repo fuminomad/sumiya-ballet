@@ -31,29 +31,29 @@
       }
     }
 
-  .p-header_nav {
-    width: rem(500);
-    height: rem(600);
-    color: $white;
-    background: rgba($color: $base-color, $alpha: 0.9);
-    background: rgba($color: $gray, $alpha: 0.9);
-    background: rgba($color: $r-red, $alpha: 0.9);
-    // background: rgba(38,38,38,0.9);
-    position: absolute;
-    // top: rem(100);
-    right: -100%;
-    pointer-events: none;
-    transition: .5s;
-    opacity: 1;
-    // transform: translateX(0);
-    z-index: 100;
-    display: none;
-    @include mq(sp){
-        height: rem(450);
-        width: rem(300);
-        display: block;
-    }
-}
+//   .p-header_nav {
+//     width: rem(500);
+//     height: rem(600);
+//     color: $white;
+//     // background: rgba($color: $base-color, $alpha: 0.9);
+//     // background: rgba($color: $gray, $alpha: 0.9);
+//     background: rgba($color: $r-red, $alpha: 0.9);
+//     // background: rgba(38,38,38,0.9);
+//     position: absolute;
+//     // top: rem(100);
+//     right: -100%;
+//     pointer-events: none;
+//     transition: .5s;
+//     opacity: 1;
+//     // transform: translateX(0);
+//     z-index: 100;
+//     display: none;
+//     @include mq(tab){
+//         height: rem(750);
+//         width: rem(300);
+//         display: block;
+//     }
+// }
 // .p-header_nav-close{
 //    position: absolute;
 //   content:"" ;
@@ -76,8 +76,7 @@
 //  }
 // }
  .p-header-logo{
-   font-family: $font-logo;
-   line-height: 1;
+  line-height: 1;
    text-align:center;
    @include mq(sp){
      font-size: rem(24);
@@ -178,7 +177,7 @@
         z-index:1000;
         padding: 0 ;
         display: none;
-        @include mq(sp){
+        @include mq(tab){
             display: block;
         }
     }
@@ -217,7 +216,7 @@
   }
 
   .p-header-nav{
-      @include mq(sp){
+      @include mq(tab){
           display: none;
       }
   }
@@ -231,8 +230,8 @@
       font-size: rem(16);
       text-align: center;
       line-height: 1.35;
-      padding-left: rem(28);
-      padding-right: rem(28);
+      padding-left: rem(20);
+      padding-right: rem(20);
       border-left: 2px solid $base-background;
       transform: skewX(150deg);
       @include mq(tab){
@@ -250,7 +249,7 @@
   .p-header-nav__items ul li a{
     transform: skewX(-150deg);
     display: block;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     
   }
   .p-header-nav__items ul li:last-child{
@@ -357,6 +356,24 @@ transition: all 0.5s;
         opacity: .5;
         transition: all 0.5s;
     }
+
+  .menu-item-552 a:after {
+    content: '公演一覧';
+    display: block;
+    font-size: rem(16);
+    font-family: $font-family-base;
+    transition: all 0.5s;
+  }
+  .menu-item-552 a:hover:after{
+    opacity: .7;
+    transition: all 0.5s;
+      }
+      .menu-item-552 a:hover{
+        opacity: .5;
+        transition: all 0.5s;
+    }
+
+
 .menu-item-19 a{
     color: $orange ;
     transition: all 0.5s;

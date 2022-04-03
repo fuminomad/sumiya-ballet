@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php get_header("teachers"); ?>
+
 <section class="l-page-teachers p-page-teachers">
 <div class="p-page-teachers__inner">
 
@@ -112,4 +113,4 @@
 
 </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer("teachers"); ?>

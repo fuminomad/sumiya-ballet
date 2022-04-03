@@ -64,7 +64,7 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 
 // topに戻るボタン
 
-var show = jQuery(".p-mv").offset();
+var show = jQuery(".p-mv,.p-page-teachers__wrapper,.p-page-gallery__title,.p-page-information__wrapper,.p-contact-top__buttons,.p-page-single-mv").offset();
 jQuery('.p-footer__btn').hide();
 jQuery(window).scroll(function() {
 if(jQuery(this).scrollTop() > show.top) {
@@ -168,4 +168,24 @@ jQuery(function($){
 		  el: '.swiper-scrollbar',
 		},
 });
+});
+
+// ページ外からのスムーススクロール
+jQuery(function($){
+	var headerHeight = $('.j-header').outerHeight();
+	var urlHash = location.hash;
+	if(urlHash) {
+		$('body,html').stop().scrollTop(0);
+		setTimeout(function(){
+			var target = $(urlHash);
+			var position = target.offset().top - headerHeight;
+			$('body,html').stop().animate({scrollTop:position}, 500);
+		}, 100);
+	}
+	$('a[href^="#"]').click(function() {
+		var href= $(this).attr("href");
+		var target = $(href);
+		var position = target.offset().top - headerHeight;
+		$('body,html').stop().animate({scrollTop:position}, 500);   
+	});
 });

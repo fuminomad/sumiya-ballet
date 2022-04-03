@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("performance"); ?>
 <section class="l-page-performance-classes">
     <div class="l-page-performance-classes__inner">
       <div class="l-page-performance-classes__wrapper">
@@ -58,4 +58,4 @@ the_posts_pagination($args);
 
     </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer("performance"); ?>

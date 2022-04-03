@@ -17,6 +17,7 @@ padding-bottom: 40px;
 .p-company__title{
  padding-bottom: 40px; 
  position: relative;  
+font-weight: $font-weight-bold;
 }
 .p-company__title:before{
     content:""; 
@@ -80,7 +81,7 @@ padding-bottom: 40px;
 .p-company__title span{
  font-size: rem(50);
  color: $base-color; 
- font-family: $second-font-family; 
+ font-family: $font-family-base; 
 }
 
 .p-company__card:nth-child(even){
@@ -118,7 +119,7 @@ margin: auto;
     color: $base-color;
     top: -18%;
     left: 0;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     font-weight: bold;
     font-style: italic;
     @include mq(sp){
@@ -148,7 +149,7 @@ margin: auto;
     color: $base-color;
     font-style:italic;
     
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     font-weight: bold;
     
     @include mq(sp){
@@ -239,7 +240,7 @@ padding-right: 5px;
 text-align: center;
 color: $black;
 font-size: rem(24);
-font-weight: normal;
+font-weight: $font-weight-bold;
 
 @include mq(sp){
     font-size: rem(24);
@@ -256,7 +257,7 @@ margin-left: 0;
 }
 }
 .card__title span{
-    font-family: $second-font-family; 
+    font-family: $font-family-base; 
     font-size: rem(30);
     color: $base-color;
     

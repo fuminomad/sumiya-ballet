@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("information"); ?>
 <section class="l-page-information p-page-information">
   <div class="l-page-information__inner p-page-information__inner">
   <h1 class="p-page-section__subtitle">
@@ -68,4 +68,4 @@
         </div>
     </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer("information"); ?>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("contact"); ?>
 <div class="l-page-contact">
 <div class="l-page-contact__inner">
 
@@ -74,4 +74,4 @@
 </section>
 </div>
 </div>
-<?php get_footer(); ?>
+<?php get_footer("contact"); ?>

@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("classes"); ?>
 <section class="l-page-classes">
     <div class="l-page-classes__inner">
       <div class="l-page-classes__wrapper">
@@ -44,4 +44,4 @@
       </div>  
     </div>
 </section>
-<?php get_footer(); ?>
+<?php get_footer("classes"); ?>

@@ -24,7 +24,7 @@
     }
     }
     .p-footer__title{
-        font-family: $second-font-family;
+        font-family: $font-family-base;
         font-size: 32px;
         font-weight: bold;
         color: $white;
@@ -89,7 +89,7 @@ display: flex;
 }
 .p-footer_nav ul li{
     //   margin-left: rem(40);
-      font-family: $second-font-family;
+      font-family: $font-family-base;
       font-weight: bold;
       font-size: rem(16);
       text-align: center;

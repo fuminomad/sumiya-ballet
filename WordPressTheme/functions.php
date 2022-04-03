@@ -34,6 +34,8 @@ add_action( 'after_setup_theme', 'my_setup' );
  */
 function my_script_init()
 {
+   //グーグルフォントとかの読み込み
+	wp_enqueue_style('my-font', '//fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
 
 	wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/slick/slick.css', array(), '1.8.1','all' );
 	wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/assets/slick/slick-theme.css', array(), '1.8.1','all' );

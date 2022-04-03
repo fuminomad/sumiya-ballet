@@ -1,7 +1,6 @@
-.l-mv {
+.p-page-single-mv {
   width: 100%;
   padding-top: rem(130);
-  // height: 100vh;
   min-height: 100vh; /* カスタムプロパティ未対応ブラウザ用のフォールバック */
   min-height: calc(var(--vh, 1vh) * 100);
   padding-left: rem(40);
@@ -13,14 +12,11 @@
     padding-top: rem(80);
   }
 }
-.p-mv {
-}
 
-.mv-container {
+.p-page-single-mv__container {
   max-width: rem(1200);
   position: relative;
   height: 100%;
-
   height: calc(var(--vh, 1vh) * 100 - 145px);
   width: 100%;
   margin: 0 auto;
@@ -29,32 +25,35 @@
     height: calc(var(--vh, 1vh) * 100 - 125px);
   }
 }
-
-.mv__wrapper {
+.page-single-mv__wrapper {
   height: inherit;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
-.mv__wrapper .swiper-wrapper {
+.page-single-mv__wrapper .page-single-mv__image {
   height: 100%;
+
   height: calc(var(--vh, 1vh) * 100 - 179px);
   width: 100%;
   @include mq(sp) {
     height: calc(var(--vh, 1vh) * 100 - 130px);
   }
 }
-.mv__wrapper .swiper-wrapper .swiper-slide {
+.page-single-mv__wrapper .page-single-mv__image .page-single-mv__figure {
   height: 100%;
   position: relative;
   padding-top: 56.25%;
 }
 @media screen and (min-width: 1000px) and (max-width: 1175px) {
-  .mv__wrapper .swiper-wrapper .swiper-slide {
+  .page-single-mv__wrapper .page-single-mv__image .page-single-mv__figure {
     padding-top: 64.25%;
   }
 }
-.mv__wrapper .swiper-wrapper .swiper-slide .slide-img {
+.page-single-mv__wrapper
+  .page-single-mv__image
+  .page-single-mv__figure
+  .page-single-mv__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -65,40 +64,14 @@
     height: calc(var(--vh, 1vh) * 100 - 7.8125rem);
   }
 }
-
-.slide-img-1 {
+.page-single-mv__img-4 {
   display: block;
-  background: url(../img/mv-pc-1-3.jpg) no-repeat top center / cover;
+  background: url(../img/page-single-mv.jpg) no-repeat top center / cover;
   @include mq(sp) {
-    background: url(../img/mv-sp-15.jpg) no-repeat top center / cover;
+    background: url(../img/page-single-mv.jpg) no-repeat top center / cover;
   }
 }
-.slide-img-2 {
-  display: block;
-  background: url(../img/mv-pc-2-5.jpg) no-repeat top center / cover;
-  @include mq(sp) {
-    background: url(../img/mv-sp-6.jpg) no-repeat top center / cover;
-  }
-  @include mq(ssp) {
-    background: url(../img/mv-sp-6.jpg) no-repeat top center / cover;
-  }
-}
-.slide-img-3 {
-  display: block;
-  background: url(../img/mv-pc-3-4.jpg) no-repeat top center / cover;
-  @include mq(sp) {
-    background: url(../img/mv-sp-10.jpg) no-repeat top center / cover;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .slide-img-1 {
-    background: url(../img/mv-tab-5.jpg) no-repeat top center / cover;
-  }
-}
-.p-mv_title-1st,
-.p-mv_title-2nd,
-.p-mv_title-3rd {
+.p-page-single-mv__title-4th {
   position: absolute;
   top: 0%;
   left: 50%;
@@ -116,7 +89,7 @@
   line-height: 1.25;
   font-family: $font-family-base;
   font-weight: 900;
-  font-weight: $font-weight-bold;
+  font-weight: bold;
   @include mq(tab) {
     font-size: 35px;
     padding-top: 15px;
@@ -127,9 +100,7 @@
     font-size: 25px;
   }
 }
-.p-mv_title-1st::before,
-.p-mv_title-2nd::before,
-.p-mv_title-3rd::before {
+.p-page-single-mv__title-4th::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -185,9 +156,7 @@
     linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 5px 51%
       no-repeat;
 }
-.p-mv_title-1st::after,
-.p-mv_title-2nd::after,
-.p-mv_title-3rd::after {
+.p-page-single-mv__title-4th::after {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -197,9 +166,7 @@
   box-shadow: 0 0 0 1px #ca4;
 }
 
-.p-mv_title-1st span,
-.p-mv_title-2nd span,
-.p-mv_title-3rd span {
+.p-page-single-mv__title-4th span {
   display: inline-block;
   position: relative;
   padding: 7px 15px;
@@ -216,20 +183,11 @@
     margin-top: rem(10);
   }
 }
-.p-mv_title-1st span {
+.p-page-single-mv__title-4th span {
   background: $base-color; /*背景色*/
 }
-.p-mv_title-2nd span {
-  background: #f4be7f; /*背景色*/
-  background: #f4d292; /*背景色*/
-  color: $r-red;
-}
-.p-mv_title-3rd span {
-  background: $r-red; /*背景色*/
-}
-.p-mv_title-1st span::before,
-.p-mv_title-2nd span::before,
-.p-mv_title-3rd span::before {
+
+.p-page-single-mv__title-4th span::before {
   position: absolute;
   content: "";
   top: 100%;
@@ -238,9 +196,7 @@
   border-bottom: solid 11px transparent;
   border-right: solid 20px rgb(149, 158, 155); /*折り返し部分*/
 }
-.p-mv_title-1st span::after,
-.p-mv_title-2nd span::after,
-.p-mv_title-3rd span::after {
+.p-page-single-mv__title-4th span::after {
   position: absolute;
   content: "";
   top: 100%;
@@ -250,7 +206,7 @@
   border-left: solid 20px rgb(149, 158, 155); /*折り返し部分*/
 }
 
-.p-mv__news {
+.p-page-single-mv__news {
   font-size: 16px;
   font-weight: bold;
   font-family: $font-family-base;
@@ -264,7 +220,7 @@
     padding-left: rem(18);
   }
 }
-.p-mv__icon {
+.p-page-single-mv__icon {
   position: absolute;
   bottom: -43px;
   right: 20px;
@@ -275,86 +231,31 @@
     right: 10px;
   }
 }
-.p-mv__wrapper {
+.p-page-single-mv__wrapper {
   width: 100%;
 }
 
-@keyframes zoomUp {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.15);
-  }
-}
-
-.swiper-slide-active .slide-img,
-.swiper-slide-duplicate-active .slide-img,
-.swiper-slide-prev .slide-img {
-  animation: zoomUp 30s linear 0s 1 normal both;
-}
-
 //imgタグだと下に隙間ができるのでblockに。
-.slide-img img {
+.page-single-mv__img img {
   display: block;
-}
-
-.is-pc {
-  display: block;
-  @include mq(sp) {
-    display: none;
-  }
-}
-.is-tab {
-  display: none;
-  @include mq(tab) {
-    display: block;
-  }
-}
-.is-sp {
-  display: none;
-  @include mq(sp) {
-    display: block;
-  }
-}
-.is-ssp {
-  display: none;
-  @include mq(ssp) {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 650px) and (max-width: 900px) {
-  .l-mv {
+  .p-page-single-mv {
     height: 500px !important;
     min-height: 500px !important;
   }
-  .mv__wrapper .swiper-wrapper .swiper-slide .slide-img {
-    height: calc(513px - 9.06rem) !important;
-    top: 15px;
+  .page-single-mv__figure .page-single-mv__img {
+    height: calc(520px - 9.06rem) !important;
   }
-  .mv-container {
-    height: calc(500px - 145px);
+
+  .p-page-single-mv__container {
+    height: calc(520px - 145px);
     @include mq(sp) {
       height: calc(500px - 125px) !important;
     }
   }
-  .slide-img img {
-    display: block;
-  }
-  .slide-img-1 {
-    display: block;
-    background: url(../img/mv-pc-1-3.jpg) no-repeat top center / cover !important;
-  }
-  .slide-img-2 {
-    display: block;
-    background: url(../img/mv-pc-2-5.jpg) no-repeat top center / cover !important;
-  }
-  .slide-img-3 {
-    display: block;
-    background: url(../img/mv-pc-3-4.jpg) no-repeat top center / cover !important;
-  }
-  .slide-img img {
+  .page-single-mv__img img {
     display: block !important;
   }
 }

@@ -20,7 +20,7 @@
 
 .l-page-class__title{
     text-align: center;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     font-size: rem(36);
     padding-bottom: rem(20);
     display: inline-block;
@@ -77,7 +77,7 @@
     box-shadow: 5px 5px 0 $blue;
     transition: 0.5s;
     border-radius: 5px;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
 }
 
 .classes__card-title:hover {

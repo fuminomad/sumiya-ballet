@@ -60,28 +60,30 @@
        </a></h1>
      
       <div class="p-header-nav">
-      <?php
-          wp_nav_menu(
-          array(
-          'depth' => 1,
-          'theme_location' => 'global', //ヘッダーメニューをここに表示すると指定
-          // 'container' => 'div',
-          'container_class' => 'p-header-nav__items',
-          'menu_class' => 'p-header-nav__item',
-          )
-          );
-          ?>
+          <div class="p-header-nav__items">
+          <ul class="p-header-nav__item">
+              <li class="p-header-nav__list p-header-nav__list--1st"><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
+              
+              <li class="p-header-nav__list p-header-nav__list--2nd"><a href="<?php echo esc_url(home_url('/teachers/')); ?>">Teachers</a></li>
+              <li class="p-header-nav__list p-header-nav__list--3rd"><a href="<?php echo esc_url(home_url('/category/archive/')); ?>">Classes</a></li>
+              
+              <li class="p-header-nav__list p-header-nav__list--5th"><a href="<?php echo esc_url(home_url('/information/')); ?>">Info</a></li>
+              <li class="p-header-nav__list p-header-nav__list--6th"><a href="<?php echo esc_url(home_url('/performance/')); ?>">Performance</a></li>
+              <li class="p-header-nav__list p-header-nav__list--7th"><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
+            </ul>
+            </div>
       </div>
+      
       
 
 
 
       <div class="p-header_btn j-header_btn">
-        <div class="p-header_hamburger">
+        <button class="p-header_hamburger">
           <span></span>
           <span></span>
           <span></span>
-      </div>
+      </button>
       </div>
       </div>
       

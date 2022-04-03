@@ -1,19 +1,14 @@
 // 色
-$base-color:#006E93;
 $base-color:#274a75;
 $gray:#7C8A97;
 $background: #fff; // 背景
-$text-color: #003041; // テキスト色
 $text-color: #000; // テキスト色
-$blue:#167AAC;
 $blue:#C6D6EB;
-$black:#000;
 $black:#333;
 $base-background: #2e6c83;
 $white:#fff;
 $orange:#FF9900;
 $background-blue:#4683C6;
-$bg-white:#f7f7f7;
 $bg-white:#f4f4f4;
 $r-red:#752B27;
 $light-gray:#e6e6e6;
@@ -21,25 +16,25 @@ $light-blue:#ECF1F8;
 $white-alpha:rgba($color: $white, $alpha: 0.8);
 $yellow:#fee512;
 $purple:#6667ab;
+$gold:#ca4;
 // マウスホバー
 $opacity: 0.7; // 透過度
-$opacity: 0.7; // 透過度
 
+
+// webフォントチラつき防止（低速環境考慮）
+html {
+	visibility: hidden;
+  }
+  html.wf-active, html.loading-delay {
+	visibility: visible;
+  }
 
 // フォント
-$third-font-family: 'Noto Sans JP', sans-serif;// ベースフォント
-$font-family-base: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;// ベースフォント
-$font-family-base: 'Noto Serif JP', serif;// ベースフォント
-$font-family-base: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo,sans-serif;// ベースフォント
-// $second-font-family:'Montserrat', sans-serif;
-// $font-family-base:'Roboto Slab', serif;
-$second-font-family:'Roboto Slab', serif;
+$font-family-base:  fot-tsukuardgothic-std,sans-serif;// ベースフォント
 $second-font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", Meiryo,sans-serif;// ベースフォント
-// $second-font-family:'fertigo-pro', serif;
-// $third-font-family: futura-pt-condensed, sans-serif;
-$font-logo: 'fertigo-pro', serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
+$font-weight-bold: bold; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
 
 // ---

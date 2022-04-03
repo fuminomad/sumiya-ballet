@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("top"); ?>
 <section class="p-mv l-mv">
   <div class="p-mv-container mv-container">
   <div class="swiper mv__wrapper" id="swiper0">
@@ -70,7 +70,7 @@
        </p>
           <div class="card-btns">
             <div class="c-btn">
-              <a href="<?php echo home_url('/gallery/'); ?>">gallery</a>
+              <a href="<?php echo home_url('/gallery/'); ?>">Gallery</a>
             </div>
             <div class="c-btn">
               <a href="<?php echo home_url('/performance/'); ?>">公演一覧</a>
@@ -106,7 +106,7 @@
         習い事の一環としてお稽古する生徒から、ボリショイバレエ学校、ミラノスカラ座バレエ学校、イギリスランベールスクールなど海外留学、そしてプロバレエダンサーとして活躍している人材を輩出しています。
       </p>
       <div class="c-btn">
-         <a href="<?php echo home_url('/information/'); ?>">more</a>
+         <a href="<?php echo home_url('/information/'); ?>">More</a>
        </div>
       </div>
       <div class="card__images">
@@ -146,7 +146,7 @@
   成人初心者〜経験者
   </div>
 <p class="p-class__text  line_narrow-2nd">
-相模大野、綾瀬、戸塚のみ
+相模大野、鶴間<br>綾瀬、戸塚のみ
 </p>
 </div>
 
@@ -228,4 +228,4 @@ if ( $the_query->have_posts() ) :
 </div>
 </section>
 
-<?php get_footer(); ?>
+<?php get_footer("top"); ?>

@@ -2,6 +2,9 @@
     position: relative;
     width: rem(50);
     height: rem(33);
+    padding: 0;
+    border: none;
+    background: $white;
     @include mq(tab){
         width: rem(40);
         height: rem(30);

@@ -99,14 +99,7 @@ color: $black;
 font-weight: normal;
 font-size: rem(18);
 }
-// .p-class__card:nth-child(3n) .p-class__text{
-//     color:$white;
-    
-//   }
-// .p-class__card:nth-child(3n) .p-class__header{
-//     color:$white;
-    
-//   }
+
 
 .p-class__card::after{
     position: absolute;
@@ -140,7 +133,7 @@ font-size: rem(18);
 .p-class__card:first-of-type::after{
     content: "kids&\Ayouth";
     white-space: pre;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
 }
 
 .p-class__card:nth-of-type(2)::after{
@@ -148,7 +141,7 @@ font-size: rem(18);
     background: $white;
     color: $base-color;
     border:5px solid $base-color;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
     padding: 60px 33px 62px 30px;
     top: -122px
 
@@ -157,6 +150,6 @@ font-size: rem(18);
 .p-class__card:nth-of-type(3)::after{
     content: "kids&\Ayouth";
     white-space: pre;
-    font-family: $second-font-family;
+    font-family: $font-family-base;
 }
 
