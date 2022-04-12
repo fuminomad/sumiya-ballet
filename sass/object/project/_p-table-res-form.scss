@@ -28,7 +28,7 @@
 }
 /*th（項目欄）は30%幅、テキストを右寄せ*/
 .table-res-form th {
-    width: 30%;
+    width: 33%;
     text-align: right;
 }
 /*「必須」部分のスタイリング*/
@@ -82,19 +82,21 @@
 }
 /*送信ボタンスタイリング*/
 .table-res-form input[type="submit"] {
-    border: 1px $base-color solid;
+    
     padding: 0.5em 4em;
     border-radius: 5px;
-    background: $base-color;
+    background: $orange;
     color: #fff;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    
+    transition: all .5s;
 }
 /*送信ボタン・マウスオーバー時スタイリング*/
 .table-res-form input[type="submit"]:hover {
-    background: #006599;
+    opacity: .7;
     box-shadow: none;
+    transition: all .5s;
+   
 }
 
 table,th,td{

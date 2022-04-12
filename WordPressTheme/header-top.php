@@ -49,6 +49,11 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<script>
+  window.ontouchstart = function() {};
+window.addEventListener('touchstart', function() {}, true);
+window.addEventListener('touchstart', function() {}, false);
+</script>
   <?php wp_body_open(); ?>
   <header class="l-header p-header j-header">
     <div class="p-header-inner">

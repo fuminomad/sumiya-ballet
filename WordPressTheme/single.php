@@ -1,6 +1,4 @@
-<?php get_header(); ?>
-
-<?php get_header(); ?>
+<?php get_header("classes"); ?>
 <section class="l-page-class">
     <div class="l-page-class__inner">
    
@@ -13,6 +11,13 @@
     <br><span>
         タイムスケジュール</span>
     </h1> 
+    <div class="p-page__breadcrumb">
+         <?php
+      if ( function_exists( 'bcn_display' ) ) {
+           bcn_display();
+                      }
+                      ?>
+  </div>
     <?php the_content(); ?>
     
     <?php if( has_tag('schedule') ) : ?>
@@ -265,5 +270,5 @@
 </section>
 
 
-<?php get_footer(); ?>
+<?php get_footer("classes"); ?>
 

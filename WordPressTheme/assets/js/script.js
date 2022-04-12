@@ -29,26 +29,36 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 	});
 
 	/* スムーススクロール */
-	jQuery('a[href^="#"]').click(function() {
-		let header = jQuery(".js-header").height();
-		let speed = 300;
-		let id = jQuery(this).attr("href");
-		let target = jQuery("#" == id ? "html" : id);
-		let position = jQuery(target).offset().top - header;
-		if ("fixed" !== jQuery("#header").css("position")) {
-			position = jQuery(target).offset().top;
-		}
-		if (0 > position) {
-			position = 0;
-		}
-		jQuery("html, body").animate(
-			{
-				scrollTop: position
-			},
-			speed
-		);
+	// jQuery('a[href^="#"]').click(function() {
+	// 	let header = jQuery(".js-header").height();
+	// 	let speed = 300;
+	// 	let id = jQuery(this).attr("href");
+	// 	let target = jQuery("#" == id ? "html" : id);
+	// 	let position = jQuery(target).offset().top - header;
+	// 	if ("fixed" !== jQuery("#header").css("position")) {
+	// 		position = jQuery(target).offset().top;
+	// 	}
+	// 	if (0 > position) {
+	// 		position = 0;
+	// 	}
+	// 	jQuery("html, body").animate(
+	// 		{
+	// 			scrollTop: position
+	// 		},
+	// 		speed
+	// 	);
+	// 	return false;
+	// });
+// ページ内スムーススクロール
+	var headerHeight = $('.j-header').outerHeight();
+	$('a[href^="#"]').click(function() {
+		var href= $(this).attr("href");
+		var target = $(href);
+		var position = target.offset().top - headerHeight;
+		$('body,html').stop().animate({scrollTop:position}, 500);   
 		return false;
 	});
+
 
 	/* 電話リンク */
 	let ua = navigator.userAgent;
@@ -64,7 +74,7 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 
 // topに戻るボタン
 
-var show = jQuery(".p-mv,.p-page-teachers__wrapper,.p-page-gallery__title,.p-page-information__wrapper,.p-contact-top__buttons,.p-page-single-mv").offset();
+var show = jQuery(".p-mv,.p-page-teachers__wrapper,.p-page-gallery__title,.p-page-information__wrapper,.p-contact-top__buttons,.p-page-single-mv,.l-page-class__times,.p-overview").offset();
 jQuery('.p-footer__btn').hide();
 jQuery(window).scroll(function() {
 if(jQuery(this).scrollTop() > show.top) {

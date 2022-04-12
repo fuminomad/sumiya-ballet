@@ -13,13 +13,32 @@ text-align: center;
   max-width: rem(700);
   font-weight: normal;
    display: inline-block;
+   padding-top: rem(60);
+   
    @include mq(sp){
-     font-size: rem(18);
+     font-size: rem(16);
    }
 }
 .p-contact-top__title span{
 display: inline-block;
+
 }
+.p-contact-top__title--bottom{
+  width: 100%;
+  max-width: rem(700);
+  font-weight: normal;
+   display: inline-block;
+   padding-top: rem(60);
+   
+   @include mq(sp){
+     font-size: rem(16);
+   }
+}
+.p-contact-top__title--bottom span{
+display: inline-block;
+text-decoration: underline double #FF9900;
+}
+
 .p-contact-top__buttons{
 display: flex;
 // justify-content: center;
@@ -109,12 +128,12 @@ padding-bottom: rem(80);
       padding-right: 7%;
       text-align: center;
       text-align: left;
-      @include mq(sp){
+     
     
-      }
     }
 .p-contact__text span{
   // display: inline-block;
+ 
 }
     .passing-txt{
         text-align: center;
@@ -145,7 +164,7 @@ padding-bottom: rem(80);
     }
 
     .p-contact-top__tel-box{
-      padding-top: rem(40);
+      padding-top: rem(20);
     }
     
     .p-contact-top__tels{
@@ -161,4 +180,16 @@ padding-bottom: rem(80);
     .p-contact-top__tel a{
      text-decoration: underline;
      color: $base-color;
+    }
+    .p-contact__text{
+      padding-bottom: rem(30);
+    }
+    .p-contact__texts--top{
+      text-align: center;
+    
+    }
+    .p-contact__text--top{
+      text-align: center;
+      padding-bottom: 20px;
+      text-decoration: underline solid #FF9900;
     }

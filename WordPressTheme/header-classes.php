@@ -55,14 +55,16 @@
       
      
     
-      <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">
-       <img src="<?php echo get_template_directory_uri() ?>/assets/img/sumiya-logo-3.png" alt="ロゴ" loading="lazy" width="135" height="71">
-       </a></h1>
+      <a href="<?php echo esc_url(home_url('/')); ?>">
+      <h1 class="p-header__logo--2nd">
+      角屋満李子バレエ団<br>トップページはこちら
+    </h1>
+  </a>
      
       <div class="p-header-nav">
           <div class="p-header-nav__items">
           <ul class="p-header-nav__item">
-              <li class="p-header-nav__list p-header-nav__list--1st"><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
+              <!-- <li class="p-header-nav__list p-header-nav__list--1st"><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li> -->
               
               <li class="p-header-nav__list p-header-nav__list--2nd"><a href="<?php echo esc_url(home_url('/teachers/')); ?>">Teachers</a></li>
               

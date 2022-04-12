@@ -246,7 +246,7 @@ margin: 0 auto;
 	border-image-slice: 20;
 	border-image-repeat: round;
 	border: 7px solid $white;
-    @include mq(sp){
+    @include mq(ssp){
         display: block;
     }
 }
@@ -260,7 +260,7 @@ margin: 0 auto;
     position: absolute;
     width: 100px;
     height: 100px;
-    @include mq(sp){
+    @include mq(ssp){
      width: 60px;
      height: 60px;
      display: block;
@@ -293,7 +293,7 @@ margin: 0 auto;
   }
   /*スクロールバーの動く部分*/
   .wp-block-image::-webkit-scrollbar-thumb {
-    background: #ff99ab ;
+    background: $orange ;
     border: none;
   }
   /*スクロールバーの動く部分のホバー（マウスオーバー）*/
@@ -445,7 +445,7 @@ display: block;
     margin-bottom: 30px;
     position: relative;
     font-size: rem(24);
-    // display: inline-block;
+    display: inline-block;
    color: $black;
   
 //    background: $white;
@@ -454,14 +454,13 @@ display: block;
   
     @include mq(sp){
     font-size: rem(18); 
-    width: 100%;
-     max-width: rem(600);
+  
     }
 }
 .l-page-class__text::before,.l-page-class__text::after{
     position: absolute;
-    left: 0;
-    width: 100%;
+    left: -5%;
+    width: 110%;
     height: 4px;
     content: '';
    background: $base-color;
@@ -516,7 +515,7 @@ display: block;
   } 
   .l-page-class__text-2nd p{
       display: inline-block;
-   text-decoration: underline double #ff99ab ;
+   text-decoration: underline double #FF9900  ;
   }
   .p-class__btn-totsuka{
       margin-top: rem(80);
@@ -526,7 +525,7 @@ display: block;
   }
   .p-class__scroll{
       display: none;
-     color: #ff99ab  ; 
+     color: $orange ; 
      font-weight: bold;
 
   }

@@ -46,6 +46,9 @@
     }
     .p-footer-nav ul li:last-child{
         border-right: 2px solid $base-background;
+        @include mq(sp){
+          border-right: none;
+          }
        
     }
     .p-footer-nav__list--1st a:after {

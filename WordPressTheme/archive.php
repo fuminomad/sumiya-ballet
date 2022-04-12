@@ -5,7 +5,7 @@
           <h1 class="p-page-section__subtitle">
           Classes
     <br><span>
-       教室一覧</span>
+       教室一覧&タイムスケジュール</span>
           </h1>
    <div class="p-page__breadcrumb">
          <?php

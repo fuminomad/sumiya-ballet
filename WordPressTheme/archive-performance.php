@@ -3,9 +3,9 @@
     <div class="l-page-performance-classes__inner">
       <div class="l-page-performance-classes__wrapper">
           <h1 class="p-page-section__subtitle">
-          公演一覧
-    <!-- <br><span>
-       公演一覧</span> -->
+          Performance
+    <br><span>
+       公演一覧</span>
           </h1>
    <div class="p-page__breadcrumb">
          <?php
