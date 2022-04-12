@@ -274,6 +274,7 @@ transition: all 0.5s;
     position: relative;
     padding: 10px 20px;
     letter-spacing: .5px;
+    font-weight: bold;
     @include mq(tab){
       font-size: 14px;
       }

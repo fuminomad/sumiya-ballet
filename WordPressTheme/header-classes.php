@@ -56,9 +56,9 @@
      
     
       <a href="<?php echo esc_url(home_url('/')); ?>">
-      <h1 class="p-header__logo--2nd">
+      <div class="p-header__logo--2nd">
       角屋満李子バレエ団<br>トップページはこちら
-    </h1>
+    </div>
   </a>
      
       <div class="p-header-nav">

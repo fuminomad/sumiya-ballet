@@ -90,7 +90,7 @@
         本部のスタジオは相模大野駅徒歩３分の場所にあり、その他、神奈川県内に８教室(鶴間・西三田・綾瀬・南林間・戸塚・本厚木・海老名) 約150名の生徒が在籍しております。
         </p>
         <div class="c-btn--long">
-         <a href="<?php echo home_url('/category/archive/'); ?>">教室一覧＆タイムスケジュール</a>
+         <a href="<?php echo home_url('/category/archive/'); ?>">教室一覧＆<br class="is-ssp">タイムスケジュール</a>
        </div>
       </div>
       <div class="card__images">

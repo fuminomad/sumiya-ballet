@@ -46,6 +46,9 @@
     height: rem(51);
   }
 }
+.performance-classes__card{
+  
+}
 .performance-classes__card-title {
   font-size: rem(24);
   font-family: $font-family-base;
@@ -55,7 +58,7 @@
   padding: 20px 10px;
   text-align: center;
   font-weight: $font-weight-base;
-
+ border: 2px solid $bg-white ;
   @include mq(sp) {
     font-size: rem(16);
   }

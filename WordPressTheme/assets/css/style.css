@@ -2173,6 +2173,7 @@ summary {
 
 .p-header__logo--2nd {
 	font-size: 1rem;
+	font-weight: bold;
 	letter-spacing: .5px;
 	padding: 10px 20px;
 	position: relative;
@@ -2817,6 +2818,7 @@ summary {
 }
 
 .performance-classes__card-title {
+	border: 2px solid #f4f4f4;
 	color: #333;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1.5rem;
