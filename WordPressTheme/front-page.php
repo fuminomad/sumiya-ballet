@@ -31,6 +31,7 @@
     </div>
   </div>
 </section>
+
 <section class="l-about p-about">
   <div class="p-about__inner">
     <h2 class="p-about__title c-section__title">
@@ -46,6 +47,7 @@
     </div>
   </div>
 </section>
+
 <section class="p-company l-company">
   <div class="p-company__inner">
     <h2 class="c-section__title p-company__title">
@@ -108,6 +110,7 @@
     </div>
   </div>
 </section>
+
 <section class="p-class l-class">
   <div class="p-class__inner">
     <h2 class="c-section__title p-class__title">
@@ -151,6 +154,7 @@
     </div>
   </div>
 </section>
+
 <section class="p-performance l-performance">
   <div class="p-performance__inner">
     <h2 class="p-performance__title">
