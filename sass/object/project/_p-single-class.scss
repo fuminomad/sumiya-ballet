@@ -1,24 +1,23 @@
-.l-page-class{
-    
+.l-page-class {
     padding-top: rem(200);
     background: $light-gray;
     padding-bottom: rem(100);
-    @include mq(sp){
-    padding-top: rem(100);    
+    @include mq(sp) {
+        padding-top: rem(100);
     }
 }
-.l-page-class__inner{
+.l-page-class__inner {
     max-width: rem(1200);
     margin: 0 auto;
     width: 100%;
     text-align: center;
     padding: 0 40px;
-    @include mq(sp){
-    padding: 0 15px;   
+    @include mq(sp) {
+        padding: 0 15px;
     }
 }
 
-.l-page-class__title{
+.l-page-class__title {
     text-align: center;
     font-family: $font-family-base;
     font-size: rem(36);
@@ -30,28 +29,31 @@
     background: $white;
 }
 
-.l-page-class__title::before{
+.l-page-class__title::before {
     position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  background:
-    radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top / 23px 23px no-repeat,
-    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px no-repeat,
-    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px 23px no-repeat,
-    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom / 23px 23px no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top /
+            23px 23px no-repeat,
+        radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px
+            23px no-repeat,
+        radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom /
+            23px 23px no-repeat,
+        radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom /
+            23px 23px no-repeat,
+        linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
+        linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
+        linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
+        linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
+        linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
+        linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
+        linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
+        linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat;
 }
-.l-page-class__title::after{
+.l-page-class__title::after {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -59,21 +61,20 @@
     left: 10px;
     content: "";
     box-shadow: 0 0 0 1px #ca4;
- 
 }
-.l-page-classes__title h1{
+.l-page-classes__title h1 {
     font-weight: normal;
 }
-.classes__card-title{
-  font-weight: normal;  
-  display: inline-block;
-  background: $base-color;
-  color: $white;
-  padding: 20px 40px;
-  min-width: 300px;
-  border-radius: 10px;
-  font-weight: bold;
-  background-color: $base-color;
+.classes__card-title {
+    font-weight: normal;
+    display: inline-block;
+    background: $base-color;
+    color: $white;
+    padding: 20px 40px;
+    min-width: 300px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: $base-color;
     box-shadow: 5px 5px 0 $blue;
     transition: 0.5s;
     border-radius: 5px;
@@ -81,17 +82,14 @@
 }
 
 .classes__card-title:hover {
-      transition: 0.5s;
+    transition: 0.5s;
     text-decoration: none;
     background-color: $blue;
     box-shadow: 0 0 0;
     color: $base-color;
-  }
+}
 
-
-
-
-.l-page-class__subtitle{
+.l-page-class__subtitle {
     width: 70%;
     margin: 0 auto;
     margin-bottom: rem(50);
@@ -102,26 +100,22 @@
     padding-bottom: rem(40);
     padding-top: rem(40);
     color: $base-color;
-    // border:5px solid $white;
     font-weight: normal;
     background: #20337f;
     background: $base-color;
     color: $yellow;
-    // font-family: $third-font-family;
     box-shadow: 0 0 5px $base-color;
     background-image: linear-gradient(45deg, $white 10px, transparent 0),
-                    linear-gradient(-45deg, $white 10px, transparent 0),
-                    linear-gradient(135deg, $white 10px, transparent 0),
-                    linear-gradient(-135deg, $white 10px, transparent 0);
-     @include mq(sp){
-   font-size: rem(30);    
-   width: 100%; 
-   max-width: rem(600);
-   margin-bottom: rem(80);  
-   }  
-            
+        linear-gradient(-45deg, $white 10px, transparent 0), linear-gradient(135deg, $white 10px, transparent 0),
+        linear-gradient(-135deg, $white 10px, transparent 0);
+    @include mq(sp) {
+        font-size: rem(30);
+        width: 100%;
+        max-width: rem(600);
+        margin-bottom: rem(80);
+    }
 }
-.l-page-class__subtitle::before{
+.l-page-class__subtitle::before {
     position: absolute;
     top: 1px;
     right: 1px;
@@ -131,7 +125,7 @@
     box-shadow: 0 0 0 5px $white;
     z-index: 5;
 }
-.l-page-class__subtitle::after{
+.l-page-class__subtitle::after {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -139,56 +133,46 @@
     left: 10px;
     content: "";
     box-shadow: 0 0 0 1px $white;
- 
 }
-.l-page-class__subtitle span{
+.l-page-class__subtitle span {
     position: relative;
     color: $white;
     font-size: rem(24);
     // font-family: $third-font-family;
-    @include mq(sp){
-    font-size: rem(18);    
+    @include mq(sp) {
+        font-size: rem(18);
     }
 }
- span::before,.l-page-class__subtitle span::after{
-    content: '';
-position: absolute;
-// top: 50%;
-// display: inline-block;
-// width: 44px;
-// height: 2px;
-// background-color: $white;
-}
-.l-page-class__subtitle span::before{
-    // left: -37px;
-    // transform: rotate(60deg);
- 
-}
-.l-page-class__subtitle span::after{
-   right: -37px;
-	transform: rotate(-60deg);
-}
-.l-page-class__image{
-max-width: 700px;
-margin: 0 auto;
+span::before,
+.l-page-class__subtitle span::after {
+    content: "";
+    position: absolute;
 }
 
-.l-page-class__figure{
+.l-page-class__subtitle span::after {
+    right: -37px;
+    transform: rotate(-60deg);
+}
+.l-page-class__image {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.l-page-class__figure {
     text-align: center;
     position: relative;
     width: 100%;
     margin: 0 auto;
-   
-    @include mq(sp){
+
+    @include mq(sp) {
         width: 100%;
     }
 }
-.l-page-class__figure img{
+.l-page-class__figure img {
     position: relative;
     box-shadow: 20px 20px 0 $gray;
-    @include mq(sp){
+    @include mq(sp) {
         box-shadow: 10px 10px 0 $gray;
-
     }
 }
 
@@ -200,200 +184,181 @@ margin: 0 auto;
     border-radius: 0 10px 10px 10px;
     display: inline-block;
     background: $white;
-    // font-weight: bold;
     color: $black;
-    // font-family: $third-font-family;
-    margin-bottom: rem(30);
     margin-top: rem(80);
     padding: 30px 50px 30px 70px;
     font-weight: normal;
-      @include mq(sp){
-        padding: 1rem 1.5rem 1rem 3rem   ;
+    @include mq(sp) {
+        padding: 1rem 1.5rem 1rem 3rem;
         display: block;
-        margin: 50px auto  30px;
+        margin: 50px auto 30px;
         max-width: rem(600);
         font-size: rem(18);
     }
-  }
-  
-  .l-page-class__time:before {
+}
+
+.l-page-class__time:before {
     font-size: 15px;
     font-size: 1.5rem;
     position: absolute;
     top: -42px;
     left: -3px;
-    // height: 24px;
     padding: 0 1em;
-    content: 'クラシックバレエ';
+    content: "クラシックバレエ";
     font-weight: normal;
     color: #fff;
     border-radius: 10px 10px 0 0;
     background: $gray;
-   
-  }
-.l-page-class__figure:after{
+}
+.l-page-class__figure:after {
     display: none;
-    content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: calc(100% - 5px);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 5px);
     width: 100%;
-	height: calc(100% - 5px);
+    height: calc(100% - 5px);
     height: 100%;
-	// border-image-source: repeating-linear-gradient(45deg, #fff, #fff 3px, rgba(0 0 0 / 0) 0, rgba(0 0 0 / 0) 6px);
-	border-image-slice: 20;
-	border-image-repeat: round;
-	border: 7px solid $white;
-    @include mq(ssp){
+    border-image-slice: 20;
+    border-image-repeat: round;
+    border: 7px solid $white;
+    @include mq(ssp) {
         display: block;
     }
 }
-.l-page-class__figure:before{
+.l-page-class__figure:before {
     display: none;
     content: "";
     z-index: 2;
-    background: url(../img/logo-gray.png) no-repeat center center /contain;
+    background: url(../img/logo-gray.png) no-repeat center center / contain;
     right: 10px;
     bottom: 0;
     position: absolute;
     width: 100px;
     height: 100px;
-    @include mq(ssp){
-     width: 60px;
-     height: 60px;
-     display: block;
+    @include mq(ssp) {
+        width: 60px;
+        height: 60px;
+        display: block;
     }
 }
 
-// .l-page-wrapper{
-// display: flex;    
-// }
-.wp-block-image{
+.wp-block-image {
     margin: 0 auto 30px;
     width: 100%;
-    @include mq(sp){
-      overflow-x: auto;  
-       
-      margin-bottom: 40px;
+    @include mq(sp) {
+        overflow-x: auto;
+
+        margin-bottom: 40px;
     }
 }
-.wp-block-image img{
-  max-width: 100%;
-  min-width: 750px;
-  vertical-align: top;  
+.wp-block-image img {
+    max-width: 100%;
+    min-width: 750px;
+    vertical-align: top;
 }
 .wp-block-image::-webkit-scrollbar {
     height: 4px;
-  }
-  /*スクロールバー全体の背景*/
-  .wp-block-image::-webkit-scrollbar-track {
+}
+/*スクロールバー全体の背景*/
+.wp-block-image::-webkit-scrollbar-track {
     background: #eee;
-  }
-  /*スクロールバーの動く部分*/
-  .wp-block-image::-webkit-scrollbar-thumb {
-    background: $orange ;
+}
+/*スクロールバーの動く部分*/
+.wp-block-image::-webkit-scrollbar-thumb {
+    background: $orange;
     border: none;
-  }
-  /*スクロールバーの動く部分のホバー（マウスオーバー）*/
-  .wp-block-image::-webkit-scrollbar-thumb:hover {
+}
+/*スクロールバーの動く部分のホバー（マウスオーバー）*/
+.wp-block-image::-webkit-scrollbar-thumb:hover {
     background: #999;
-  }
-.p-overview{
-width: 80%;
-max-width: rem(800);
-margin: 80px auto 0; 
-@include mq(sp){
-    width: 100%;
-    max-width: rem(600);
 }
+.p-overview {
+    width: 80%;
+    max-width: rem(800);
+    margin: 80px auto 0;
+    @include mq(sp) {
+        width: 100%;
+        max-width: rem(600);
+    }
 }
-.p-overview__title{
-margin-top: 40px;
+.p-overview__title {
+    margin-top: 40px;
 
- position: relative;
-  padding: 1.5rem;
-  text-align: center;
-  border: 2px solid #000;
-  background: $base-color;
-  color: $white;
-  
+    position: relative;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid #000;
+    background: $base-color;
+    color: $white;
 }
-.p-overview__wrapper-2nd{
-display: block;
+.p-overview__wrapper-2nd {
+    display: block;
 }
-.p-overview__wrapper-2nd dl{
+.p-overview__wrapper-2nd dl {
     width: 100%;
     background: $white;
-   
-    
 }
-.p-overview__wrapper-2nd dt{
+.p-overview__wrapper-2nd dt {
     background: $gray;
-	padding: 5px;
+    padding: 5px;
     color: $white;
     font-weight: bold;
-	// width: 150px;
-	border-right: 1px solid $gray;
-	border-bottom: 1px solid $gray;
-	
+    border-right: 1px solid $gray;
+    border-bottom: 1px solid $gray;
 }
 .p-overview__wrapper {
     display: flex;
     width: 100%;
     border: 1px solid $gray;
-    // border-bottom: none;
-    @include mq(sp){
+    @include mq(sp) {
         display: block;
     }
 }
-.p-overview__wrapper dl{
+.p-overview__wrapper dl {
     width: 30%;
     background: $white;
-    @include mq(sp){
-    width: 100%;
+    @include mq(sp) {
+        width: 100%;
     }
 }
-.p-overview__wrapper dt{
+.p-overview__wrapper dt {
     background: $gray;
-	padding: 5px;
+    padding: 5px;
     color: $white;
     font-weight: bold;
-	// width: 150px;
-	border-right: 1px solid $gray;
-	border-bottom: 1px solid $gray;
-	
+    border-right: 1px solid $gray;
+    border-bottom: 1px solid $gray;
 }
-.p-overview__wrapper dd:last-child{
+.p-overview__wrapper dd:last-child {
     border-bottom: 0;
 }
-.p-overview__wrapper dd{
+.p-overview__wrapper dd {
     background: #fff;
-	padding: 20px 5px;
-	// width: calc(100% - 150px);
-	border-bottom: 1px solid $gray;
-	// border-right: 1px solid $gray;
+    padding: 20px 5px;
+    border-bottom: 1px solid $gray;
     color: $black;
 }
-.p-overview__maps{
-    padding-top: 400 / 750 * 100%;  
+.p-overview__maps {
+    padding-top: 400 / 750 * 100%;
     position: relative;
     width: 100%;
     width: 70%;
     margin-left: auto;
-    @include mq(sp){
-    width: 100%;    
+    @include mq(sp) {
+        width: 100%;
     }
 }
-.p-overview__maps iframe{
+.p-overview__maps iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-.p-overview__title{
+.p-overview__title {
     text-align: center;
     font-family: $font-family-base;
     font-size: rem(24);
@@ -405,28 +370,31 @@ display: block;
     background: $white;
     color: $black;
 }
-.p-overview__title::before{
+.p-overview__title::before {
     position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-  background:
-    radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top / 23px 23px no-repeat,
-    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px no-repeat,
-    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px 23px no-repeat,
-    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom / 23px 23px no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top /
+            23px 23px no-repeat,
+        radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px
+            23px no-repeat,
+        radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom /
+            23px 23px no-repeat,
+        radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom /
+            23px 23px no-repeat,
+        linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
+        linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
+        linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
+        linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 3px no-repeat,
+        linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 3px 51% no-repeat,
+        linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
+        linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
+        linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat;
 }
-.p-overview__title::after{
+.p-overview__title::after {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -434,148 +402,130 @@ display: block;
     left: 10px;
     content: "";
     box-shadow: 0 0 0 1px #ca4;
- 
 }
 
-.l-page-class__contact{
+.l-page-class__contact {
     padding-top: rem(80);
-    
 }
 .l-page-class__text {
     margin-bottom: 30px;
     position: relative;
     font-size: rem(24);
     display: inline-block;
-   color: $black;
-  
-//    background: $white;
+    color: $black;
+    margin: auto;
 
-   margin: auto;
-  
-    @include mq(sp){
-    font-size: rem(18); 
-  
+    @include mq(sp) {
+        font-size: rem(18);
     }
 }
-.l-page-class__text::before,.l-page-class__text::after{
+.l-page-class__text::before,
+.l-page-class__text::after {
     position: absolute;
     left: -5%;
     width: 110%;
     height: 4px;
-    content: '';
-   background: $base-color;
-//    @include mq(ssp){
-//      width: 120%; 
-//      left: -10%; 
-//    }
+    content: "";
+    background: $base-color;
 }
-.l-page-class__text::before{
+.l-page-class__text::before {
     top: -5px;
 }
-.l-page-class__text::after{
+.l-page-class__text::after {
     bottom: -5px;
 }
-.l-page-class__text a{
+.l-page-class__text a {
     margin-top: rem(30);
 }
 
-.p-btn_wrapper{
+.p-btn_wrapper {
     display: flex;
     justify-content: center;
-    @include mq(sp){
-    display: block;    
-    }
-}
-.p-btn_wrapper--2nd{
-    padding-bottom: rem(30);
-    display: flex;
-    justify-content: center;
-    
-    flex-wrap: wrap;
-    margin:  auto;
-    @include mq(sp){
-    // max-width: rem(400);
-
-    }
-   
-   
-}
-.p-btn_wrapper--3rd{
-    display: flex;
-    justify-content: center;
-    @include mq(sp){
-    display: block;    
-    }
-}
-
-.l-page-class__text-2nd{
-    padding-top: rem(15);
-     padding-bottom: rem(15);
-    
-  } 
-  .l-page-class__text-2nd p{
-      display: inline-block;
-   text-decoration: underline double #FF9900  ;
-  }
-  .p-class__btn-totsuka{
-      margin-top: rem(80);
-      @include mq(sp){
-      margin-top: rem(40);     
-      }
-  }
-  .p-class__scroll{
-      display: none;
-     color: $orange ; 
-     font-weight: bold;
-
-  }
-  @media screen and (max-width: 629px){
-    .p-class__scroll{
+    @include mq(sp) {
         display: block;
     }
 }
-.l-page-class__times{
-    margin-bottom: 80px;
-    margin-bottom: 60px;
-    @include mq(sp){
-    margin-bottom: rem(40);
+.p-btn_wrapper--2nd {
+    padding-bottom: rem(30);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.p-btn_wrapper--3rd {
+    display: flex;
+    justify-content: center;
+    @include mq(sp) {
+        display: block;
     }
 }
 
-.p-btn__title--2nd{
-  margin-top: 10px;
-  margin-bottom: rem(10);
-  color: $orange;  
-  padding:rem(10) rem(15);
-  background: $white;
-  display: inline-block;
-  border-radius: 20px;
+.l-page-class__text-2nd {
+    padding-top: rem(15);
+    padding-bottom: rem(15);
 }
-.p-btn__title--3rd{
-margin-top: rem(10);
-margin-bottom: rem(10);
-padding:rem(10) rem(15);
-background: $white;
-display: inline-block;
-border-radius: 20px;
-color: $base-color;
+.l-page-class__text-2nd p {
+    display: inline-block;
+    text-decoration: underline double #ff9900;
+}
+.p-class__btn-totsuka {
+    margin-top: rem(80);
+    @include mq(sp) {
+        margin-top: rem(40);
+    }
+}
+.p-class__scroll {
+    display: none;
+    color: $orange;
+    font-weight: bold;
+}
+@media screen and (max-width: 629px) {
+    .p-class__scroll {
+        display: block;
+    }
+}
+.l-page-class__times {
+    margin-bottom: 80px;
+    margin-bottom: 60px;
+    @include mq(sp) {
+        margin-bottom: rem(40);
+    }
 }
 
-.l-page-class__contacts{
-max-width: rem(800);
-width: 100%;
-margin: auto;
-padding: 0 40px;
-@include mq(sp){
-    padding: 0;
+.p-btn__title--2nd {
+    margin-top: 10px;
+    margin-bottom: rem(10);
+    color: $orange;
+    padding: rem(10) rem(15);
+    background: $white;
+    display: inline-block;
+    border-radius: 20px;
 }
-}
-.l-page-class img{
-   max-width: 500px; 
-   width: 100%;
+.p-btn__title--3rd {
+    margin-top: rem(10);
+    margin-bottom: rem(10);
+    padding: rem(10) rem(15);
+    background: $white;
+    display: inline-block;
+    border-radius: 20px;
+    color: $base-color;
 }
 
-.current-item br{
+.l-page-class__contacts {
+    max-width: rem(800);
+    width: 100%;
+    margin: auto;
+    padding: 0 40px;
+    @include mq(sp) {
+        padding: 0;
+    }
+}
+.l-page-class img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.current-item br {
     display: none;
 }
 .current-item {

@@ -6,24 +6,21 @@
 }
 /*一行ごとに上ボーダー*/
 .table-res-form tr {
-    border-top: 1px #DDD solid;
+    border-top: 1px #ddd solid;
 }
 /*一番上の行だけボーダーなし*/
 .table-res-form tr:first-child {
     border-top: none;
 }
-/*背景色つける*/
-// .table-res-form tr {
-//    border-left:1px solid #ca4;
-//    border-right:1px solid  #ca4;
-// }
+
 .table-res-form tr:last-child {
-   border-left:none;
-   border-right:none;
+    border-left: none;
+    border-right: none;
 }
 
 /*thとtd内の余白指定*/
-.table-res-form th, .table-res-form td {
+.table-res-form th,
+.table-res-form td {
     padding: 1.5em;
 }
 /*th（項目欄）は30%幅、テキストを右寄せ*/
@@ -34,7 +31,7 @@
 /*「必須」部分のスタイリング*/
 .table-res-form .requied {
     font-size: 0.8em;
-    color: #FFF;
+    color: #fff;
     display: inline-block;
     padding: 0.3em 0.3em 0.2em;
     background: red;
@@ -44,17 +41,18 @@
 /*ここから768px以下の指定*/
 
 @media only screen and (max-width: 768px) {
-/*thとtdをブロック化して幅100％にして、縦積み*/
-    .table-res-form th, .table-res-form td {
+    /*thとtdをブロック化して幅100％にして、縦積み*/
+    .table-res-form th,
+    .table-res-form td {
         width: 100%;
         display: block;
     }
-/*th（項目名）欄の不要な余白削除・テキスト左寄せ*/
+    /*th（項目名）欄の不要な余白削除・テキスト左寄せ*/
     .table-res-form th {
         padding-bottom: 0;
         text-align: left;
     }
-/*不要な最終行の左のthを非表示にする*/
+    /*不要な最終行の左のthを非表示にする*/
     .table-res-form .empty {
         display: none;
     }
@@ -65,43 +63,48 @@
 /*ここから入力欄のスタイル指定*/
 
 /*各入力フォームスタイリング*/
-.table-res-form input[type="text"], input[type="email"],input[type="tel"], textarea {
+.table-res-form input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
     border: 1px $base-color solid;
     padding: 0.5em;
     border-radius: 5px;
     margin-bottom: 0.5em;
     width: 90%;
-    @include mq(sp){
+    @include mq(sp) {
         width: 100%;
     }
 }
 /*入力欄にフォーカスしたら変化*/
-.table-res-form input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    background: #EEFFFF;
+.table-res-form input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background: #eeffff;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 /*送信ボタンスタイリング*/
 .table-res-form input[type="submit"] {
-    
     padding: 0.5em 4em;
     border-radius: 5px;
     background: $orange;
     color: #fff;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
     font-weight: bold;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 /*送信ボタン・マウスオーバー時スタイリング*/
 .table-res-form input[type="submit"]:hover {
-    opacity: .7;
+    opacity: 0.7;
     box-shadow: none;
-    transition: all .5s;
-   
+    transition: all 0.5s;
 }
 
-table,th,td{
+table,
+th,
+td {
     border: none;
 }
-select{
+select {
     border: 1px solid #666;
 }

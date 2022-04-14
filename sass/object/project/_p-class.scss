@@ -88,11 +88,12 @@ width: calc(33.3% - 40px * 2 / 3);
 padding-bottom: rem(30);
 color: $black;
 font-size: rem(18);
-font-weight: normal;
+font-weight: bold;
 @include mq(sp){
  font-size: rem(24);   
 }
 }
+
 .p-class__text{
 color:$black;
 color: $black;

@@ -1,105 +1,89 @@
-.p-contact-top{
-padding-top: rem(60);
+.p-contact-top {
+  padding-top: rem(60);
   background: $bg-white;
-@include mq(sp){
-  padding-top: 0;
-}
-}
-.p-contact-top__texts{
-text-align: center;
-}
-.p-contact-top__title{
-  width: 100%;
-  max-width: rem(700);
-  font-weight: normal;
-   display: inline-block;
-   padding-top: rem(60);
-   
-   @include mq(sp){
-     font-size: rem(16);
-   }
-}
-.p-contact-top__title span{
-display: inline-block;
-
-}
-.p-contact-top__title--bottom{
-  width: 100%;
-  max-width: rem(700);
-  font-weight: normal;
-   display: inline-block;
-   padding-top: rem(60);
-   
-   @include mq(sp){
-     font-size: rem(16);
-   }
-}
-.p-contact-top__title--bottom span{
-display: inline-block;
-text-decoration: underline double #FF9900;
-}
-
-.p-contact-top__buttons{
-display: flex;
-// justify-content: center;
-padding-top: 40px;
-flex-wrap: wrap;
-max-width: rem(700);
-margin: auto;
-justify-content: space-evenly;
-padding-bottom: rem(80);
-}
-
-
-// .p-contact-top__button:not(:nth-child(2n + 1)) {
-//   @include mq(tab){
-//     // margin-left: 40px;
-//     width: calc(50% - 40px * 1 / 2);
-//   }
-// }
-.p-contact-top__button{
-  width: 25%;
-  @include mq(tab){
-    width: 50%;
-
+  @include mq(sp) {
+    padding-top: 0;
   }
-  @include mq(ssp){
+}
+.p-contact-top__texts {
+  text-align: center;
+}
+.p-contact-top__title {
+  width: 100%;
+  max-width: rem(700);
+  font-weight: normal;
+  display: inline-block;
+  padding-top: rem(60);
+
+  @include mq(sp) {
+    font-size: rem(16);
+  }
+}
+.p-contact-top__title span {
+  display: inline-block;
+}
+.p-contact-top__title--bottom {
+  width: 100%;
+  max-width: rem(700);
+  font-weight: normal;
+  display: inline-block;
+  padding-top: rem(60);
+
+  @include mq(sp) {
+    font-size: rem(16);
+  }
+}
+.p-contact-top__title--bottom span {
+  display: inline-block;
+  text-decoration: underline double #ff9900;
+}
+
+.p-contact-top__buttons {
+  display: flex;
+
+  padding-top: 40px;
+  flex-wrap: wrap;
+  max-width: rem(700);
+  margin: auto;
+  justify-content: space-evenly;
+  padding-bottom: rem(80);
+}
+
+.p-contact-top__button {
+  width: 25%;
+  @include mq(tab) {
+    width: 50%;
+  }
+  @include mq(ssp) {
     width: 100%;
   }
-
 }
-.p-contact-top__button{
+.p-contact-top__button {
   padding-top: rem(30);
+}
 
+.p-contact {
+  margin-top: rem(120);
+  padding-bottom: rem(100);
+  @include mq(sp) {
+    margin-top: rem(100);
   }
-  // @media screen and (max-width: 450px){
-  //   .p-contact-top__button{
-  //     width: 50%;
-  //   }
-  // }
-.p-contact{
-    margin-top: rem(120);
-    padding-bottom: rem(100);
-    @include mq(sp){
-      margin-top: rem(100);
-    }
-    }
-    
-    .p-contact__inner{
-    // padding-top: rem(120);
-    }
-    
-    .p-contact__forms{
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        max-width: rem(720);
-        background: $blue;
-        background:
-    radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top / 23px 23px no-repeat,
-    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px no-repeat,
-    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px 23px no-repeat,
-    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom / 23px 23px no-repeat,
+}
+
+.p-contact__forms {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: rem(720);
+  background: $blue;
+  background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top /
+      23px 23px no-repeat,
+    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 23px
+      no-repeat,
+    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px
+      23px no-repeat,
+    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom /
+      23px 23px no-repeat,
     linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 3px no-repeat,
     linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 3px no-repeat,
     linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 3px no-repeat,
@@ -108,88 +92,80 @@ padding-bottom: rem(80);
     linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 3px 51% no-repeat,
     linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 3px 51% no-repeat,
     linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 3px 51% no-repeat !important;
-        padding-top: rem(80);
-        @include mq(sp){
-            max-width: rem(600);
-            // width: 100%;
-        }
-    }
-    
-    .p-contact__texts{
-      padding-top: rem(50);
-      text-align: center;
-      padding-bottom: rem(50);
-      
-    }
-    
-    .p-contact__text{
-      line-height: 1.75;
-      padding-left: 7%;
-      padding-right: 7%;
-      text-align: center;
-      text-align: left;
-     
-    
-    }
-.p-contact__text span{
-  // display: inline-block;
- 
+  padding-top: rem(80);
+  @include mq(sp) {
+    max-width: rem(600);
+  }
 }
-    .passing-txt{
-        text-align: center;
 
-        padding-bottom: rem(20);
-        color: $base-color;
-        font-size: 36px;
-        font-weight: normal;
-        @include mq(sp){
-        font-size: rem(24);
-        }
-    }
-    
-    .wpcf7-spinner::before{
-        @include mq(sp){
-     display: none !important;
-        }
-    }
-    .wpcf7-spinner{
-    @include mq(sp){
+.p-contact__texts {
+  padding-top: rem(50);
+  text-align: center;
+  padding-bottom: rem(50);
+}
+
+.p-contact__text {
+  line-height: 1.75;
+  padding-left: 7%;
+  padding-right: 7%;
+  text-align: center;
+  text-align: left;
+}
+
+.passing-txt {
+  text-align: center;
+
+  padding-bottom: rem(20);
+  color: $base-color;
+  font-size: 36px;
+  font-weight: normal;
+  @include mq(sp) {
+    font-size: rem(24);
+  }
+}
+
+.wpcf7-spinner::before {
+  @include mq(sp) {
     display: none !important;
-     }
-    }
-    .submit-btn{
-    @include mq(sp){
+  }
+}
+.wpcf7-spinner {
+  @include mq(sp) {
+    display: none !important;
+  }
+}
+.submit-btn {
+  @include mq(sp) {
     text-align: center;
-     }
-    }
+  }
+}
 
-    .p-contact-top__tel-box{
-      padding-top: rem(20);
-    }
-    
-    .p-contact-top__tels{
-      display: flex;
-      justify-content: center;
-    }
-    .p-contact-top__tel{
-      font-size: rem(24);
-      @include mq(sp){
-        font-size: rem(20);
-      }
-    }
-    .p-contact-top__tel a{
-     text-decoration: underline;
-     color: $base-color;
-    }
-    .p-contact__text{
-      padding-bottom: rem(30);
-    }
-    .p-contact__texts--top{
-      text-align: center;
-    
-    }
-    .p-contact__text--top{
-      text-align: center;
-      padding-bottom: 20px;
-      text-decoration: underline solid #FF9900;
-    }
+.p-contact-top__tel-box {
+  padding-top: rem(20);
+}
+
+.p-contact-top__tels {
+  display: flex;
+  justify-content: center;
+}
+.p-contact-top__tel {
+  font-size: rem(24);
+  @include mq(sp) {
+    font-size: rem(20);
+  }
+}
+.p-contact-top__tel a {
+  text-decoration: underline;
+  color: $base-color;
+}
+.p-contact__text {
+  padding-bottom: rem(30);
+}
+.p-contact__texts--top {
+  text-align: center;
+}
+.p-contact__text--top {
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline solid #ff9900;
+}

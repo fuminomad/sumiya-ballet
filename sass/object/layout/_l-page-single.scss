@@ -50,10 +50,7 @@
     padding-top: 64.25%;
   }
 }
-.page-single-mv__wrapper
-  .page-single-mv__image
-  .page-single-mv__figure
-  .page-single-mv__img {
+.page-single-mv__wrapper .page-single-mv__image .page-single-mv__figure .page-single-mv__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,7 +92,6 @@
     padding-top: 15px;
     padding-bottom: 20px;
   }
-
   @include mq(sp) {
     font-size: 25px;
   }
@@ -107,54 +103,22 @@
   bottom: 0;
   left: 0;
   content: "";
-  background: radial-gradient(
-        circle at top left,
-        transparent 20px,
-        #ca4 20px,
-        #ca4 23px,
-        transparent 23px
-      )
-      left top / 23px 25px no-repeat,
-    radial-gradient(
-        circle at top right,
-        transparent 20px,
-        #ca4 20px,
-        #ca4 23px,
-        transparent 23px
-      )
-      right top / 23px 25px no-repeat,
-    radial-gradient(
-        circle at bottom left,
-        transparent 20px,
-        #ca4 20px,
-        #ca4 23px,
-        transparent 23px
-      )
-      left bottom / 23px 25px no-repeat,
-    radial-gradient(
-        circle at bottom right,
-        transparent 20px,
-        #ca4 20px,
-        #ca4 23px,
-        transparent 23px
-      )
-      right bottom / 23px 25px no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 5px
+  background: radial-gradient(circle at top left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left top /
+      23px 25px no-repeat,
+    radial-gradient(circle at top right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right top / 23px 25px
       no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 5px
-      no-repeat,
-    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 5px
-      no-repeat,
-    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 5px
-      no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 5px 51%
-      no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 5px 51%
-      no-repeat,
-    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 5px 51%
-      no-repeat,
-    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 5px 51%
-      no-repeat;
+    radial-gradient(circle at bottom left, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) left bottom / 23px
+      25px no-repeat,
+    radial-gradient(circle at bottom right, transparent 20px, #ca4 20px, #ca4 23px, transparent 23px) right bottom /
+      23px 25px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left top / 51% 5px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right top / 51% 5px no-repeat,
+    linear-gradient(90deg, transparent 20px, #ca4 23px) left bottom / 51% 5px no-repeat,
+    linear-gradient(-90deg, transparent 20px, #ca4 23px) right bottom / 51% 5px no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) left top / 5px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) left bottom / 5px 51% no-repeat,
+    linear-gradient(180deg, transparent 20px, #ca4 23px) right top / 5px 51% no-repeat,
+    linear-gradient(0deg, transparent 20px, #ca4 23px) right bottom / 5px 51% no-repeat;
 }
 .p-page-single-mv__title-4th::after {
   position: absolute;

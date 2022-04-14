@@ -6,19 +6,15 @@
      padding-top: rem(130);
     }
 }
-// .p-page-gallery__title{
-//   width: 100%;  
-// }
+
 .l-page-gallery__inner{
 max-width: rem(1000);
 width: 100%;
 padding: 0 40px;
 margin: auto;
 @include mq(sp){
-  
-padding: 0 15px;  
+  padding: 0 15px;  
 }
-
 }
 
 

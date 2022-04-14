@@ -17,21 +17,11 @@ text-align: center;
     padding: 0 15px;
 }
 }
-.l-page-classes__wrapper{
 
-}
 .l-page-classes__title{
 padding-bottom: rem(80);
 font-size: rem(24);
 }
-// .l-page-classes__cards{
-//     display: flex;
-//     flex-wrap: wrap;
-//     // margin-top: rem(220);
-//     @include mq(sp){
-//         // margin-top: rem(129);
-//     }
-// }
 
 .classes__cards{
    display: inline-block;

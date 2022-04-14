@@ -1,228 +1,221 @@
-.c-btn{
-    text-align: center;
+.c-btn {
+  text-align: center;
 }
 
 .c-btn a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 150px;
-    color: $white;
-   display: inline-block;
-    font-size: 18px;
-    background-color: $base-color;
-    box-shadow: 5px 5px 0 $blue;
-    transition: 0.5s;
-    border-radius: 5px;
-    font-family: $font-family-base;
-    max-width: 180px;
-    border: 1px solid $base-color;
-  }
-  
-  .c-btn a:hover {
-    text-decoration: none;
-    background-color: $blue;
-    box-shadow: 0 0 0;
-    color: $base-color;
-    transition: 0.5s;
-    border: 1px solid $base-color;
-  }
-  .c-btn--long{
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 150px;
+  color: $white;
+  display: inline-block;
+  font-size: 18px;
+  background-color: $base-color;
+  box-shadow: 5px 5px 0 $blue;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-family: $font-family-base;
+  max-width: 180px;
+  border: 1px solid $base-color;
+}
+
+.c-btn a:hover {
+  text-decoration: none;
+  background-color: $blue;
+  box-shadow: 0 0 0;
+  color: $base-color;
+  transition: 0.5s;
+  border: 1px solid $base-color;
+}
+.c-btn--long {
+  text-align: center;
 }
 
 .c-btn--long a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 300px;
-    color: $white;
-   display: inline-block;
-    font-size: 18px;
-    background-color: $base-color;
-    box-shadow: 5px 5px 0 $blue;
-    transition: 0.5s;
-    border-radius: 5px;
-    font-family: $font-family-base;
-    max-width: 300px;
-    border: 1px solid $base-color;
-    @include mq(ssp){
-      width:rem(250);
-      }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+  color: $white;
+  display: inline-block;
+  font-size: 18px;
+  background-color: $base-color;
+  box-shadow: 5px 5px 0 $blue;
+  transition: 0.5s;
+  border-radius: 5px;
+  font-family: $font-family-base;
+  max-width: 300px;
+  border: 1px solid $base-color;
+  @include mq(ssp) {
+    width: rem(250);
   }
-  
-  .c-btn--long a:hover {
-    text-decoration: none;
-    background-color: $blue;
-    box-shadow: 0 0 0;
-    color: $base-color;
-    transition: 0.5s;
-    border: 1px solid $base-color;
-  }
+}
 
-.p-class__btn{
-   padding-top: rem(10);
-    text-align: center;
-    margin: 0 auto;
-    
+.c-btn--long a:hover {
+  text-decoration: none;
+  background-color: $blue;
+  box-shadow: 0 0 0;
+  color: $base-color;
+  transition: 0.5s;
+  border: 1px solid $base-color;
+}
+
+.p-class__btn {
+  padding-top: rem(10);
+  text-align: center;
+  margin: 0 auto;
 }
 .p-class__btn a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-   
-    color: $white;
-   display: inline-block;
-    font-size: 16px;
-    // font-weight: 700;
-    border-radius: 5px;
-    background-color: $orange;
-    box-shadow: 5px 5px 0 $blue;
-    transition: 0.5s;
-    font-family: $font-family-base;
-    font-weight: bold;
-  }
-  .p-class__btn a:hover {
-    text-decoration: none;
-    background-color: $blue;
-    box-shadow: 0 0 0;
-    color: $base-color;
-    transition: 0.5s;
-   
-  }
-.p-class__btn a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 15px 40px;
-   
-    color: $white;
-   display: inline-block;
-    font-size: 16px;
-    // font-weight: 700;
-    border-radius: 5px;
-    background-color: $orange;
-    box-shadow: 5px 5px 0 $white;
-    transition: 0.3s;
-    border: 1px solid $orange;
-    font-family: $font-family-base;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  color: $white;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: $orange;
+  box-shadow: 5px 5px 0 $blue;
+  transition: 0.5s;
+  font-family: $font-family-base;
+  font-weight: bold;
 }
 .p-class__btn a:hover {
-    border: 1px solid $orange;
-    text-decoration: none;
-    background-color: $white;
-    box-shadow: 0 0 0;
-    color: $orange;
-    transition: 0.5s;
-  }
+  text-decoration: none;
+  background-color: $blue;
+  box-shadow: 0 0 0;
+  color: $base-color;
+  transition: 0.5s;
+}
+.p-class__btn a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 40px;
+  color: $white;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: $orange;
+  box-shadow: 5px 5px 0 $white;
+  transition: 0.3s;
+  border: 1px solid $orange;
+  font-family: $font-family-base;
+}
+.p-class__btn a:hover {
+  border: 1px solid $orange;
+  text-decoration: none;
+  background-color: $white;
+  box-shadow: 0 0 0;
+  color: $orange;
+  transition: 0.5s;
+}
 
-.p-class__btn-2nd{
+.p-class__btn-2nd {
   padding-top: rem(10);
-   text-align: center;
-   margin-left: 20px;
-   margin-right: 20px;
-   transition: 0.5s;
-   @include mq(sp){
-   padding-bottom: rem(25);    
-   }
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.5s;
+  @include mq(sp) {
+    padding-bottom: rem(25);
+  }
 }
 .p-class__btn-2nd a {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 auto;
-   padding: 10px;
-   min-width: rem(120);
-   color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  min-width: rem(120);
+  color: $white;
   display: inline-block;
-   font-size: 16px;
-   font-weight: 700;
-   border-radius: 5px;
-   background-color: $orange;
-   box-shadow: 5px 5px 0 $white;
-   transition: 0.5s;
-   border: 1px solid $orange;
-   font-family: $font-family-base;
- }
-  .p-class__btn-2nd a:hover {
-    text-decoration: none;
-    background-color: $white;
-    box-shadow: 0 0 0;
-    color: $orange;
-    transition: 0.5s;
-  }
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: $orange;
+  box-shadow: 5px 5px 0 $white;
+  transition: 0.5s;
+  border: 1px solid $orange;
+  font-family: $font-family-base;
+}
+.p-class__btn-2nd a:hover {
+  text-decoration: none;
+  background-color: $white;
+  box-shadow: 0 0 0;
+  color: $orange;
+  transition: 0.5s;
+}
 
-.p-class__btn-3rd{
-   padding-top: rem(10);
-    text-align: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: 0.5s;
-    @include mq(sp){
-    padding-bottom: rem(25);    
-    }
+.p-class__btn-3rd {
+  padding-top: rem(10);
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: 0.5s;
+  @include mq(sp) {
+    padding-bottom: rem(25);
+  }
 }
 .p-class__btn-3rd a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    min-width: rem(120);
-    color: $white;
-   display: inline-block;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: $base-color;
-    box-shadow: 5px 5px 0 $blue;
-    transition: 0.5s;
-    border: 1px solid $base-color;
-    font-family: $font-family-base;
-  }
-  .p-class__btn-3rd a:hover {
-    text-decoration: none;
-    background-color: $blue;
-    box-shadow: 0 0 0;
-    color: $base-color;
-    transition: 0.5s;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  min-width: rem(120);
+  color: $white;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: $base-color;
+  box-shadow: 5px 5px 0 $blue;
+  transition: 0.5s;
+  border: 1px solid $base-color;
+  font-family: $font-family-base;
+}
+.p-class__btn-3rd a:hover {
+  text-decoration: none;
+  background-color: $blue;
+  box-shadow: 0 0 0;
+  color: $base-color;
+  transition: 0.5s;
+}
 
-  .c-btn-contact{
-    text-align: center;
+.c-btn-contact {
+  text-align: center;
 }
 
 .c-btn-contact a {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 150px;
-    color: $white;
-   display: inline-block;
-    font-size: 18px;
-    // font-weight: 700;
-    background-color: $base-color;
-    box-shadow: 5px 5px 0 $blue;
-    transition: 0.3s;
-    border-radius: 5px;
-    font-family: $font-family-base;
-    max-width: 180px;
-    transition: 0.5s;
-  }
-  
-  .c-btn-contact a:hover {
-    text-decoration: none;
-    background-color: $blue;
-    box-shadow: 0 0 0;
-    color: $base-color;
-    transition: 0.5s;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 150px;
+  color: $white;
+  display: inline-block;
+  font-size: 18px;
+  background-color: $base-color;
+  box-shadow: 5px 5px 0 $blue;
+  transition: 0.3s;
+  border-radius: 5px;
+  font-family: $font-family-base;
+  max-width: 180px;
+  transition: 0.5s;
+}
+
+.c-btn-contact a:hover {
+  text-decoration: none;
+  background-color: $blue;
+  box-shadow: 0 0 0;
+  color: $base-color;
+  transition: 0.5s;
+}

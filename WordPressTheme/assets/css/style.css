@@ -699,10 +699,7 @@ summary {
 	position: relative;
 }
 
-.page-single-mv__wrapper
-.page-single-mv__image
-.page-single-mv__figure
-.page-single-mv__img {
+.page-single-mv__wrapper .page-single-mv__image .page-single-mv__figure .page-single-mv__img {
 	height: 100%;
 	height: calc(var(--vh, 1vh) * 100 - 9.06rem);
 	left: 0;
@@ -1107,7 +1104,6 @@ summary {
 	left: 0;
 	position: absolute;
 	transform: translateY(0) rotate(0);
-	transition: .2s;
 	width: 100%;
 }
 
@@ -1201,11 +1197,6 @@ summary {
 	font-size: 36px;
 	font-weight: normal;
 	text-align: center;
-}
-
-.c-test {
-	color: red;
-	font-size: 3.125rem;
 }
 
 .c-top-btn {
@@ -1378,7 +1369,7 @@ summary {
 .p-class__header {
 	color: #333;
 	font-size: 1.125rem;
-	font-weight: normal;
+	font-weight: bold;
 	padding-bottom: 1.875rem;
 }
 
@@ -1566,7 +1557,7 @@ summary {
 .card__title--3rd {
 	color: #333;
 	font-size: 1.25rem;
-	font-weight: normal;
+	font-weight: bold;
 	margin-left: 0;
 	text-align: center;
 }
@@ -1651,9 +1642,9 @@ summary {
 }
 
 .p-contact-top__title--bottom span {
-	-webkit-text-decoration: underline double #FF9900;
+	-webkit-text-decoration: underline double #ff9900;
 	display: inline-block;
-	text-decoration: underline double #FF9900;
+	text-decoration: underline double #ff9900;
 }
 
 .p-contact-top__buttons {
@@ -1738,10 +1729,10 @@ summary {
 }
 
 .p-contact__text--top {
-	-webkit-text-decoration: underline solid #FF9900;
+	-webkit-text-decoration: underline solid #ff9900;
 	padding-bottom: 20px;
 	text-align: center;
-	text-decoration: underline solid #FF9900;
+	text-decoration: underline solid #ff9900;
 }
 
 .p-footer-nav__item {
@@ -1779,7 +1770,7 @@ summary {
 }
 
 .p-footer-nav__list--1st a:after {
-	content: 'トップ';
+	content: "トップ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1787,22 +1778,22 @@ summary {
 }
 
 .p-footer-nav__list--1st a:hover {
-	opacity: .7;
+	opacity: 0.7;
 	transition: all 0.5s;
 }
 
 .p-footer-nav__list a:hover:after {
-	opacity: .7;
+	opacity: 0.7;
 	transition: all 0.5s;
 }
 
 .p-footer-nav__list a:hover {
-	opacity: .5;
+	opacity: 0.5;
 	transition: all 0.5s;
 }
 
 .p-footer-nav__list--3rd a:after {
-	content: '教室一覧';
+	content: "教室一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1810,7 +1801,7 @@ summary {
 }
 
 .p-footer-nav__list--2nd a:after {
-	content: '教師一覧';
+	content: "教師一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1818,14 +1809,14 @@ summary {
 }
 
 .p-footer-nav__list--5th a:after {
-	content: 'お知らせ';
+	content: "お知らせ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
 }
 
 .p-footer-nav__list--4th a:after {
-	content: 'ギャラリー';
+	content: "ギャラリー";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1833,7 +1824,7 @@ summary {
 }
 
 .p-footer-nav__list--3rd a:after {
-	content: '教室一覧';
+	content: "教室一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1841,7 +1832,7 @@ summary {
 }
 
 .p-footer-nav__list--6th a:after {
-	content: '公演一覧';
+	content: "公演一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1855,7 +1846,7 @@ summary {
 
 .p-footer-nav__list--7th a:after {
 	color: #FF9900;
-	content: 'お問い合わせ';
+	content: "お問い合わせ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -1904,7 +1895,7 @@ summary {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	transition: .4s ease-in-out;
+	transition: 0.4s ease-in-out;
 	width: 100%;
 }
 
@@ -1995,7 +1986,7 @@ summary {
 	pointer-events: none;
 	position: absolute;
 	right: -100%;
-	transition: .7s;
+	transition: 0.7s;
 	width: 31.25rem;
 	z-index: 100;
 }
@@ -2011,7 +2002,7 @@ summary {
 	right: 0;
 	top: 5.9375rem;
 	transform: translateX(0px);
-	transition: .5s;
+	transition: 0.5s;
 	z-index: 100;
 	z-index: 10000;
 }
@@ -2061,7 +2052,7 @@ summary {
 
 .j-header.change-color {
 	background-color: rgba(255, 255, 255, 0.8);
-	transition: all  0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .p-header-nav__items {
@@ -2083,12 +2074,12 @@ summary {
 }
 
 .p-header-nav__items ul li a:hover {
-	opacity: .7;
+	opacity: 0.7;
 	transition: all 0.5s;
 }
 
 .p-header-nav__list--1st a:after {
-	content: 'トップ';
+	content: "トップ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2096,22 +2087,22 @@ summary {
 }
 
 .p-header-nav__list--1st a:hover {
-	opacity: .7;
+	opacity: 0.7;
 	transition: all 0.5s;
 }
 
 .p-header-nav__list a:hover:after {
-	opacity: .7;
+	opacity: 0.7;
 	transition: all 0.5s;
 }
 
 .p-header-nav__list a:hover {
-	opacity: .5;
+	opacity: 0.5;
 	transition: all 0.5s;
 }
 
 .p-header-nav__list--3rd a:after {
-	content: '教室一覧';
+	content: "教室一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2119,7 +2110,7 @@ summary {
 }
 
 .p-header-nav__list--2nd a:after {
-	content: '教師一覧';
+	content: "教師一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2127,14 +2118,14 @@ summary {
 }
 
 .p-header-nav__list--5th a:after {
-	content: 'お知らせ';
+	content: "お知らせ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
 }
 
 .p-header-nav__list--4th a:after {
-	content: 'ギャラリー';
+	content: "ギャラリー";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2142,7 +2133,7 @@ summary {
 }
 
 .p-header-nav__list--3rd a:after {
-	content: '教室一覧';
+	content: "教室一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2150,7 +2141,7 @@ summary {
 }
 
 .p-header-nav__list--6th a:after {
-	content: '公演一覧';
+	content: "公演一覧";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2164,7 +2155,7 @@ summary {
 
 .p-header-nav__list--7th a:after {
 	color: #FF9900;
-	content: 'お問い合わせ';
+	content: "お問い合わせ";
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
 	font-size: 1rem;
@@ -2174,7 +2165,7 @@ summary {
 .p-header__logo--2nd {
 	font-size: 1rem;
 	font-weight: bold;
-	letter-spacing: .5px;
+	letter-spacing: 0.5px;
 	padding: 10px 20px;
 	position: relative;
 	text-align: center;
@@ -2936,7 +2927,7 @@ summary {
 
 .p-page-section__subtitle span::before,
 .p-page-section__subtitle span::after {
-	content: '';
+	content: "";
 	position: absolute;
 }
 
@@ -3067,7 +3058,7 @@ summary {
 
 span::before,
 .l-page-class__subtitle span::after {
-	content: '';
+	content: "";
 	position: absolute;
 }
 
@@ -3101,7 +3092,6 @@ span::before,
 	display: inline-block;
 	font-size: 1.5rem;
 	font-weight: normal;
-	margin-bottom: 1.875rem;
 	margin-top: 5rem;
 	padding: 30px 50px 30px 70px;
 	position: relative;
@@ -3112,7 +3102,7 @@ span::before,
 	background: #7C8A97;
 	border-radius: 10px 10px 0 0;
 	color: #fff;
-	content: 'クラシックバレエ';
+	content: "クラシックバレエ";
 	font-size: 15px;
 	font-size: 1.5rem;
 	font-weight: normal;
@@ -3126,7 +3116,7 @@ span::before,
 	border: 7px solid #fff;
 	border-image-repeat: round;
 	border-image-slice: 20;
-	content: '';
+	content: "";
 	display: none;
 	height: calc(100% - 5px);
 	height: 100%;
@@ -3314,7 +3304,7 @@ span::before,
 .l-page-class__text::before,
 .l-page-class__text::after {
 	background: #274a75;
-	content: '';
+	content: "";
 	height: 4px;
 	left: -5%;
 	position: absolute;
@@ -3357,9 +3347,9 @@ span::before,
 }
 
 .l-page-class__text-2nd p {
-	-webkit-text-decoration: underline double #FF9900;
+	-webkit-text-decoration: underline double #ff9900;
 	display: inline-block;
-	text-decoration: underline double #FF9900;
+	text-decoration: underline double #ff9900;
 }
 
 .p-class__btn-totsuka {
@@ -3576,7 +3566,7 @@ span::before,
 /*一行ごとに上ボーダー*/
 
 .table-res-form tr {
-	border-top: 1px #DDD solid;
+	border-top: 1px #ddd solid;
 }
 
 /*一番上の行だけボーダーなし*/
@@ -3584,8 +3574,6 @@ span::before,
 .table-res-form tr:first-child {
 	border-top: none;
 }
-
-/*背景色つける*/
 
 .table-res-form tr:last-child {
 	border-left: none;
@@ -3611,7 +3599,7 @@ span::before,
 .table-res-form .requied {
 	background: red;
 	border-radius: 2px;
-	color: #FFF;
+	color: #fff;
 	display: inline-block;
 	font-size: 0.8em;
 	padding: 0.3em 0.3em 0.2em;
@@ -3641,7 +3629,7 @@ textarea {
 .table-res-form input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-	background: #EEFFFF;
+	background: #eeffff;
 	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -3654,15 +3642,15 @@ textarea:focus {
 	color: #fff;
 	font-weight: bold;
 	padding: 0.5em 4em;
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 /*送信ボタン・マウスオーバー時スタイリング*/
 
 .table-res-form input[type="submit"]:hover {
 	box-shadow: none;
-	opacity: .7;
-	transition: all .5s;
+	opacity: 0.7;
+	transition: all 0.5s;
 }
 
 table,
@@ -3727,11 +3715,6 @@ select {
 	position: absolute;
 	top: 0;
 	width: 100%;
-}
-
-.p-test {
-	color: red;
-	font-size: 3.125rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3924,11 +3907,6 @@ html {
 	width: 2.5rem;
 }
 
-.c-test {
-	color: green;
-	font-size: 1.875rem;
-}
-
 .p-about::after {
 	height: 7.5rem;
 	width: 38.4375rem;
@@ -4078,10 +4056,7 @@ html {
 	height: calc(var(--vh, 1vh) * 100 - 130px);
 }
 
-.page-single-mv__wrapper
-.page-single-mv__image
-.page-single-mv__figure
-.page-single-mv__img {
+.page-single-mv__wrapper .page-single-mv__image .page-single-mv__figure .page-single-mv__img {
 	height: calc(var(--vh, 1vh) * 100 - 7.8125rem);
 }
 
@@ -4625,7 +4600,7 @@ html {
 .l-page-class__time {
 	display: block;
 	font-size: 1.125rem;
-	margin: 50px auto  30px;
+	margin: 50px auto 30px;
 	max-width: 37.5rem;
 	padding: 1rem 1.5rem 1rem 3rem;
 }
@@ -4726,11 +4701,6 @@ textarea {
 	padding-left: 0.9375rem;
 	padding-right: 0.9375rem;
 	width: 90%;
-}
-
-.p-test {
-	color: green;
-	font-size: 1.875rem;
 }
 
 .u-hidden-sp {

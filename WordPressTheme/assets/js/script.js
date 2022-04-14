@@ -74,7 +74,7 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 
 // topに戻るボタン
 
-var show = jQuery(".p-mv,.p-page-teachers__wrapper,.p-page-gallery__title,.p-page-information__wrapper,.p-contact-top__buttons,.p-page-single-mv,.l-page-class__times,.p-overview").offset();
+var show = jQuery(".p-mv,.p-page-teachers__wrapper,.p-page-gallery__title,.p-page-information__wrapper,.p-contact-top__buttons,.p-page-single-mv,.l-page-class__times,.p-overview,.l-page-performance-classes__inner").offset();
 jQuery('.p-footer__btn').hide();
 jQuery(window).scroll(function() {
 if(jQuery(this).scrollTop() > show.top) {

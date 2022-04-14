@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
   <!-- adobe fonts -->
   <script>
     (function(d) {
@@ -40,7 +38,6 @@
       s.parentNode.insertBefore(tk, s)
     })(document);
   </script>
-
   <!-- webフォントチラつき防止（低速環境考慮） -->
   <script>
     setTimeout(function() {
@@ -49,37 +46,25 @@
   </script>
   <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="l-header p-header j-header">
     <div class="p-header-inner">
-
-
-
       <h1 class="p-header-logo"><a href="<?php echo esc_url(home_url('/')); ?>">
           <img src="<?php echo get_template_directory_uri() ?>/assets/img/sumiya-logo-3.png" alt="ロゴ" loading="lazy" width="135" height="71">
         </a></h1>
-
       <div class="p-header-nav">
         <div class="p-header-nav__items">
           <ul class="p-header-nav__item">
             <li class="p-header-nav__list p-header-nav__list--1st"><a href="<?php echo esc_url(home_url('/')); ?>">Top</a></li>
-
             <li class="p-header-nav__list p-header-nav__list--2nd"><a href="<?php echo esc_url(home_url('/teachers/')); ?>">Teachers</a></li>
             <li class="p-header-nav__list p-header-nav__list--3rd"><a href="<?php echo esc_url(home_url('/category/archive/')); ?>">Classes</a></li>
             <li class="p-header-nav__list p-header-nav__list--4th"><a href="<?php echo esc_url(home_url('/gallery/')); ?>">Gallery</a></li>
-            
             <li class="p-header-nav__list p-header-nav__list--6th"><a href="<?php echo esc_url(home_url('/performance/')); ?>">Performance</a></li>
             <li class="p-header-nav__list p-header-nav__list--7th"><a href="<?php echo esc_url(home_url('/contact/')); ?>">Contact</a></li>
           </ul>
         </div>
       </div>
-
-
-
-
-
       <div class="p-header_btn j-header_btn">
         <button class="p-header_hamburger">
           <span></span>
@@ -88,7 +73,6 @@
         </button>
       </div>
     </div>
-
     <?php
     wp_nav_menu(
       array(
@@ -100,7 +84,5 @@
       )
     );
     ?>
-
-
     <div class="p-header_nav-background"></div>
   </header>

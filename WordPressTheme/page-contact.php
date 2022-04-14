@@ -32,7 +32,6 @@
         <div class="p-contact-top__buttons">
           <div class="c-btn-contact p-contact-top__button">
             <a href="<?php echo home_url('/minamirinkan/#minami'); ?>">南林間</a>
-            
           </div>
           <div class="c-btn-contact p-contact-top__button">
             <a href="<?php echo home_url('/totuka/#totsuka'); ?>">戸塚</a>
@@ -44,7 +43,6 @@
             <a href="<?php echo home_url('/ebina/#ebina'); ?>">海老名</a>
           </div>
         </div>
-
       </div>
     </section>
     <section class="p-contact l-contact" id="contact">
@@ -57,7 +55,6 @@
               </div>
             </div>
           </div>
-
           <?php echo do_shortcode('[contact-form-7 id="27" title="お問い合わせフォーム"]'); ?>
           <div class="p-contact__texts--top">
             <p class="p-contact__text--top">

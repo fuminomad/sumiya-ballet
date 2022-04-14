@@ -1,65 +1,53 @@
-.p-header_hamburger{
-    position: relative;
-    width: rem(50);
-    height: rem(33);
-    padding: 0;
-    border: none;
-    background: $white;
-    @include mq(tab){
-        width: rem(40);
-        height: rem(30);
-      }
-    }
-    .p-header_hamburger span{
-        position: absolute;
-        left: 0;
-        transition: .2s;
-        transform:translateY(0) rotate(0);
-        display: block;
-        width: 100%;
-        height: 4px;
-        background: $black;
-       
-        
-        }
-        .p-header_hamburger span:nth-of-type(1){
-            width: 100%;
-            top: 0;
-        }
-        .p-header_hamburger span:nth-of-type(2){
-            width: calc(32 / 40 * 100%);
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-         }
-         .p-header_hamburger span:nth-of-type(3){
-          width: calc(20 / 40 * 100%);
-          bottom: 0;
-          
-         }
-    
-  
-  .p-header_hamburger.active{
-    span {
-        background: $black;
-    }
-    span:nth-of-type(1) {
-      top: 50%;
-      transform: translateY(-50%) rotate(45deg);
-    }
-    span:nth-of-type(2) {
-      width: 0;
-    }
-    span:nth-of-type(3) {
-      width: 100%;
-      bottom: 50%;
-      transform: translateY(50%) rotate(-45deg);
-    }
+.p-header_hamburger {
+  position: relative;
+  width: rem(50);
+  height: rem(33);
+  padding: 0;
+  border: none;
+  background: $white;
+  @include mq(tab) {
+    width: rem(40);
+    height: rem(30);
   }
-  
-  
-  
-//   button{
-//     background: $white;
-//     border: none;
-//   }
+}
+.p-header_hamburger span {
+  position: absolute;
+  left: 0;
+  transform: translateY(0) rotate(0);
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: $black;
+}
+.p-header_hamburger span:nth-of-type(1) {
+  width: 100%;
+  top: 0;
+}
+.p-header_hamburger span:nth-of-type(2) {
+  width: calc(32 / 40 * 100%);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.p-header_hamburger span:nth-of-type(3) {
+  width: calc(20 / 40 * 100%);
+  bottom: 0;
+}
+
+.p-header_hamburger.active {
+  span {
+    background: $black;
+  }
+  span:nth-of-type(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  span:nth-of-type(2) {
+    width: 0;
+  }
+  span:nth-of-type(3) {
+    width: 100%;
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+  }
+}

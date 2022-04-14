@@ -1,135 +1,127 @@
-.p-footer-nav__item{
-    display: flex;
-    @include mq(sp){
-        flex-direction: column;
-        text-align: center;
-        padding-top: rem(40);
-    }
-    
-    }
-    .p-footer-nav__list{
-        color: $white;
-        padding-left: rem(32);
-        @include mq(sp){
-            // padding-left: 0;
-            padding-top: rem(15);
-        }
-    }
+.p-footer-nav__item {
+  display: flex;
+  @include mq(sp) {
+    flex-direction: column;
+    text-align: center;
+    padding-top: rem(40);
+  }
+}
+.p-footer-nav__list {
+  color: $white;
+  padding-left: rem(32);
+  @include mq(sp) {
+    padding-top: rem(15);
+  }
+}
 
-    .p-footer-nav ul li{
-        //   margin-left: rem(40);
-          font-family: $font-family-base;
-          font-weight: bold;
-          font-size: rem(16);
-          text-align: center;
-          line-height: 1.35;
-          padding-left: rem(30);
-          padding-right: rem(30);
-          border-left: 2px solid $base-background;
-          transform: skewX(150deg);
-          @include mq(sp){
-              transform: skewX(0);
-              font-size: rem(18);
-              border-left: none;
-          }
-      }
-      .p-footer-nav ul li a:last-child{
-        transform: skewX(-150deg);
-        display: inline-block;
-        @include mq(sp){
-        transform: skewX(0);
-    
-        }
-    }
-    .p-footer-nav ul li:hover{
-    opacity: 0.7;
-    }
-    .p-footer-nav ul li:last-child{
-        border-right: 2px solid $base-background;
-        @include mq(sp){
-          border-right: none;
-          }
-       
-    }
-    .p-footer-nav__list--1st a:after {
-        content: 'トップ';
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-      .p-footer-nav__list--1st a:hover{
-    opacity: .7;
-    transition: all 0.5s;
-      }
-      .p-footer-nav__list a:hover:after{
-    opacity: .7;
-    transition: all 0.5s;
-      }
-      .p-footer-nav__list a:hover{
-        opacity: .5;
-        transition: all 0.5s;
-    }
-      .p-footer-nav__list--3rd a:after {
-        content: '教室一覧';
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-     
-    
-      .p-footer-nav__list--2nd a:after {
-        content: '教師一覧';
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-     
-      .p-footer-nav__list--5th a:after {
-        content: 'お知らせ';
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-      }
-     
-      .p-footer-nav__list--4th a:after {
-        content: 'ギャラリー';
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-      
-          
-      .p-footer-nav__list--3rd a:after {
-        content: '教室一覧';
-       
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-      .p-footer-nav__list--6th a:after {
-        content: '公演一覧';
-       
-        display: block;
-        font-size: rem(16);
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
-      
-    .p-footer-nav__list--7th a{
-        color: $orange ;
-        transition: all 0.5s;
-    }
-    
-      .p-footer-nav__list--7th a:after {
-        content: 'お問い合わせ';
-        display: block;
-        font-size: rem(16);
-        color: $orange;
-        font-family: $font-family-base;
-        transition: all 0.5s;
-      }
+.p-footer-nav ul li {
+  font-family: $font-family-base;
+  font-weight: bold;
+  font-size: rem(16);
+  text-align: center;
+  line-height: 1.35;
+  padding-left: rem(30);
+  padding-right: rem(30);
+  border-left: 2px solid $base-background;
+  transform: skewX(150deg);
+  @include mq(sp) {
+    transform: skewX(0);
+    font-size: rem(18);
+    border-left: none;
+  }
+}
+.p-footer-nav ul li a:last-child {
+  transform: skewX(-150deg);
+  display: inline-block;
+  @include mq(sp) {
+    transform: skewX(0);
+  }
+}
+.p-footer-nav ul li:hover {
+  opacity: 0.7;
+}
+.p-footer-nav ul li:last-child {
+  border-right: 2px solid $base-background;
+  @include mq(sp) {
+    border-right: none;
+  }
+}
+.p-footer-nav__list--1st a:after {
+  content: "トップ";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+.p-footer-nav__list--1st a:hover {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.p-footer-nav__list a:hover:after {
+  opacity: 0.7;
+  transition: all 0.5s;
+}
+.p-footer-nav__list a:hover {
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.p-footer-nav__list--3rd a:after {
+  content: "教室一覧";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+
+.p-footer-nav__list--2nd a:after {
+  content: "教師一覧";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+
+.p-footer-nav__list--5th a:after {
+  content: "お知らせ";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+}
+
+.p-footer-nav__list--4th a:after {
+  content: "ギャラリー";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+
+.p-footer-nav__list--3rd a:after {
+  content: "教室一覧";
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+.p-footer-nav__list--6th a:after {
+  content: "公演一覧";
+
+  display: block;
+  font-size: rem(16);
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
+
+.p-footer-nav__list--7th a {
+  color: $orange;
+  transition: all 0.5s;
+}
+
+.p-footer-nav__list--7th a:after {
+  content: "お問い合わせ";
+  display: block;
+  font-size: rem(16);
+  color: $orange;
+  font-family: $font-family-base;
+  transition: all 0.5s;
+}
