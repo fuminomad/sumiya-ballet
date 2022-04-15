@@ -108,6 +108,14 @@
         </div>
       </div>
     </div>
+    <div class="p-company__contact">
+        <div class="p-company__text">
+            <p>体験レッスン <br class="is-sp">お問い合わせはこちらまで</p>
+        </div>
+        <div class="p-company__btns p-class__btn">
+            <a href="<?php echo home_url('/contact/'); ?>">お問い合わせ</a>
+        </div>
+    </div>
   </div>
 </section>
 

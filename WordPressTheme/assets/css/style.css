@@ -1612,6 +1612,42 @@ summary {
 	width: 100%;
 }
 
+.p-company__contact {
+	padding-bottom: 5rem;
+	text-align: center;
+}
+
+.p-company__text {
+	color: #333;
+	display: inline-block;
+	font-size: 1.5rem;
+	margin: auto;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.p-company__text::before,
+.p-company__text::after {
+	background: #274a75;
+	content: "";
+	height: 4px;
+	left: -5%;
+	position: absolute;
+	width: 110%;
+}
+
+.p-company__text::before {
+	top: -5px;
+}
+
+.p-company__text::after {
+	bottom: -5px;
+}
+
+.p-company__text a {
+	margin-top: 1.875rem;
+}
+
 .p-contact-top {
 	background: #f4f4f4;
 	padding-top: 3.75rem;
@@ -4287,6 +4323,10 @@ html {
 
 .card__images {
 	width: 100%;
+}
+
+.p-company__text {
+	font-size: 1.125rem;
 }
 
 .p-contact-top {

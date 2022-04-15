@@ -28,27 +28,7 @@ jQuery('.p-header_hamburger , .p-header_nav-background').on('click' , function(e
 		jQuery('.p-header_hamburger').trigger('click');
 	});
 
-	/* スムーススクロール */
-	// jQuery('a[href^="#"]').click(function() {
-	// 	let header = jQuery(".js-header").height();
-	// 	let speed = 300;
-	// 	let id = jQuery(this).attr("href");
-	// 	let target = jQuery("#" == id ? "html" : id);
-	// 	let position = jQuery(target).offset().top - header;
-	// 	if ("fixed" !== jQuery("#header").css("position")) {
-	// 		position = jQuery(target).offset().top;
-	// 	}
-	// 	if (0 > position) {
-	// 		position = 0;
-	// 	}
-	// 	jQuery("html, body").animate(
-	// 		{
-	// 			scrollTop: position
-	// 		},
-	// 		speed
-	// 	);
-	// 	return false;
-	// });
+
 // ページ内スムーススクロール
 	var headerHeight = $('.j-header').outerHeight();
 	$('a[href^="#"]').click(function() {

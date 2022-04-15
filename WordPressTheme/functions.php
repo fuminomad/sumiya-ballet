@@ -36,11 +36,11 @@ function my_script_init()
 	wp_enqueue_style('slick', get_template_directory_uri() . '/assets/slick/slick.css', array(), '1.8.1', 'all');
 	wp_enqueue_style('slick-theme', get_template_directory_uri() . '/assets/slick/slick-theme.css', array(), '1.8.1', 'all');
 	wp_enqueue_style('swiper', get_template_directory_uri() . '/assets/css/swiper-bundle.min.css', array(), '7.0.0', 'all');
-	wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/style.css', array(), '1.1.9', 'all');
+	wp_enqueue_style('my', get_template_directory_uri() . '/assets/css/style.css', array(), '1.2.0', 'all');
 	
 	wp_enqueue_script('slick', get_template_directory_uri() .  '/assets/slick/slick.min.js', array('jquery'), '1.8.1', true);
 	wp_enqueue_script('swiper', get_template_directory_uri() .  '/assets/js/swiper-bundle.min.js', array('jquery'), '7.0.0', true);
-	wp_enqueue_script('my', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.6', true);
+	wp_enqueue_script('my', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), '1.0.7', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 /**
@@ -65,24 +65,8 @@ add_action('init', 'my_menu_init');
  * 参考：https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_nav_menus
  */
 /**
- * ウィジェットの登録
- *
- * @codex http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_sidebar
- */
-// function my_widget_init() {
-// 	register_sidebar(
-// 		array(
-// 			'name'          => 'サイドバー',
-// 			'id'            => 'sidebar',
-// 			'before_widget' => '<div id="%1$s" class="p-widget %2$s">',
-// 			'after_widget'  => '</div>',
-// 			'before_title'  => '<div class="p-widget__title">',
-// 			'after_title'   => '</div>',
-// 		)
-// 	);
-// }
-// add_action( 'widgets_init', 'my_widget_init' );
-/**
+ 
+
  * アーカイブタイトル書き換え
  *
  * @param string $title 書き換え前のタイトル.

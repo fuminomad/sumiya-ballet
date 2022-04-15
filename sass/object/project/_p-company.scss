@@ -328,3 +328,40 @@ height: 100%;
     }
 
 }
+
+//追加分
+.p-company__contact{
+    text-align: center;
+    padding-bottom: rem(80);
+}
+.p-company__text {
+    margin-bottom: 30px;
+    position: relative;
+    font-size: rem(24);
+    display: inline-block;
+    color: $black;
+    margin: auto;
+
+    @include mq(sp) {
+        font-size: rem(18);
+    }
+}
+
+.p-company__text::before,
+.p-company__text::after {
+    position: absolute;
+    left: -5%;
+    width: 110%;
+    height: 4px;
+    content: "";
+    background: $base-color;
+}
+.p-company__text::before {
+    top: -5px;
+}
+.p-company__text::after {
+    bottom: -5px;
+}
+.p-company__text a {
+    margin-top: rem(30);
+}
