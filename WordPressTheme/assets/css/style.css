@@ -1200,23 +1200,25 @@ summary {
 }
 
 .c-top-btn {
-	background-color: #fff;
+	background-color: #c6d6eb;
 	display: block;
 	height: 2.8125rem;
 	opacity: 1;
 	position: relative;
 	text-decoration: none;
+	transition: all .3s;
 	width: 2.8125rem;
 }
 
 .c-top-btn:hover {
-	background-color: #333;
+	opacity: .7;
 	transition: all .3s;
 }
 
 .c-top-btn__white {
 	display: block;
 	left: 50%;
+	opacity: 1;
 	padding: 1.03125rem 0.65625rem;
 	position: absolute;
 	top: 50%;
@@ -1235,14 +1237,6 @@ summary {
 	transform: translate(-50%, -50%);
 	transition: .4s ease-in-out;
 	width: 100%;
-}
-
-.c-top-btn__white:hover {
-	opacity: 0;
-}
-
-.c-top-btn__black:hover {
-	opacity: 1;
 }
 
 .p-about {
@@ -4158,6 +4152,10 @@ html {
 
 .c-section__title {
 	font-size: 24px;
+}
+
+.c-top-btn:hover {
+	opacity: 1;
 }
 
 .p-about {

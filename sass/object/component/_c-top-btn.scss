@@ -2,13 +2,17 @@
     width: rem(45); 
     height: rem(45);
     display: block;
-    background-color: $white;
+    background-color: #c6d6eb;
     text-decoration: none;
     opacity: 1;
     position: relative;
+    transition: all .3s; 
     &:hover{
-        background-color: $black; 
+        opacity: .7;
         transition: all .3s; 
+        @include mq(sp){
+            opacity: 1;
+            }
     }
 }
 
@@ -21,6 +25,7 @@
 	width: 100%;
 	display: block;
 	transition: .4s ease-in-out;
+    opacity: 1;
 }
 .c-top-btn__black{
     padding: rem(16.5) rem(10.5);  
@@ -33,9 +38,4 @@
 	transition: .4s ease-in-out;
     opacity: 0;
 }
-.c-top-btn__white:hover{
-    opacity: 0;
-    }
-.c-top-btn__black:hover{
-    opacity: 1;
-    }
+
