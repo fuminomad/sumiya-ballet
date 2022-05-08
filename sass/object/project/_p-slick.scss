@@ -116,14 +116,14 @@
   z-index: 999;
 }
 .slick-prev {
-  top: 25px;
+  top: rem(220);
   bottom: 0;
   left: 20px;
   right: auto;
   margin: auto;
 }
 .slick-next {
-  top: 25px;
+  top: rem(220);
   bottom: 0;
   left: auto;
   right: 20px;
@@ -135,12 +135,21 @@
   max-width: 1000px;
   margin: 50px auto;
   background: #ddd;
-  padding: 50px;
+  padding: 50px 50px 100px;
   border-radius: 20px;
 
   @include mq(sp) {
-    padding: 25px 0;
+    padding: 50px 0 100px;
     margin: 0 calc(50% - 50vw);
     width: 100vw;
   }
+}
+.slick-prev, .slick-next{
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before, .slick-next:before{
+  font-size: 40px;
+  color: $base-color;
 }

@@ -52,6 +52,24 @@
           <li class="item">
             <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/111.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
           </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/5267.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/80009.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/5633.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/80010.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/9336.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
+          <li class="item">
+            <a href="#"><img src="<?php echo get_template_directory_uri() ?>/assets/img/80011-2.jpg" loading="lazy" width="1400" height="960" alt="舞台写真"></a>
+          </li>
         </ul>
         <div class="slide-navigation">
           <div class="item">
@@ -109,6 +127,37 @@
               <img src="<?php echo get_template_directory_uri() ?>/assets/img/111.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
             </figure>
           </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/5267.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/80009.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/5633.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/80010.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/9336.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+          <div class="item">
+            <figure class="image">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/img/80011-2.jpg" loading="lazy" width="1400" height="960" alt="舞台写真">
+            </figure>
+          </div>
+
         </div>
       </div>
     </div>

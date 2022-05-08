@@ -3565,7 +3565,7 @@ span::before,
 	left: 20px;
 	margin: auto;
 	right: auto;
-	top: 25px;
+	top: 13.75rem;
 }
 
 .slick-next {
@@ -3573,7 +3573,7 @@ span::before,
 	left: auto;
 	margin: auto;
 	right: 20px;
-	top: 25px;
+	top: 13.75rem;
 }
 
 .slide-wrapper {
@@ -3581,8 +3581,20 @@ span::before,
 	border-radius: 20px;
 	margin: 50px auto;
 	max-width: 1000px;
-	padding: 50px;
+	padding: 50px 50px 100px;
 	width: 100%;
+}
+
+.slick-prev,
+.slick-next {
+	height: 40px;
+	width: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: #274a75;
+	font-size: 40px;
 }
 
 /*ContactForm7のテーブル化レスポンシブ調整*/
@@ -4699,7 +4711,7 @@ html {
 
 .slide-wrapper {
 	margin: 0 calc(50% - 50vw);
-	padding: 25px 0;
+	padding: 50px 0 100px;
 	width: 100vw;
 }
 
