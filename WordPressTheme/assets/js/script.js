@@ -179,3 +179,19 @@ jQuery(function($){
 		$('body,html').stop().animate({scrollTop:position}, 500);   
 	});
 });
+
+// モーダル
+jQuery(function ($) {
+	$('.js-close-modal').on('click', function (e) {
+		$('body').css('overflow-y', 'auto')
+		var target = $(this).data('target')
+		$(target).fadeOut(300)
+	})
+
+	$('.js-open-modal').on('click', function (e) {
+		$('body').css('overflow-y', 'hidden')
+		var target = $(this).data('target')
+		$(target).fadeIn(300)
+	})
+
+});

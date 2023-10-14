@@ -16,23 +16,23 @@
             </div>
             <div class="l-page-classes__cards">
                 <?php if (have_posts()) : ?>
-                    <?php while (have_posts()) : the_post(); ?>
-                        <div class="l-page-classes__card-item classes__cards">
-                            <a href="<?php the_permalink(); ?>" class="classes__card">
-                                <div class="classes__cards">
-                                    <?php if (has_tag('culture', 'studio')) : ?>
-                                        <div class="classes__card-info">
-                                            <p class="classes__card-tag"><?php the_tags(''); ?></p>
-                                        </div>
-                                    <?php else : ?>
-                                    <?php endif; ?>
-                                    <h4 class="classes__card-title">
-                                        <?php the_title(); ?>
-                                    </h4>
-                                </div>
-                            </a>
+                <?php while (have_posts()) : the_post(); ?>
+                <div class="l-page-classes__card-item classes__cards">
+                    <a href="<?php the_permalink(); ?>" class="classes__card">
+                        <div class="classes__cards">
+                            <?php if (has_tag('culture', 'studio')) : ?>
+                            <div class="classes__card-info">
+                                <p class="classes__card-tag"><?php the_tags(''); ?></p>
+                            </div>
+                            <?php else : ?>
+                            <?php endif; ?>
+                            <h4 class="classes__card-title">
+                                <?php the_title(); ?>
+                            </h4>
                         </div>
-                    <?php endwhile; ?>
+                    </a>
+                </div>
+                <?php endwhile; ?>
                 <?php endif; ?>
             </div>
         </div>

@@ -2369,7 +2369,7 @@ summary {
 	transition: all 0.5s;
 }
 
-.menu-item-314 a:after {
+.menu-item-603 a:after {
 	content: '教室一覧';
 	display: block;
 	font-family: fot-tsukuardgothic-std, sans-serif;
@@ -2377,12 +2377,12 @@ summary {
 	transition: all 0.5s;
 }
 
-.menu-item-314 a:hover:after {
+.menu-item-603 a:hover:after {
 	opacity: .7;
 	transition: all 0.5s;
 }
 
-.menu-item-314 a:hover {
+.menu-item-603 a:hover {
 	opacity: .5;
 	transition: all 0.5s;
 }
@@ -2541,6 +2541,177 @@ summary {
 
 .p-page-information__text {
 	padding-top: 0.625rem;
+}
+
+.p-page-information__top-text {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 0.625rem;
+}
+
+@use "global" as *;
+.p-modal {
+	display: none;
+	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	z-index: 10501;
+}
+
+.p-modal__button {
+	cursor: pointer;
+	display: block;
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.p-modal__bg {
+	background: transparent;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: none;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10500;
+}
+
+.p-modal__wrap {
+	background: #333;
+	border: 4px solid #333;
+	max-height: 1000px;
+	overflow: scroll;
+	padding: 1.25rem;
+	width: 100%;
+}
+
+.p-modal__box {
+	margin: 6.25rem 0;
+}
+
+@use "global" as *;
+.l-page-recruit {
+	background: linear-gradient(180deg, #fff 0, #fff 6.25rem, #7C8A97 6.25rem, #7C8A97 100%);
+	margin-bottom: 7.5rem;
+	padding-bottom: 6.25rem;
+	padding-top: 7.5rem;
+}
+
+.l-page-recruit_breadcrumb {
+	margin: 0 auto;
+	max-width: 67.5rem;
+	padding-bottom: 1.875rem;
+	padding-top: 7.5rem;
+	width: 84.3%;
+}
+
+.l-page-recruit_breadcrumb a {
+	color: #333;
+	text-decoration: none;
+}
+
+.l-page-recruit-inner {
+	margin: 0 auto;
+	max-width: 66.25rem;
+	width: 82.81%;
+}
+
+.l-page-recruit-subtitle {
+	font-size: 2.5rem;
+	font-weight: normal;
+	text-align: center;
+}
+
+.l-page-recruit-contents {
+	margin: 0 auto;
+	max-width: 37.5rem;
+	padding-bottom: 3.75rem;
+	text-align: center;
+}
+
+.l-page-recruit-title {
+	font-weight: normal;
+	text-align: center;
+}
+
+.l-page-recruitment-title {
+	background: #274a75;
+	color: #fff;
+	display: block;
+	padding: 0.625rem 0;
+	padding-left: 1.875rem;
+}
+
+.l-page-recruitment-info {
+	display: flex;
+}
+
+.l-page-recruit-text {
+	display: inline-block;
+	text-align: left;
+}
+
+.l-page-recruitment-info:nth-child(9) {
+	align-items: flex-end;
+	display: flex;
+}
+
+.info-meta {
+	width: 18.25rem;
+	width: 27.35%;
+}
+
+.info-salary {
+	margin-top: 0.1875rem;
+}
+
+.info-meta-last {
+	padding-bottom: 0.3125rem;
+}
+
+.info-content {
+	width: calc(100% - 292px);
+}
+
+.info-content a {
+	color: #274a75;
+	font-size: 1.125rem;
+	font-weight: bold;
+	padding-left: 0.625rem;
+}
+
+.l-page-recruitment-info:not(:first-child) {
+	border-bottom: 0.0625rem solid #707070;
+	line-height: 1.5;
+	padding: 1.5rem 0;
+}
+
+.l-page-recruitment-info:nth-child(9n) {
+	border-bottom: none;
+	padding-bottom: 0.625rem;
+}
+
+.l-page-recruitment-info:last-child {
+	line-height: 1;
+	padding-top: 0.625rem;
+}
+
+.info span {
+	margin-left: 1.25rem;
+}
+
+.recruitment-address {
+	display: none;
 }
 
 .l-mv {
@@ -3565,7 +3736,6 @@ span::before,
 	left: 20px;
 	margin: auto;
 	right: auto;
-	top: 13.75rem;
 }
 
 .slick-next {
@@ -3573,7 +3743,6 @@ span::before,
 	left: auto;
 	margin: auto;
 	right: 20px;
-	top: 13.75rem;
 }
 
 .slide-wrapper {
@@ -3588,6 +3757,7 @@ span::before,
 .slick-prev,
 .slick-next {
 	height: 40px;
+	top: 10rem !important;
 	width: 40px;
 }
 
@@ -3759,6 +3929,32 @@ select {
 	width: 100%;
 }
 
+@use "global" as *;
+.p-works {
+	margin-bottom: 6.25rem;
+	padding: 9.375rem 2.5rem 6.25rem;
+	position: relative;
+	text-align: center;
+}
+
+.p-works__title {
+	font-weight: bold;
+	padding-bottom: 1.875rem;
+}
+
+.p-works__btn {
+	font-weight: bold;
+	padding-top: 1.875rem;
+}
+
+.wd-card__btn {
+	margin-top: 3.125rem;
+}
+
+.p-words__text {
+	display: inline-block;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 html:focus-within {
@@ -3848,6 +4044,14 @@ html:focus-within {
 
 }
 
+@media screen and (min-width: 765px) {
+
+.p-modal {
+	max-width: calc(100% - 25px * 2);
+}
+
+}
+
 @media screen and (min-width: 767px) and (max-width: 1240px) {
 
 .p-company__title:before {
@@ -3900,6 +4104,14 @@ html {
 
 .mv__wrapper .swiper-wrapper .swiper-slide {
 	padding-top: 64.25%;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+
+.p-modal {
+	width: 50%;
 }
 
 }
@@ -4496,8 +4708,94 @@ html {
 	padding-right: 0.9375rem;
 }
 
-.p-page-information__wrapper {
-	padding-top: 1.25rem;
+.p-page-information__top-text {
+	font-size: 1.125rem;
+	margin: 0 auto;
+	max-width: 90%;
+	text-align: left;
+}
+
+.p-modal {
+	width: 90%;
+}
+
+.p-modal__wrap {
+	max-height: 500px;
+	padding: 0;
+}
+
+.p-modal__box {
+	margin: 0;
+}
+
+.l-page-recruit {
+	background: linear-gradient(180deg, #fff 0, #fff 5rem, #7C8A97 5rem, #7C8A97 100%);
+	background: #7C8A97;
+	margin-bottom: 6.25rem;
+	padding-top: 7.375rem;
+}
+
+.l-page-recruit_breadcrumb {
+	font-size: 0.875rem;
+	padding-bottom: 3.125rem;
+	padding-top: 3.125rem;
+}
+
+.l-page-recruit-inner {
+	width: 89.3%;
+}
+
+.l-page-recruit-subtitle {
+	font-size: 1.875rem;
+}
+
+.l-page-recruit-contents {
+	padding-bottom: 1.875rem;
+}
+
+.l-page-recruitment-info {
+	display: block;
+}
+
+.l-page-recruit-text {
+	font-size: 1rem;
+	line-height: 1.68;
+	margin: 0 auto;
+}
+
+.l-page-recruitment-info:nth-child(9) {
+	display: block;
+}
+
+.info-meta {
+	font-weight: bold;
+	width: 100%;
+}
+
+.info-salary {
+	margin-top: 0;
+}
+
+.info-meta-last {
+	padding-bottom: 0;
+}
+
+.info-content {
+	width: 100%;
+}
+
+.l-page-recruitment-info:not(:first-child) {
+	padding: 1.5rem 0 0.1875rem;
+}
+
+.l-page-recruitment-info:nth-child(9n) {
+	position: relative;
+}
+
+.l-page-recruitment-info:last-child {
+	line-height: 1.375;
+	padding-bottom: 0.625rem;
+	padding-top: 0;
 }
 
 .l-mv {
@@ -4715,6 +5013,11 @@ html {
 	width: 100vw;
 }
 
+.slick-prev,
+.slick-next {
+	top: 9.25rem !important;
+}
+
 .table-res-form input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -4753,8 +5056,25 @@ textarea {
 	width: 90%;
 }
 
+.p-works {
+	margin-bottom: 6.25rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 6.25rem 0.9375rem 5rem;
+	width: 80%;
+}
+
 .u-hidden-sp {
 	display: none;
+}
+
+}
+
+@media screen and (max-width: 767px) and (max-width: 767px) {
+
+.info-content {
+	padding-bottom: 0.1875rem;
+	padding-top: 0.125rem;
 }
 
 }
@@ -4852,6 +5172,19 @@ textarea {
 
 .p-header {
 	height: 5rem;
+}
+
+.l-page-recruit-text {
+	width: 80%;
+}
+
+.br_::before {
+	content: "\A";
+	white-space: pre;
+}
+
+.recruitment-address {
+	display: block;
 }
 
 .slide-img-2 {

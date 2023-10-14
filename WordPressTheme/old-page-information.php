@@ -13,10 +13,69 @@
       }
       ?>
         </div>
+        <!-- <div class="l-page-recruit-contents">
+            <h3 class="l-page-recruit-subtitle">公演情報</h3>
 
+        </div>
+
+        <div class="l-page-recruitment-contents">
+            <p class="l-page-recruitment-title"></p>
+            <div class="l-page-recruitment-flex">
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta"></p>
+                    <p class="info-content"></p>
+                </div>
+
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">公演内容</p>
+                    <p class="info-content">角屋満李子バレエ団9月公演</p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">演目</p>
+                    <p class="info-content">『黒鳥物語』
+                        <br class="recruitment-address"> 「Smile I」「Smile II」他
+                    </p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">日時</p>
+                    <p class="info-content">2023年9月30日(土)</p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">開場</p>
+                    <p class="info-content">PM4:30
+                    </p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">開演</p>
+                    <p class="info-content">PM5:00
+                    </p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta info-salary">場所</p>
+                    <p class="info-content">相模女子大学グリーンホール </p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta">席種</p>
+                    <p class="info-content">S席4,000円
+                        /A席3,000円
+                        /B席1,500円 </p>
+                </div>
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta info-meta-last">お問い合わせ</p>
+                    <p class="info-content"> 角屋満李子バレエ団<a href="tel:042-743-7816">042-743-7816</a></p>
+                </div>
+
+                <div class="l-page-recruitment-info info">
+                    <p class="info-meta"></p>
+                    <p class="info-content">お気軽にお問い合わせください</p>
+
+                </div>
+
+            </div>
+        </div> -->
         <div class="l-page-recruit-contents">
             <div class="p-page-information__top-text">
-                角屋満李子バレエ団 9月公演はおかげさまで<br class="is-pc">無事に終演いたしました。
+                角屋満李子バレエ団9月公演はおかげさまで<br class="is-pc">無事に終演いたしました。
                 <br>ご来場頂きありがとうございました。
             </div>
 

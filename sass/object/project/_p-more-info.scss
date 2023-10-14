@@ -1,0 +1,181 @@
+@use "global" as *;  
+.l-page-recruit{
+    padding-top: rem(120);
+    padding-bottom: rem(100);
+    margin-bottom: rem(120);
+    background: linear-gradient(180deg,$background 0,$background rem(100),$gray rem(100),$gray 100%);
+    @include mq(sp){
+        background: linear-gradient(180deg,$background 0,$background rem(80),$gray rem(80),$gray 100%);
+        margin-bottom: rem(100);
+        background: $gray;
+        padding-top: rem(118);
+    }
+}
+.l-page-recruit_breadcrumb{
+    width: 84.3%; 
+    max-width: rem(1080);
+    margin: 0 auto;
+    padding-top: rem(120);
+    padding-bottom: rem(30);
+    @include mq(sp){
+        font-size: rem(14);
+        padding-top: rem(50);
+        padding-bottom: rem(50);
+    }
+}
+
+
+.l-page-recruit_breadcrumb a{
+    color: $black;
+    text-decoration: none;
+}
+.l-page-recruit-inner{
+    width: 82.81%;
+    max-width: rem(1060);
+    margin: 0 auto;
+    @include mq(sp){
+        width: 89.3%;
+    }
+}
+.l-page-recruit-subtitle{
+    text-align: center;
+    font-size: rem(40);
+    font-weight: normal;
+    @include mq(sp){
+        font-size: rem(30);
+        }
+}
+.l-page-recruit-contents{
+    text-align: center;
+    margin: 0 auto;  
+    max-width: rem(600);
+    
+    padding-bottom: rem(60);
+    @include mq(sp){
+        padding-bottom: rem(30);
+        }
+}
+
+.l-page-recruit-title{
+    text-align: center;
+    font-weight: normal;
+}
+.l-page-recruitment-title{
+  display: block;
+  background: $base-color;  
+  color: $white;
+  padding: rem(10) 0;
+  padding-left: rem(30);
+  
+
+}
+.l-page-recruitment-info{
+    display: flex;
+   
+   @include mq(sp){
+        display: block;
+    }
+  }
+  .l-page-recruit-text{
+      text-align: left;
+      display: inline-block;
+      @include mq(sp){
+          line-height: 1.68;
+          margin: 0 auto;
+          font-size: rem(16);
+        }
+        @include mq(ssp){
+          width: 80%;
+
+      }    
+  }
+.l-page-recruitment-info:nth-child(9){
+ display: flex;   
+ align-items: flex-end;
+ @include mq(sp){
+  display: block;   
+ }
+}
+
+.info-meta{
+    width: rem(292);
+    width: 27.35%;
+    @include mq(sp){
+        font-weight: bold;
+        width: 100%;
+    }
+}
+.info-salary{
+   margin-top: rem(3); 
+   @include mq(sp){
+       margin-top: 0;
+   }
+}
+.info-meta-last{
+   padding-bottom: rem(5); 
+   @include mq(sp){
+       padding-bottom: 0;
+   }
+}
+
+.info-content{
+    width:calc(100% - 292px) ;
+    @include mq(sp){
+        width: 100%;
+        @include mq(sp){
+            padding-top: rem(2);
+            padding-bottom: rem(3);
+        }
+    }
+}
+.info-content a{ 
+padding-left: rem(10);
+color: $base-color;
+font-weight: bold;
+font-size: rem(18);
+}
+.l-page-recruitment-info:not(:first-child) {
+    line-height: 1.5;
+    padding: rem(24) 0;
+    border-bottom: rem(1) solid #707070;
+    @include mq(sp){
+        padding: rem(24) 0 rem(3);
+    }
+}
+
+.l-page-recruitment-info:nth-child(9n){
+border-bottom: none;
+padding-bottom: rem(10);
+@include mq(sp){
+    position: relative;
+}
+}
+.l-page-recruitment-info:last-child{
+    line-height: 1;
+    padding-top: rem(10);
+    @include mq(sp){
+      padding-top: 0;
+        padding-bottom: rem(10);
+        line-height:1.375 ;
+    }
+
+}
+.info span{
+margin-left: rem(20);
+}
+
+.br_::before {
+    @include mq(ssp){
+        content: "\A";
+        white-space: pre;
+
+    }
+  }
+
+  .recruitment-address{
+      display: none;
+      @include mq(ssp){
+          display: block;
+      }
+  }
+  

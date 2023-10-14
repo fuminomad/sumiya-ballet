@@ -35,7 +35,56 @@
 
     </div>
 </section>
+<div class="p-works">
+    <h2 class="c-section__title p-works__title">
+        公演情報
+    </h2>
+    <div class="p-works__inner">
+        <div class="p-works__wrappers-1">
+            <h3 class="p-words__text">2023年9月30日（土）開催</h3>
+            <div class="p-works__btn c-btn"> <a href="$information">詳細はこちら</a></div>
+            <div class="p-works__wrapper wd-cards">
+                <div class="wd-card">
+                    <div class="wd-card__btn">
+                        <!-- ここからsite-1 -->
+                        <div class="js-open-modal p-modal__button" data-target=".js-modal">
+                            <div class="wd-card__img">
+                                <figure class="wd-card__figure">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/img/sumiya2023.png"
+                                        alt="webデザイン" loading="lazy" width="505" height="714">
+                                </figure>
+                            </div>
+                            <div class="wd-card__btn">
+                                <div class="c-btn">View More</div>
+                            </div>
+                        </div>
+                        <div class="p-modal l-modal js-modal">
+                            <div class="p-modal__wrap">
+                                <div class="p-modal__inner">
+                                    <div class="p-modal__box">
+                                        <div class="site__img">
+                                            <div class="site__figure">
+                                                <img src="<?php echo get_template_directory_uri() ?>/assets/img/sumiya2023.png"
+                                                    alt="公演情報">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-modal__bg js-close-modal js-modal" data-target=".js-modal"></div>
+                        <!-- ここまでsite-1 -->
+                    </div>
+                </div>
+            </div>
+        </div>
 
+
+    </div>
+</div>
+<section class="p-modal">
+
+</section>
 
 <section class="l-about p-about">
     <div class="p-about__inner">
